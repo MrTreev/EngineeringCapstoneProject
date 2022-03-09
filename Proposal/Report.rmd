@@ -1,0 +1,94 @@
+---
+author: Oliver Patterson (S3723206), XXXXXX
+date: "XX/XX/2022"
+fontsize: 12pt
+header-includes:
+    - \usepackage{booktabs}
+    - \usepackage{dcolumn}
+    - \usepackage{wrapfig}
+    - \usepackage{subcaption}
+    - \usepackage{caption}
+    - \usepackage{graphicx}
+    - \usepackage{float}
+    - \usepackage{fancyhdr}
+documentclass: "article"
+geometry: margin=2cm
+output:
+    pdf_document:
+        fig_caption: yes
+        fig_height: 3
+        fig_width: 4.5
+        latex_engine: pdflatex
+        number_sections: yes
+        citation_package: "biblatex"
+bibliography: referencing/cites.bib
+biblio-style: ieee
+nocite: '@*'
+---
+\pagestyle{empty}
+
+\let\origfigure\figure
+\let\endorigfigure\endfigure
+\renewenvironment{figure}[1][2] {
+    \expandafter\origfigure\expandafter[H]
+} {
+    \endorigfigure
+}
+\begin{centering}
+
+\vspace{5 cm}
+
+\Huge
+
+{\bf Engineering Capstone Project \\ (COURSECODE) \\ PROJECTNAME}
+
+\vspace{4 cm}
+
+\Large
+
+Oliver Patterson (S3723206), XXXXXX
+
+\vspace{4 cm}
+
+\normalsize
+
+\vspace{0.5 cm}
+
+Supervisor: \\
+TEACHERNAME
+
+\vspace{0.5 cm}
+
+Date: \\
+XX/XX/2022
+
+\vspace{4 cm}
+
+\normalsize
+
+RMIT School of \\
+Engineering
+
+\end{centering}
+\newpage
+\tableofcontents
+\newpage
+\pagenumbering{roman}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{1pt}
+\setlength{\headheight}{15pt}
+\fancyhf{}
+\fancyhead[L]{PROJECTNAME}
+\fancyhead[R]{}
+\fancyfoot[C]{\thepage}
+\clearpage
+\pagenumbering{arabic}
+
+# Introduction
+
+# References
+\printbibliography[heading=none]
+\def\printbibliography{}
+
+# Appendix
