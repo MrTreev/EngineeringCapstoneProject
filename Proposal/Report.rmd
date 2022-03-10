@@ -1,6 +1,6 @@
 ---
-author: Oliver Patterson (S3723206), XXXXXX
-date: "XX/XX/2022"
+author: Oliver Patterson (S3723206), Alec Harbis (S3661092), Ahad Abdul (S3791936)
+date: "27/03/2022"
 fontsize: 12pt
 header-includes:
     - \usepackage{booktabs}
@@ -46,7 +46,7 @@ nocite: '@*'
 
 \Large
 
-Oliver Patterson (S3723206), XXXXXX
+Oliver Patterson (S3723206), Alec Harbis (S3661092), Ahad Abdul (S3791936)
 
 \vspace{4 cm}
 
@@ -55,12 +55,12 @@ Oliver Patterson (S3723206), XXXXXX
 \vspace{0.5 cm}
 
 Supervisor: \\
-TEACHERNAME
+Dr Katrina Neville
 
 \vspace{0.5 cm}
 
 Date: \\
-XX/XX/2022
+27/03/2022
 
 \vspace{4 cm}
 
@@ -85,7 +85,17 @@ Engineering
 \clearpage
 \pagenumbering{arabic}
 
-# Introduction
+# Summary
+
+# Statement of problem
+
+# Background and literature review
+
+# List of design/research questions
+
+# Methodology
+
+# Risk assessment and ethical considerations
 
 # References
 \printbibliography[heading=none]
