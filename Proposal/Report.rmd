@@ -1,6 +1,6 @@
 ---
 author: Oliver Patterson (S3723206), Alec Harbis (S3661092), Ahad Abdul (S3791936)
-date: "27/03/2022"
+date: "03/04/2022"
 fontsize: 12pt
 header-includes:
     - \usepackage{booktabs}
@@ -40,7 +40,7 @@ nocite: '@*'
 
 \Huge
 
-{\bf Engineering Capstone Project \\ (COURSECODE) \\ PROJECTNAME}
+{\bf Engineering Capstone Project \\ (OENG1167) \\ PROJECTNAME}
 
 \vspace{4 cm}
 
@@ -60,7 +60,7 @@ Dr Katrina Neville
 \vspace{0.5 cm}
 
 Date: \\
-27/03/2022
+03/04/2022
 
 \vspace{4 cm}
 
