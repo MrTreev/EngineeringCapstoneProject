@@ -46,7 +46,9 @@ nocite: '@*'
 
 \Large
 
-Oliver Patterson (S3723206), Alec Harbis (S3661092), Ahad Abdul (S3791936)
+Oliver Patterson (S3723206),\\
+Alec Harbis (S3661092),\\
+Ahad Abdul (S3791936)
 
 \vspace{4 cm}
 
@@ -102,3 +104,15 @@ Engineering
 \def\printbibliography{}
 
 # Appendix
+
+## Group Work Member Contribution Table
+
+| Section                                    | Person(s) Responsible and Percentage |
+|--------------------------------------------|--------------------------------------|
+| Summary                                    |                                      |
+| Statement of Problem                       |                                      |
+| Background and Literature Review           |                                      |
+| List of Design Research Questions          |                                      |
+| Methodology                                |                                      |
+| Risk Assessment and Ethical Considerations |                                      |
+| Appendix                                   |                                      |
