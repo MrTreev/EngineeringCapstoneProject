@@ -87,32 +87,48 @@ Engineering
 \clearpage
 \pagenumbering{arabic}
 
-# Summary
+# Executive Summary (Ahad)
 
-# Statement of problem
+# Statement of problem (Alec)
 
-# Background and literature review
+# Background and literature review (Ahad, Oliver Alec)
 
-# List of design/research questions
+## General overview of wearable technology (Alec)
 
-# Methodology
+## Data Acquisition
+
+### ECG (Alec)
+
+### Temperature (Ahad)
+
+### Galvanic Skin Response (Alec)
+
+### Moisture (Oliver)
+
+## Internal Data Transmission (Oliver)
+
+## External Data Transmission (Ahad)
+
+# List of design/research questions (Ahad)
+
+# Methodology (Ahad, Oliver, Ahad
+
+## Time Planning
+
+## Resource Planning
+
+## Design Method
+
+## Alternative Design
 
 # Risk assessment and ethical considerations
+
+## Risk Assessment (Oliver)
+
+## Ethical Considerations (Alec)
 
 # References
 \printbibliography[heading=none]
 \def\printbibliography{}
 
 # Appendix
-
-## Group Work Member Contribution Table
-
-| Section                                    | Person(s) Responsible and Percentage |
-|--------------------------------------------|--------------------------------------|
-| Summary                                    |                                      |
-| Statement of Problem                       |                                      |
-| Background and Literature Review           |                                      |
-| List of Design Research Questions          |                                      |
-| Methodology                                |                                      |
-| Risk Assessment and Ethical Considerations |                                      |
-| Appendix                                   |                                      |
