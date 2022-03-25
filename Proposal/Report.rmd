@@ -23,7 +23,6 @@ output:
         citation_package: "biblatex"
 bibliography: referencing/cites.bib
 biblio-style: ieee
-nocite: '@*'
 ---
 \pagestyle{empty}
 
@@ -106,12 +105,13 @@ Engineering
 ### Moisture (Oliver)
 
 ## Internal Data Transmission (Oliver)
+Internal data transmission, we hereby define as the transmission of data between components of a system without the use of Over-The-Air (OTA) communication such as Bluetooth, WiFi, LoRa, etc. The main method of internal data transmission in traditional rigid electronics is through traditional printed PCBs. These materials are not very suitable for wearable electronics as they cannot endure large amounts of flexion without breaking. One novel technology which has been around for many years that attempts to solve this issue is Flexible Silicon Fibres (FSFs) [@healy2004]. These fibres present an alternative to the copper wires and traces of a traditional PCB and connect components together in a flexible, electronically functional way. One of the next major innovations in internal data transmission was the flexible PCB (FPCB) which could withstand high amounts of flexion, however as it is still a plastic foil, the FPCB can not undergo stretch which is required in many wearable applications. The next major innovation was the Stretchable PCB (SPCB). This, in one instance [@stellaproject], involved embedding copper wires in an elastic flexible substrate in a two-dimensional spring such that stretch is possible in one axis without damaging the circuitry[@vieroth2009].
 
 ## External Data Transmission (Ahad)
 
 # List of design/research questions (Ahad)
 
-# Methodology (Ahad, Oliver, Ahad
+# Methodology (Ahad, Oliver, Ahad)
 
 ## Time Planning
 
