@@ -39,7 +39,7 @@ biblio-style: ieee
 
 \Huge
 
-{\bf Engineering Capstone Project \\ (OENG1167) \\ PROJECTNAME}
+{\bf Engineering Capstone Project \\ (OENG1167) \\ Investigation of Materials to Develop a Wearable Stress Monitoring Device}
 
 \vspace{4 cm}
 
@@ -80,7 +80,7 @@ Engineering
 \renewcommand{\footrulewidth}{1pt}
 \setlength{\headheight}{15pt}
 \fancyhf{}
-\fancyhead[L]{PROJECTNAME}
+\fancyhead[L]{Investigation of Materials to Develop a Wearable Stress Monitoring Device}
 \fancyhead[R]{}
 \fancyfoot[C]{\thepage}
 \clearpage
