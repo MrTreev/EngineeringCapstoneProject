@@ -263,3 +263,6 @@ Firstly we should start by defining what is and is not part of this project what
 # References
 \printbibliography[heading=none]
 \def\printbibliography{}
+
+# Appendix: Equipment and Activity Risk Table
+.
