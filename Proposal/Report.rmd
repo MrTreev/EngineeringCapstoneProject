@@ -264,5 +264,29 @@ Firstly we should start by defining what is and is not part of this project what
 \printbibliography[heading=none]
 \def\printbibliography{}
 
-# Appendix: Equipment and Activity Risk Table
+# Appendices
+
+## Group member contribution table
+| Section                                           | Person(s) responsible and percentage |
+|---------------------------------------------------|--------------------------------------|
+| Executive summary                                 | Ahad                                 |
+| Introduction                                      | Alec                                 |
+| Statement of problem                              | Ahad 33%, Alec 34%, Oliver 33%       |
+| General Overview of Wearable Technology           | Alec                                 |
+| Overview of Stress Detection and Wearable Devices | Alec                                 |
+| Data Aquisition                                   | Ahad 33%, Alec 33%, Oliver 33%       |
+| Internal Data Transmission                        | Oliver                               |
+| External Data Transmission                        | Ahad                                 |
+| Design/Research Questions                         | Ahad 20%, Alec 40%, Oliver 40%       |
+| Time Planning                                     | Alec                                 |
+| Resource Planning                                 | Ahad                                 |
+| Design Method                                     | Ahad                                 |
+| Alternative Design                                | Alec                                 |
+| Risk Assessment                                   | Ahad                                 |
+| Ethical Considerations                            | Oliver 100%                          |
+| Equipment and Activity Risk Table                 | Ahad 50%, Alec 50%                   |
+| Editing and Formatting                            | Ahad 10%, Alec 10%, Oliver 80%       |
+
+
+## Equipment and Activity Risk Table
 .
