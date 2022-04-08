@@ -1,0 +1,118 @@
+---
+author: Oliver Patterson (S3723206), Alec Harbis (S3661092), Ahad Abdul (S3791936)
+date: "29/05/2022"
+fontsize: 12pt
+header-includes:
+    - \usepackage{booktabs}
+    - \usepackage{dcolumn}
+    - \usepackage{wrapfig}
+    - \usepackage{subcaption}
+    - \usepackage{caption}
+    - \usepackage{graphicx}
+    - \usepackage{float}
+    - \usepackage{fancyhdr}
+documentclass: "article"
+geometry: margin=2cm
+output:
+    pdf_document:
+        fig_caption: yes
+        fig_height: 3
+        fig_width: 4.5
+        latex_engine: pdflatex
+        number_sections: yes
+        citation_package: "biblatex"
+bibliography: referencing/cites.bib
+biblio-style: ieee
+---
+\pagestyle{empty}
+
+\let\origfigure\figure
+\let\endorigfigure\endfigure
+\renewenvironment{figure}[1][2] {
+    \expandafter\origfigure\expandafter[H]
+} {
+    \endorigfigure
+}
+\begin{centering}
+
+\vspace{5 cm}
+
+\Huge
+
+{\bf Engineering Capstone Project \\ (OENG1167) \\ Investigation of Materials to Develop a Wearable Stress Monitoring Device}
+
+\vspace{4 cm}
+
+\Large
+
+Oliver Patterson (S3723206),\\
+Alec Harbis (S3661092),\\
+Ahad Abdul (S3791936)
+
+\vspace{4 cm}
+
+\normalsize
+
+\vspace{0.5 cm}
+
+Supervisor: \\
+Dr Katrina Neville
+
+\vspace{0.5 cm}
+
+Date: \\
+29/05/2022
+
+\vspace{4 cm}
+
+\normalsize
+
+RMIT School of \\
+Engineering
+
+\end{centering}
+\newpage
+\tableofcontents
+\newpage
+\pagenumbering{roman}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{1pt}
+\setlength{\headheight}{15pt}
+\fancyhf{}
+\fancyhead[L]{Investigation of Materials to Develop a Wearable Stress Monitoring Device}
+\fancyhead[R]{}
+\fancyfoot[C]{\thepage}
+\clearpage
+\pagenumbering{arabic}
+
+# Executive Summary
+
+# Introduction
+
+# Statement of Problem
+
+# Background and Literature Review
+
+# Methodology and Engineering Design
+
+# Feasibility/Proof pf Concept
+
+# Preliminary Findings
+
+# Project Management
+
+# Conclusions
+
+
+\newpage
+# References
+\printbibliography[heading=none]
+\def\printbibliography{}
+
+# Appendices
+
+## Group member contribution table
+| Section           | Person(s) responsible and percentage |
+|-------------------|--------------------------------------|
+| Executive summary |                                      |
