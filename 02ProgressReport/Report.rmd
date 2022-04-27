@@ -96,7 +96,37 @@ Engineering
 
 # Methodology and Engineering Design
 
-# Feasibility/Proof pf Concept
+## Componant Selection
+
+### Heart Rate Sensor
+The major constraints decided upon for the heart rate sensor were the ability to be worn comfortably without impeding the sensor, the ability to communicate with common MCUs, and to be able to collect the heart rate data in real time. To this end we found seven different heart rate sensors from various suppliers and had to narrow them down further. We ended up choosing the SparkFun Pulse Sensor since it is very small and has flexibility of placement.
+
+### Galvanic Skin Response Sensor
+We were unable to find a sensor which fit our requirements for cost and size so we are going to be building our own GSR sensor as it is a relatively simple undertaking compared to the other sensors in our project. We will however be using a Grove GSR Sensor in order to calibrate our sensor and ensure it functions properly.
+
+### Skin Temperature
+For measuring skin temperature the main constraints for the sensor were
+
+1. Temperature range including 20-45 Degrees Celcius
+2. 3.3V Operation
+3. Compact Profile
+4. I2C Functionality
+
+We looked through the sensors available at Core Electronics, DigiKey, and JayCar and found the sensor that best fit the requirements whilst being relatively cheap was the AHT20 Temperature and Humidity Sensor. We chose this one because of it's small form-factor, abundant documentation, low price, and the potential to measure sweat levels using the humidity sensor built in.
+
+### MCU
+The MCU being the central componant of the system must have certain requirements in order to be usable with this project.
+
+1. Small Form-Factor
+2. I2C Functionality
+3. Sleep Mode
+4. Arduino Compatible
+5. Low Power Consumption
+6. WiFi/Bluetooth Functionality
+
+The MCU we decided to use is the ESP32 due to it's extensive documentation, sleep mode, extremely small form-factor, Wifi/Bluetooth functionality which can be processed in parallel with the rest of the operations on the chip. For development we will be using the ESP32-PICO-KIT Development Board due to it's built-in programmer, Prototyping pins, and relatively small size.
+
+# Feasibility/Proof of Concept
 
 # Preliminary Findings
 

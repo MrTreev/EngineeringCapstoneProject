@@ -1,0 +1,15 @@
+GSR
+	3.3Vin 		- 3V3(Left)
+	Ground 		- GND(Left)
+	Signal 		- IO38(ADC1_CH2)
+
+AHT20
+	3.3Vin 		- 3V3(Left)
+	Ground 		- GND(Left)
+	SDA 		- IO34(RTC_GPIO4)
+	SCL 		- IO35(RTC_GPIO5)
+
+Pulse Sensor
+	5Vin 		- 5V
+	Ground 		- GND(Right)
+	S 		- IO0(RTC_GPIO11)
