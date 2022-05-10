@@ -47,7 +47,8 @@ void loop() {
   // put your main code here, to run repeatedly:
   analogInput = analogRead(38);
   voltage = analogInput * (vs/4095);
-  
+
+  // CHANGE "voltage" to an integer or any other value to test with dummy data.
   pCharacteristic->setValue(voltage);
   pCharacteristic->notify();
   delay(2000);
