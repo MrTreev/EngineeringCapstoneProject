@@ -91,12 +91,77 @@ Engineering
 # Introduction
 
 # Statement of Problem
+Stress is an ordinary physical response to everyday circumstances and challenges. Stress is comprised of both mental and physical components and when it arises, the human body automatically releases adrenaline and other hormones as a natural response. Stress can be quite useful when under control as it allows humans to be productive and efficient. However, stress, left unchecked, can quickly spiral into unproductivity or anxiety.
+Identifying and understanding periods of elevated stress could significantly increase our understanding of how stress relates to productivity and long-term health. Studies indicate that devices which monitor Heart Rate Variability (HRV), Electrodermal Activity (EDA) and Body Temperature may be useful in the analysis of stress levels. HRV (a measurement of heart rhythm over time), EDA (a measurement of the changes in skin conductance) and Body Temperature provide insights into the Autonomic Nervous System (ANS). The ANS is responsible for the sending of signals to the body which either stimulate or relax different involuntary processes (such as heart rate, sweat secretion and body temperature) (Chung, 2021). 
+The consequences of untreated stress are vast and have a ripple effect across a person’s physical and mental health. Aligned with the growing use of telehealth and telemedicine for stress management, wearable technology that both monitors the physiological indicators of stress and provides feedback to the user are becoming more widely accepted. Thus, having a wearable device that can monitor key physiological signals associated with the Autonomic Nervous System could provide key insights into the levels and effects of stress.
+This project will aim to investigate the materials and methods of construction for wearable devices and then verify these findings through the development of a stress monitoring wearable device. This project will require knowledge of core electronic principles including microcontrollers and sensors, as well as basic textile skills. Project success will be determined by mainly the wearability of the device and accuracy of the data.
+
+## Design and Research Questions
+The design and development of a wearable continuous stress monitoring device can be broken down into two, neat categories. The first being the identification of signals and sensors that can be used to monitor stress and the second, where on the body is an optimal location to place the various components. The following research and design questions are largely based on those present in the project proposal however, this version expands further, into more detail:
+1.	How to identify levels of stress via physiological signals and sensors?
+a)	Which physiological signals correlate to stress?
+b)	Which sensors can be used to measure the identified physiological signals?
+i)	Should Heart Rate be measured via ECG, or PPG?
+ii)	Should skin temperature be measured from one or more locations?
+	How often to collect skin temperature data?
+iii)	How to measure sweat rate?
+	How often to collect sweat rate data?
+iv)	How to calibrate such sensors?
+c)	How to visualise acquired data?
+i)	Can off the shelf data visualisation platforms be used?
+ii)	Can spreadsheets be used to analyse prototyping data?
+d)	How to transmit data from the wearable device to visualisation platform?
+i)	Should Bluetooth or Wi-Fi be used?
+ii)	How often should data be transmitted?
+iii)	Should data be compressed on the MCU?
+iv)	Should the MCU do any pre-processing of data?
+e)	Which components to be used?
+i)	What are the optimal operating ranges (voltage, temperature, etc)?
+ii)	What are the associated budgets for each component?
+f)	How to power the device?
+i)	What battery voltage to use?
+ii)	Where to attach the battery?
+iii)	How to charge the battery?
+	Detach the battery to charge?
+2.	How to incorporate sensors into a wearable device?
+a)	How to reduce and minimise obtrusiveness?
+i)	Where on the body would this be achieved?
+b)	Which materials would facilitate the most comfort for the user?
+i)	For heart rate sensing would electrodes or optical sensing be more comfortable?
+ii)	Where on the body should heart rate, skin temperature and galvanic skin response be placed?
+c)	Where on the body would be the most effective location for the device? 
+i)	How to transmit data from sensors to microcontroller? 
+	I2C?
+	SPI?
+ii)	How would this position affect signal acquisition? 
+iii)	How would this position affect wearability?
 
 # Background and Literature Review
 
 # Methodology and Engineering Design
+Table 1 outlines the ways in which the design and research questions will be answered. It also provides reasoning as to why a specified approach will be taken. Subsequently, it links to the section of this document where the results and discussion will be included.
 
-## Componant Selection
+## Methods for Answering Design and Research Questions
+| Question          | Method         		| Reasoning        																		 							| Corresponding Section   |
+|-------------------|---------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------|
+| 1.a)              | Literature Review  		| Physiological Signals and their correlation to mental stress lie externally to the project groups area of expertise.		     							|				  |
+| 1.b)              | Literature Review  		| The identification of sensors that can acquire data from specific physiological signals need not be tested, but rather identified.						|				  |
+| 1.c)              | Testing		  		| Different methods of data analysis will be tested to identify the most appropriate method.													|				  |
+| 1.d)              | Testing				| The specificities of data transfer will be understood throuh testing once data has been acquired.												|				  |
+| 1.e)              | Desktop Research		| The components will be identified through the research and comparison of multiple options. The options will be compared and the most optimal chosen.			|				  |
+| 1.f)              | Testing		  		| The most optimal power source will be identified through requirements analysis (I.e., operating voltages of other components).							|				  |
+| 2.a)              | Literature Review/Testing | The identification of the most optimal places to locate the various components will be identified through literature review and then tested in a practical setting.	|				  |
+| 2.b)              | Literature Review/Testing	| A literature review of the most optimal materials will be conducted and then testing will determine the most optimal in practical environments.				|				  |
+| 2.c)              | Testing		  		| Multiple locations will be tested and then whether all components will be placed in a localised area or spread over multiple areas will be determined.			|				  |
+
+## Overall System Architecture
+The overall system architecture can be seen below in Figure 1. On the left-hand side of the diagram the on-body section of the system is illustrated. This section represents everything that will be included in the wearable component of the stress monitoring device. On the right-hand side, the off-body section is illustrated. This includes everything that will not be included in the wearable component of the device. 
+INSERT IMAGE OF OVERALL SYSTEM ARCHITECTURE
+
+## Low-Level Design
+
+
+## Component Selection
 
 ### Heart Rate Sensor
 The major constraints decided upon for the heart rate sensor were the ability to be worn comfortably without impeding the sensor, the ability to communicate with common MCUs, and to be able to collect the heart rate data in real time. To this end we found seven different heart rate sensors from various suppliers and had to narrow them down further. We ended up choosing the SparkFun Pulse Sensor since it is very small and has flexibility of placement.
