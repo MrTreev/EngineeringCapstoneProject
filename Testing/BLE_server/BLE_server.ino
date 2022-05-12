@@ -28,7 +28,7 @@ void setup() {
   pCharacteristic = pService->createCharacteristic(
                                  CHARACTERISTIC_UUID,
                                  BLECharacteristic::PROPERTY_READ |
-                                 BLECharacteristic::PROPERTY_WRITE | 
+                                 BLECharacteristic::PROPERTY_WRITE |
                                  BLECharacteristic::PROPERTY_NOTIFY
                                );
 

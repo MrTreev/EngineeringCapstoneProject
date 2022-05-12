@@ -1,25 +1,55 @@
-int sensorPin = A0; // Defining the voltage output pin
-int analogInputFinal = 0;  // Initialising a variable to store the analog input
-int analogInputRaw = 0;
-float voltage = 0;  // Initialising the output voltage to 0
-float voltageRaw = 0;  
-float vs = 3.3; // The voltage source
-float current = 0;  // Initialising the curren to 0
-float shunt_resistance = 100000000; // The value of the know resistor
-float resistance = 0; // A variable for the 
-float skin_resistance = 0;
+#include <BLEDevice.h>
+#include <BLEUtils.h>
+#include <BLEServer.h>
+#include <BLE2902.h>
+#include <SPI.h>
+
+#define SERVICE_UUID 		"7aa93166-d243-441b-bd31-234ce6e72470"	// Create Service UUID
+#define CHARACTERISTIC_UUID 	"6466966b-97a1-44cf-b05f-bd8cb60d491c"	// Create Characteristic UUID
+
+BLEServer* pServer = NULL;
+BLECharacteristic* pCharacteristic = NULL;
+int BAUDRATE 		= 	9600; 					// Set Baudrate
+int PulseSensor		= 	0;  					// Pulse Sensor Pin Definition
+int AHT20_SDA  		= 	34; 					// AHT20 SDA Pin Definition
+int AHT20_SCL 		= 	35; 					// AHT20 SCL Pin Definition
+int GSR 		= 	38; 					// GSR Signal Pin Definition
+int analogInput		= 	38; 					// Initialise Analog Input Variable
+bool deviceConnected 	= 	false;					// Initialise Connected Device Bool
+uint32_t value 		= 	0;    					// Initialise Counter Value
 
 void setup() {
-  // put your setup code here, to run once:
-  Serial.begin(9600); // Begins the serial monitor at 9600 bits per second
+	// put your setup code here, to run once:
+	Serial.begin(BAUDRATE); 					// Begins the serial monitor at Baudrate
+	Serial.println("Starting Serial and BLE"); 			// Initial Serial Message
+	BLEDevice::init("Oliver_ESP32"); 				// Names the BLE device
+	BLEServer *pServer = BLEDevice::createServer(); 		//
+	BLEService *pService = pServer->createService(SERVICE_UUID); 	//
+	pCharacteristic = pService->createCharacteristic( 		//
+		CHARACTERISTIC_UUID, 					//
+		BLECharacteristic::PROPERTY_READ | 			//
+		BLECharacteristic::PROPERTY_WRITE | 			//
+		BLECharacteristic::PROPERTY_NOTIFY 			//
+	);
+
+	pCharacteristic->setValue("Hello World"); 			//
+	pService->start(); 						// Start the service
+	BLEAdvertising *pAdvertising = BLEDevice::getAdvertising(); 	//
+	pAdvertising->addServiceUUID(SERVICE_UUID); 			//
+	pAdvertising->setScanResponse(true); 				//
+	pAdvertising->setMinPreferred(0x06); 				// functions that help with iPhone connections issue
+	pAdvertising->setMinPreferred(0x12); 				//
+	BLEDevice::startAdvertising(); 					//
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-  analogInputFinal = analogRead(sensorPin);  // reads in the value at A0
-  voltage = analogInputFinal * (vs/674);  // converts the analog value at pin A0 to a voltage value
-   
-  Serial.println(voltage*1000);// Prints the voltage output
- 
-  delay(100);  // Delays the system 1 second before looping
+	// put your main code here, to run repeatedly:
+	analogInput = analogRead(PulseSensor); 				// Read pulse sensor pin
+	Serial.println(analogInput); 					// Send Pulse Sensor Data to Serial
+	if (deviceConnected) { 						//
+		pCharacteristic->setValue((uint8_t*)&value, 4); 	//
+		pCharacteristic->notify(); 				//
+		value++; 						//
+		}							//
+	delay(1000); 							// delay 1 sec
 }
