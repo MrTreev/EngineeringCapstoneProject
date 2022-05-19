@@ -46,10 +46,8 @@ void loop() {
 	// put your main code here, to run repeatedly:
 	analogInput = analogRead(PulseSensor); 				// Read pulse sensor pin
 	Serial.println(analogInput); 					// Send Pulse Sensor Data to Serial
-	if (deviceConnected) { 						//
-		pCharacteristic->setValue((uint8_t*)&value, 4); 	//
-		pCharacteristic->notify(); 				//
-		value++; 						//
-		}							//
+	pCharacteristic->setValue((uint8_t*)&value, 4); 	//
+	pCharacteristic->notify(); 				//
+	value++; 						//
 	delay(1000); 							// delay 1 sec
 }
