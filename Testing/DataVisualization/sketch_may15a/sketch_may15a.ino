@@ -2,16 +2,23 @@
 #include <ESPAsyncWebServer.h>
 #include <SPIFFS.h>
 #include <Wire.h>
-#include <stdlib.h>  
-#include <string> 
-const char* ssid = "Telstra1A50C5";
-const char* password = "abqnwhgznt";
+#include <stdlib.h>
+#include <string>
+const char* ssid = "SSID";
+const char* password = "password";
 AsyncWebServer server(80);
 
 String sensorReading() { // return string of sensor information
   return String(random(100));
  }
 
+String sensorReading2() { // return string of sensor information
+  return String(random(100));
+ }
+
+String sensorReading3() { // return string of sensor information
+  return String(random(100));
+ }
 void setup(){
   Serial.begin(9600);
   if(!SPIFFS.begin()){
@@ -35,10 +42,16 @@ void setup(){
   server.on("/sensor", HTTP_GET, [](AsyncWebServerRequest *request){
     request->send_P(200, "text/plain", sensorReading().c_str());
   });
+  server.on("/sensor2", HTTP_GET, [](AsyncWebServerRequest *request){
+    request->send_P(200, "text/plain", sensorReading2().c_str());
+  });
+  server.on("/sensor3", HTTP_GET, [](AsyncWebServerRequest *request){
+    request->send_P(200, "text/plain", sensorReading3().c_str());
+  });
   // Start server
   server.begin();
 }
- 
+
 void loop(){
-  
+
 }

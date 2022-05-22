@@ -20,11 +20,13 @@
     }
 
   </style>
- 
+
 </head>
 <body>
   <h2 class = "title">Sensor Readings</h2>
   <div id="sensor-one" class="container"></div>
+  <div id="sensor-two" class="container"></div>
+  <div id="sensor-three" class="container"></div>
 </body>
 <script>
 var chartT = new Highcharts.Chart({
@@ -65,6 +67,85 @@ setInterval(function ( ) {
   xhttp.open("GET", "/sensor", true);
   xhttp.send();
 }, 1000 ) ;
+
+var chartG = new Highcharts.Chart({
+  chart:{ renderTo : 'sensor-two' },
+  title: { text: 'Graph title 2' },
+  series: [{
+    showInLegend: false,
+    data: []
+  }],
+  plotOptions: {
+    line: { animation: false,
+      dataLabels: { enabled: true }
+    },
+    series: { color: '#9e0505' }
+  },
+  xAxis: { type: 'datetime',
+    dateTimeLabelFormats: { second: '%H:%M:%S' }
+  },
+  yAxis: {
+    title: { text: 'y-axis' }
+  },
+  credits: { enabled: false }
+});
+setInterval(function ( ) {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      var x = (new Date()).getTime(),
+          y = parseFloat(this.responseText);
+      //console.log(this.responseText);
+      if(chartG.series[0].data.length > 40) {
+        chartG.series[0].addPoint([x, y], true, true, true);
+      } else {
+        chartG.series[0].addPoint([x, y], true, false, true);
+      }
+    }
+  };
+  xhttp.open("GET", "/sensor2", true);
+  xhttp.send();
+}, 1000 ) ;
+
+var chartA = new Highcharts.Chart({
+  chart:{ renderTo : 'sensor-three' },
+  title: { text: 'Graph title 3' },
+  series: [{
+    showInLegend: false,
+    data: []
+  }],
+  plotOptions: {
+    line: { animation: false,
+      dataLabels: { enabled: true }
+    },
+    series: { color: '#9e0505' }
+  },
+  xAxis: { type: 'datetime',
+    dateTimeLabelFormats: { second: '%H:%M:%S' }
+  },
+  yAxis: {
+    title: { text: 'y-axis' }
+  },
+  credits: { enabled: false }
+});
+setInterval(function ( ) {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      var x = (new Date()).getTime(),
+          y = parseFloat(this.responseText);
+      //console.log(this.responseText);
+      if(chartA.series[0].data.length > 40) {
+        chartA.series[0].addPoint([x, y], true, true, true);
+      } else {
+        chartA.series[0].addPoint([x, y], true, false, true);
+      }
+    }
+  };
+  xhttp.open("GET", "/sensor3", true);
+  xhttp.send();
+}, 1000 ) ;
+
 
 </script>
 </html>
