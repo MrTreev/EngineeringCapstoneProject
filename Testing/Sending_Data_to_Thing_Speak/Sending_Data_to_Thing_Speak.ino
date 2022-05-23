@@ -7,8 +7,8 @@
 int adcResult = 0;
 float voltage = 0;
 
-const char* ssid = "TP-LINK_3E17";
-const char* password = "61967274";
+const char* ssid = "SSID";
+const char* password = "password";
 
 //Your Domain name with URL path or IP address with path
 String serverName = "https://api.thingspeak.com/update?api_key=8COV8VFJPE511FWX&field1=";
