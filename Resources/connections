@@ -10,6 +10,6 @@ AHT20
 	SCL 		- IO35(RTC_GPIO5)
 
 Pulse Sensor
-	5Vin 		- 5V
+	5Vin 		- 3.3V
 	Ground 		- GND(Right)
-	S 		- IO0(RTC_GPIO11)
+	S 		- IO4(RTC_GPIO10)
