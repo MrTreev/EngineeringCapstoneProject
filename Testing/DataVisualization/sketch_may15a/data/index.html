@@ -31,7 +31,7 @@
 <script>
 var chartT = new Highcharts.Chart({
   chart:{ renderTo : 'sensor-one' },
-  title: { text: 'Graph title 1' },
+  title: { text: 'Galvanic Skin Response as A Measure of Voltage' },
   series: [{
     showInLegend: false,
     data: []
@@ -46,7 +46,7 @@ var chartT = new Highcharts.Chart({
     dateTimeLabelFormats: { second: '%H:%M:%S' }
   },
   yAxis: {
-    title: { text: 'y-axis' }
+    title: { text: 'Voltage' }
   },
   credits: { enabled: false }
 });
@@ -70,7 +70,7 @@ setInterval(function ( ) {
 
 var chartG = new Highcharts.Chart({
   chart:{ renderTo : 'sensor-two' },
-  title: { text: 'Graph title 2' },
+  title: { text: 'Beats Per Minute over Time' },
   series: [{
     showInLegend: false,
     data: []
@@ -85,7 +85,7 @@ var chartG = new Highcharts.Chart({
     dateTimeLabelFormats: { second: '%H:%M:%S' }
   },
   yAxis: {
-    title: { text: 'y-axis' }
+    title: { text: 'Beats Per Minute' }
   },
   credits: { enabled: false }
 });
@@ -109,7 +109,7 @@ setInterval(function ( ) {
 
 var chartA = new Highcharts.Chart({
   chart:{ renderTo : 'sensor-three' },
-  title: { text: 'Graph title 3' },
+  title: { text: 'Skin Temperature' },
   series: [{
     showInLegend: false,
     data: []
@@ -124,7 +124,7 @@ var chartA = new Highcharts.Chart({
     dateTimeLabelFormats: { second: '%H:%M:%S' }
   },
   yAxis: {
-    title: { text: 'y-axis' }
+    title: { text: 'Degrees [C]' }
   },
   credits: { enabled: false }
 });

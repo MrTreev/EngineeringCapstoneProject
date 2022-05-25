@@ -14,7 +14,7 @@ TwoWire AHTI2C = TwoWire(0);
 
 float voltage = 0;
 float vs = 3.3;
-
+int Signal = 0;
 bool QS = false;
 int BPM = 0;
 int IBI = 750;
@@ -41,14 +41,12 @@ String sensorReading() { // return string of sensor information
  }
 
 String sensorReading2() { // return string of sensor information
-  int Signal = analogRead(0);
-  return String(Signal);
+  return String(BPM);
  }
 
 String sensorReading3() { // return string of sensor information
   sensors_event_t humidity, temp;
   aht.getEvent(&humidity, &temp);
-  
   return String(temp.temperature);
  }
  
@@ -90,6 +88,45 @@ void setup(){
   server.begin();
 }
 
-void loop(){
+void loop() {
+  sampleCounter = sampleCounter + delayMs; // keeping track of time in ms
+  int N = sampleCounter - lastBeatTime;
 
+  Signal = analogRead(35);
+
+  if (N > 250 && N < 3000){
+    if (Signal > thresh){
+      Pulse = true;
+      IBI = sampleCounter - lastBeatTime;
+
+      word runningTotal = 0;
+
+      for (int i = 0; i <= 8; i++) {          // shift data in the rate array
+        rate[i] = rate[i + 1];                // and drop the oldest IBI value
+        runningTotal += rate[i];              // add up the 9 oldest IBI values
+      }
+
+      rate[9] = IBI;                          // add the latest IBI to the rate array
+      runningTotal += rate[9];                // add the latest IBI to runningTotal
+      runningTotal /= 10;                     // average the last 10 IBI values
+      BPM = 60000 / runningTotal;             // how many beats can fit into a minute? that's BPM!
+
+      lastBeatTime = sampleCounter;
+    }
+  }
+
+  if (N > 3000) {                          // if 3 seconds go by without a beat
+    thresh = threshSetting;                // set thresh default
+    P = 2048;                               // set P default
+    T = 2048;                               // set T default
+    lastBeatTime = sampleCounter;          // bring the lastBeatTime up to date
+    firstBeat = true;                      // set these to avoid noise
+    secondBeat = false;                    // when we get the heartbeat back
+    Pulse = false;
+    BPM = 0;
+    IBI = 600;                  // 600ms per beat = 100 Beats Per Minute (BPM)
+    Pulse = false;
+    amp = 410;                  // beat amplitude 1/10 of input range.
+  }
+  delay(delayMs);                    
 }
