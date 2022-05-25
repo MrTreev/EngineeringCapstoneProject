@@ -1,26 +1,26 @@
 ---
 author: Oliver Patterson (S3723206), Alec Harbis (S3661092), Ahad Abdul (S3791936)
 date: "29/05/2022"
-fontsize: 12pt
+fontsize: 10pt
 header-includes:
-    - \usepackage{booktabs}
-    - \usepackage{dcolumn}
-    - \usepackage{wrapfig}
-    - \usepackage{subcaption}
-    - \usepackage{caption}
-    - \usepackage{graphicx}
-    - \usepackage{float}
-    - \usepackage{fancyhdr}
+        - \usepackage{booktabs}
+        - \usepackage{dcolumn}
+        - \usepackage{wrapfig}
+        - \usepackage{subcaption}
+        - \usepackage{caption}
+        - \usepackage{graphicx}
+        - \usepackage{float}
+        - \usepackage{fancyhdr}
 documentclass: "article"
 geometry: margin=2cm
 output:
-    pdf_document:
-        fig_caption: yes
-        fig_height: 3
-        fig_width: 4.5
-        latex_engine: pdflatex
-        number_sections: yes
-        citation_package: "biblatex"
+        pdf_document:
+                fig_caption: yes
+                fig_height: 3
+                fig_width: 4.5
+                latex_engine: pdflatex
+                number_sections: yes
+                citation_package: "biblatex"
 bibliography: referencing/cites.bib
 biblio-style: ieee
 nocite: '@*'
@@ -30,9 +30,9 @@ nocite: '@*'
 \let\origfigure\figure
 \let\endorigfigure\endfigure
 \renewenvironment{figure}[1][2] {
-    \expandafter\origfigure\expandafter[H]
+	\expandafter\origfigure\expandafter[H]
 } {
-    \endorigfigure
+	\endorigfigure
 }
 \begin{centering}
 
@@ -73,133 +73,154 @@ Engineering
 
 \end{centering}
 \newpage
-\tableofcontents
-\newpage
 \pagenumbering{roman}
 \pagestyle{fancy}
 \renewcommand{\headrulewidth}{1pt}
 \renewcommand{\footrulewidth}{1pt}
 \setlength{\headheight}{15pt}
 \fancyhf{}
-\fancyhead[L]{Investigation of Materials to Develop a Wearable Stress Monitoring Device}
+\fancyhead[L]{Laboratory 1}
 \fancyhead[R]{}
 \fancyfoot[C]{\thepage}
 \clearpage
-\pagenumbering{arabic}
+\pagenumbering{roman}
 
 # Executive Summary
+Wearable technology has been a driving force in transforming the medium to deliver health care data and has become indispensable in the daily lives of people around the world. In addition to continuously monitoring a user's activities, wearables also enable a user's motion to be unrestricted while being integrated with textile fabrics or implanted on the wearer's body. This progress report aims to provide an update on the current work regarding the development of a wearable device that can capture real-time data related to the levels of stress in the wearer.
 
-# Introduction
+This report details the progress made on numerous aspects of our wearable device including both the hardware and software domains of the project. Firstly, we present our research into the types and options of available sensors and reasons as to why we have chosen those that we did, along with the design of a custom Galvanic Skin Response sensor.  Secondly, further research was implemented to understand the viability and requirements of a device like the one that we are planning to produce. Finally, the implementation of software was demonstrated to prototype a web server application that allows the user to interface with the collected data.
+
+This project aims to design a wearable device that can continuously monitor some of the user’s physiological signals and simultaneously utilising key biomarkers to provide insights into the wearer's stress levels. In accordance with the timeline, progress made on the project is in line with the projected prototyping phase, and the team is ready to progress to the next step which will be the Advanced Design phase.
+
+\newpage
+\tableofcontents
+\newpage
+\pagenumbering{arabic}
 
 # Statement of Problem
-Stress is an ordinary physical response to everyday circumstances and challenges. Stress is comprised of both mental and physical components and when it arises, the human body automatically releases adrenaline and other hormones as a natural response. Stress can be quite useful when under control as it allows humans to be productive and efficient. However, stress, left unchecked, can quickly spiral into unproductivity or anxiety.
-Identifying and understanding periods of elevated stress could significantly increase our understanding of how stress relates to productivity and long-term health. Studies indicate that devices which monitor Heart Rate Variability (HRV), Electrodermal Activity (EDA) and Body Temperature may be useful in the analysis of stress levels. HRV (a measurement of heart rhythm over time), EDA (a measurement of the changes in skin conductance) and Body Temperature provide insights into the Autonomic Nervous System (ANS). The ANS is responsible for the sending of signals to the body which either stimulate or relax different involuntary processes (such as heart rate, sweat secretion and body temperature) (Chung, 2021).
-The consequences of untreated stress are vast and have a ripple effect across a person’s physical and mental health. Aligned with the growing use of telehealth and telemedicine for stress management, wearable technology that both monitors the physiological indicators of stress and provides feedback to the user are becoming more widely accepted. Thus, having a wearable device that can monitor key physiological signals associated with the Autonomic Nervous System could provide key insights into the levels and effects of stress.
-This project will aim to investigate the materials and methods of construction for wearable devices and then verify these findings through the development of a stress monitoring wearable device. This project will require knowledge of core electronic principles including microcontrollers and sensors, as well as basic textile skills. Project success will be determined by mainly the wearability of the device and accuracy of the data.
+Stress is an ordinary physical response to everyday circumstances and challenges. Stress is comprised of both mental and physical components. When stress is induced, the natural response of the human body is to automatically release adrenaline and other hormones. Stress is quite useful as it allows humans to be productive and efficient. However, stress, left unchecked, can quickly spiral into lack of motivation or anxiety and a whole host of other mental and physical illnesses.
 
-## Design and Research Questions
-The design and development of a wearable continuous stress monitoring device can be broken down into two, neat categories. The first being the identification of signals and sensors that can be used to monitor stress and the second, where on the body is an optimal location to place the various components. The following research and design questions are largely based on those present in the project proposal however, this version expands further, into more detail:
-1.	How to identify levels of stress via physiological signals and sensors?
-	a)	Which physiological signals correlate to stress?
-	b)	Which sensors can be used to measure the identified physiological signals?
-		i)	Should Heart Rate be measured via ECG, or PPG?
-		ii)	Should skin temperature be measured from one or more locations?
-			-	How often to collect skin temperature data?
-		iii)	How to measure sweat rate?
-			-	How often to collect sweat rate data?
-		iv)	How to calibrate such sensors?
-	c)	How to visualise acquired data?
-		i)	Can off the shelf data visualisation platforms be used?
-		ii)	Can spreadsheets be used to analyse prototyping data?
-	d)	How to transmit data from the wearable device to visualisation platform?
-		i)	Should Bluetooth or Wi-Fi be used?
-		ii)	How often should data be transmitted?
-		iii)	Should data be compressed on the MCU?
-		iv)	Should the MCU do any pre-processing of data?
-	e)	Which components to be used?
-		i)	What are the optimal operating ranges (voltage, temperature, etc)?
-		ii)	What are the associated budgets for each component?
-	f)	How to power the device?
-		i)	What battery voltage to use?
-		ii)	Where to attach the battery?
-		iii)	How to charge the battery?
-			-	Detach the battery to charge?
-2.	How to incorporate sensors into a wearable device?
-	a)	How to reduce and minimise obtrusiveness?
-		i)	Where on the body would this be achieved?
-	b)	Which materials would facilitate the most comfort for the user?
-		i)	For heart rate sensing would electrodes or optical sensing be more comfortable?
-		ii)	Where on the body should heart rate, skin temperature and galvanic skin response be placed?
-	c)	Where on the body would be the most effective location for the device?
-		i)	How to transmit data from sensors to microcontroller?
-			-	I2C?
-			-	SPI?
-		ii)	How would this position affect signal acquisition?
-		iii)	How would this position affect wearability?
+Identifying and understanding periods of elevated stress could significantly increase our understanding of how stress relates to productivity and long-term health. Studies indicate that devices which monitor Heart Rate Variability (HRV), Electrodermal Activity (EDA) and Skin Temperature may be useful in the analysis of stress levels. HRV (a measurement of heart rhythm over time), EDA (a measurement of the changes in skin conductance also known as galvanic skin response (GSR)) and Body Temperature can provide insights into the Autonomic Nervous System (ANS). The ANS is responsible for the sending of signals to the body which either stimulate or relax different involuntary processes (such as heart rate, sweat secretion and body temperature) (Chung, 2021).
 
-# Background and Literature Review
+The consequences of untreated stress are vast and have a ripple effect across a person’s physical and mental health. Aligned with the growing use of tele-health and tele-medicine for stress management, wearable technology that both monitors the physiological indicators of stress and provides feedback to the user are becoming more widely accepted. Thus, having a wearable device that can monitor the key physiological signals associated with the Autonomic Nervous System could provide key insights into the levels and effects of stress.
+
+This project will aim to investigate the materials and methods of design and construction for wearable devices and then verify these findings through the development of a stress monitoring wearable device. This project will require knowledge of core electronic principles including micro-controllers and sensors, as well as potentially basic textile skills. Project success will be determined by mainly the wearability of the device and accuracy of the data.
+
+# Design and Research Questions
+The design and development of a wearable continuous stress monitoring device can be broken down into two, neat categories. The first being the identification of signals and sensors that can be used to monitor stress and the second, the qualitative aspects such as, where on the body is an optimal location to place the various sensors. The following research and design questions are largely based on those present in the project proposal however, this version expands further, into more detail:
+
+1. How to identify levels of stress via physiological signals and sensors?
+	a) Which physiological signals correlate to stress?
+	b) Which sensors can be used to measure the identified physiological signals?
+		i) Should Heart Rate be measured via ECG, or PPG?
+		ii) Should skin temperature be measured from one or more locations?
+			- How often to collect skin temperature data?
+		iii) How to measure sweat rate?
+			- How often to collect sweat rate data?
+		iv) How to calibrate such sensors?
+	c) How to visualise acquired data?
+		i) Can off the shelf data visualisation platforms be used?
+		ii) Can spreadsheets be used to analyse prototyping data?
+	d) How to transmit data from the wearable device to visualisation platform?
+		i) Should Bluetooth or Wi-Fi be used?
+		ii) How often should data be transmitted?
+		iii) Should data be compressed on the MCU?
+		iv) Should the MCU do any pre-processing of data?
+	e) Which components to be used?
+		i) What are the optimal operating ranges (voltage, temperature, etc)?
+		ii) What are the associated budgets for each component?
+	f) How to power the device?
+		i) What battery voltage to use?
+		ii) Where to attach the battery?
+		iii) How to charge the battery?
+			- Detach the battery to charge?
+2. How to incorporate sensors into a wearable device?
+	a) How to reduce and minimise obtrusiveness?
+		i) Where on the body would this be achieved?
+	b) Which materials would facilitate the most comfort for the user?
+		i) For heart rate sensing would electrodes or optical sensing be more comfortable?
+		ii) Where on the body should heart rate, skin temperature and galvanic skin response be placed?
+	c) Where on the body would be the most effective location for the device?
+		i) How to transmit data from sensors to microcontroller?
+			- I2C?
+			- SPI?
+		ii) How would this position affect signal acquisition?
+		iii) How would this position affect wearability?
 
 # Methodology and Engineering Design
-Table 1 outlines the ways in which the design and research questions will be answered. It also provides reasoning as to why a specified approach will be taken. Subsequently, it links to the section of this document where the results and discussion will be included.
+Figure \ref{RandDMethodology} outlines the ways in which the design and research questions will be researched and answered. It also provides reasoning as to why a specified approach will be taken. Subsequently, it links to the section of this document where the results and discussion will be included.
 
-## Methods for Answering Design and Research Questions
-| Question | Method                    | Reasoning                                                                                                                                                           | Corresponding Section |
-|-|--|-----|--|
-| 1.a)     | Literature Review         | Physiological Signals and their correlation to mental stress lie externally to the project groups area of expertise.                                                |                       |
-| 1.b)     | Literature Review         | The identification of sensors that can acquire data from specific physiological signals need not be tested, but rather identified.                                  |                       |
-| 1.c)     | Testing                   | Different methods of data analysis will be tested to identify the most appropriate method.                                                                          |                       |
-| 1.d)     | Testing                   | The specificities of data transfer will be understood throuh testing once data has been acquired.                                                                   |                       |
-| 1.e)     | Desktop Research          | The components will be identified through the research and comparison of multiple options. The options will be compared and the most optimal chosen.                |                       |
-| 1.f)     | Testing                   | The most optimal power source will be identified through requirements analysis (I.e., operating voltages of other components).                                      |                       |
-| 2.a)     | Literature Review/Testing | The identification of the most optimal places to locate the various components will be identified through literature review and then tested in a practical setting. |                       |
-| 2.b)     | Literature Review/Testing | A literature review of the most optimal materials will be conducted and then testing will determine the most optimal in practical environments.                     |                       |
-| 2.c)     | Testing                   | Multiple locations will be tested and then whether all components will be placed in a localised area or spread over multiple areas will be determined.              |                       |
+\label{RandDMethodology}
+
+| Question | Method | Reasoning |
+|--|----|-----------|
+| 1 a) | Literature Review          | Physiological signals and their correlation to mental stress lie externally to the project groups area of expertise.                                                |
+| 1 b) | Literature Review          | The identification of sensors that can acquire data from specific physiological signals need not be tested, but rather identified.                                  |
+| 1 c) | Testing                    | Different methods of data analysis will be tested and scrutinised to identify the most appropriate method.                                                          |
+| 1 d) | Testing                    | The specificities of data transfer will be understood through testing once data has been acquired.                                                                  |
+| 1 e) | Desktop Research, Testing  | The components will be identified through the research and comparison of multiple options. The options will be compared and the most optimal chosen.                |
+| 1 f) | Desktop Research           | The most optimal power source will be identified through requirements analysis (I.e., operating voltages of other components).                                      |
+| 2 a) | Testing, Literature Review | The identification of the most optimal places to locate the various components will be identified through literature review and then tested in a practical setting. |
+| 2 b) | Testing, Literature Review | A literature review of the most optimal materials will be conducted and then testing will determine the most optimal in practical environments.                     |
+| 2 c) | Testing                    | Multiple locations will be tested and then whether all components will be placed in a localised area or spread over multiple areas will be determined.              |
 
 ## Overall System Architecture
-The overall system architecture can be seen below in Figure 1. On the left-hand side of the diagram the on-body section of the system is illustrated. This section represents everything that will be included in the wearable component of the stress monitoring device. On the right-hand side, the off-body section is illustrated. This includes everything that will not be included in the wearable component of the device.
-INSERT IMAGE OF OVERALL SYSTEM ARCHITECTURE
+The overall system architecture is outlined in Figure \ref{fig:HighLevelDesign}. Indicated on the left-hand side of the diagram the on-body section of the system is illustrated, which represents the componentry that will be included in the wearable portion of the stress monitoring device. On the right-hand side, the off-body section is illustrated. This includes everything that will not be included in the wearable component of the device.
+
+![High Level Design](Images/HighLevelDesign.png){#fig:HighLevelDesign}
 
 ## Low-Level Design
+### Sensor-MCU Pin Connections:
+The pin connections of the sensors to the MCU were decided by ensuring the analogue components are connected to the ADC pins and that each component does not interfere with another. The final design settled upon as in Figure \ref{fig:MCUPinConnections}.
 
+![Sensor to MCU Connections](Images/MCUPinConnections.png){#fig:MCUPinConnections}
 
-## Component Selection
+### Data Logging and Visualisation
+When creating the data visualization application, the initial steps were designing early prototypes of the application interface using Figma. As shown on the left of  Figure \ref{fig:MobileApplication}, the interface will first require the user to connect to the internet via networks that are available near the wearable device. After successful connection, the sensors will begin outputting relevant health data, which will be updated live on the application through graphs and other forms of data analytics as shown on the right of  Figure \ref{fig:MobileApplication}. The graphs are displayed in a column format and the user should be able to access multiple sensor readings in the one page. Furthermore, the interface also includes a calendar icon as well as the menu icon on the header of the data visualization page. Ideally, the calendar icon is planned to allow the user to access health data records from previous time periods, and the menu item allows the user to navigate to other application functionalities.
 
-### Heart Rate Sensor
-The major constraints decided upon for the heart rate sensor were the ability to be worn comfortably without impeding the sensor, the ability to communicate with common MCUs, and to be able to collect the heart rate data in real time. To this end we found seven different heart rate sensors from various suppliers and had to narrow them down further. We ended up choosing the SparkFun Pulse Sensor since it is very small and has flexibility of placement.
+![Mobile Application](Images/MobileApplication.png){#fig:MobileApplication}
+
+To build a prototype of a web-based application, different libraries were used, and certain hardware specifications were explored, as previewed in Figure \ref{fig:WebServerAndClient}. The ESP32 board includes a Serial Peripheral Interface Flash File System (SPIFFS), a lightweight file system designed for microcontrollers that contain a flash chip. The SPIFFS gives access to flash memory but is simpler and more limited relative to traditional filesystems. A few notable features include saving data permanently, saving HTML and CSS files and creating files to save relatively small amounts of data. The next component includes implementing the ESPAsyncWebServer library, which ultimately allows the data interchange between the microcontroller and other devices connected to the web. Furthermore, the library offers a quick template to build an asynchronous web server capable of handling multiple connections simultaneously. The outcome of the network architecture below involves the following: a request is sent to the ESP async server, which responds with the relevant files saved in SPIFFS. This loops for each data point reading, alternating between requests and responses.
+
+![Web Server and Client](Images/WebServerAndClient.png){#fig:WebServerAndClient}
 
 ### Galvanic Skin Response Sensor
-We were unable to find a sensor which fit our requirements for cost and size so we are going to be building our own GSR sensor as it is a relatively simple undertaking compared to the other sensors in our project. We will however be using a Grove GSR Sensor in order to calibrate our sensor and ensure it functions properly.
+Based on the conclusion that there a large variation of GSR sensors is not available on the market, and those which are, are obtrusively designed, it was decided that a custom GSR sensor will be used to measure skin conductance. The general functionality of a GSR can be seen below in Figure \ref{fig:GSRFunctionality}, where electrodes are used as part of a voltage divider to measure skin resistivity. The output of the voltage divider is then input into a unity gain buffer to match input and output impedance. Subsequently, the signal is then filtered and amplified and passed to the MCU ADC.
 
-### Skin Temperature
-For measuring skin temperature the main constraints for the sensor were
+![GSR Functionality](Images/GSRFunctionality.png){#fig:GSRFunctionality}
 
-1. Temperature range including 20-45 Degrees Celcius
-2. 3.3V Operation
-3. Compact Profile
-4. I2C Functionality
+The Voltage Range of the ESP32 ADC is 0.2-2.4V, thus the output of the GSR sensor must be within this range. Therefore, supplying the sensor with 3.3V means that the output voltage must be divided by a certain factor to ensure compatibility with the MCU.
 
-We looked through the sensors available at Core Electronics, DigiKey, and JayCar and found the sensor that best fit the requirements whilst being relatively cheap was the AHT20 Temperature and Humidity Sensor. We chose this one because of it's small form-factor, abundant documentation, low price, and the potential to measure sweat levels using the humidity sensor built in.
+The voltage divider of the GSR sensor is used to translate the resistivity or conductance of the skin into an analogue measure of voltage so that the MCU can then convert the signal to a digital one. According to (Webster, 2020), typical skin resistance ranges from 1k to 500k Ohm. Thus, a voltage divider can be designed to control the output.
 
-### MCU
-The MCU being the central componant of the system must have certain requirements in order to be usable with this project.
+The circuit design for the voltage divider can be seen in Figure \ref{fig:GSRVoltageDivider}, where Rs (the resistance of the skin) is added in parallel to R2:
 
-1. Small Form-Factor
-2. I2C Functionality
-3. Sleep Mode
-4. Arduino Compatible
-5. Low Power Consumption
-6. WiFi/Bluetooth Functionality
+![GSR Voltage Divider](Images/GSRVoltageDivider.png){#fig:GSRVoltageDivider}
 
-The MCU we decided to use is the ESP32 due to it's extensive documentation, sleep mode, extremely small form-factor, Wifi/Bluetooth functionality which can be processed in parallel with the rest of the operations on the chip. For development we will be using the ESP32-PICO-KIT Development Board due to it's built-in programmer, Prototyping pins, and relatively small size.
+Subsequently, a voltage follower circuit is added to strengthen the signal and add high input impedance as seen in Figure \ref{fig:VoltageFollower}.
 
-# Feasibility/Proof of Concept
+![Voltage Follower](Images/VoltageFollower.png){#fig:VoltageFollower}
 
-# Preliminary Findings
+(Webster, 2020) states that Galvanic Skin Response typically oscillates within the 1Hz frequency, thus an LPF is used as seen in Figure \ref{fig:LPFAndAmp} to cut off the signal above 1Hz. Subsequently, the maximum voltage that can be achieved at the output of the LPF is 1.65V and occurs when RS is open circuited or has infinite resistance. Thus, the maximum gain of the circuit can be 1.455 V/V as anything higher would exceed the limitations of the ESP32 ADC Voltage Range.
 
-# Project Management
+![LPF and Amplification](Images/LPFAmplification){#fig:LPFAndAmp}
 
-# Conclusions
+When RS is 35K (relatively low = high stress), the output voltage is 165.6mV as seen in Figure \ref{fig:HighStressTheoreticalVout}. When RS is 600K (relatively high = low stress), the output voltage is 1.33V as seen in \ref{fig:LowStressTheoreticalVout}.
 
+Thus, in theory the circuit can be confirmed to be working.
+
+![High Stress Theoretical $V_{out}$](Images/HighStressTheoreticalVout.png){#fig:HighStressTheoreticalVout}
+
+![Low Stress Theoretical $V_{out}$](Images/LowStressTheoreticalVout.png){#fig:LowStressTheoreticalVout}
+
+### Pulse Sensor
+The Pulse Sensor is an analogue device which gives a value of the light the photodiode is receiving. There is a library for use with this device to calculate the heart rate and/or the Inter-Beat-Interval which is created by the same group as the device (PulseSensor).
+
+The waveform generated by the pulse sensor can be seen in Figure \ref{fig:PulseWaveform}, where the pulses outlined in red.
+
+By setting a threshold for the analogue value read by the MCU, beats per minute can be derived.
+
+\label{fig:PulseWaveform}
 
 \newpage
 # References

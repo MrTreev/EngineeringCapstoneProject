@@ -22,7 +22,7 @@ unsigned long lastTime = 0;
 unsigned long timerDelay = 500;
 
 void setup() {
-  Serial.begin(115200); 
+  Serial.begin(115200);
 
   WiFi.begin(ssid, password);
   Serial.println("Connecting");
@@ -33,7 +33,7 @@ void setup() {
   Serial.println("");
   Serial.print("Connected to WiFi network with IP Address: ");
   Serial.println(WiFi.localIP());
- 
+
   Serial.println("Timer set to 5 seconds (timerDelay variable), it will take 5 seconds before publishing the first reading.");
 }
 
@@ -49,17 +49,17 @@ void loop() {
       Serial.print("Voltage: ");
       Serial.print(voltage);
       Serial.println("");
-      
+
       //Serial.println("Pot Value: " + String(potValue));
 
       String serverPath = serverName + String(voltage);
-      
+
       // Your Domain name with URL path or IP address with path
       http.begin(serverPath.c_str());
-      
+
       // Send HTTP GET request
       int httpResponseCode = http.GET();
-      
+
       if (httpResponseCode>0) {
         //Serial.print("HTTP Response code: ");
         //Serial.println(httpResponseCode);

@@ -5,8 +5,8 @@
 #include <stdlib.h>
 #include <string>
 #include <Adafruit_AHTX0.h>
-const char* ssid = "TP-LINK_3E17";
-const char* password = "61967274";
+const char* ssid = "DaBoisWireless_2G";
+const char* password = "dungyreamyxmPgG";
 AsyncWebServer server(80);
 
 Adafruit_AHTX0 aht;
@@ -47,9 +47,13 @@ String sensorReading2() { // return string of sensor information
 String sensorReading3() { // return string of sensor information
   sensors_event_t humidity, temp;
   aht.getEvent(&humidity, &temp);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8353302 (Renaming and first run of reporting)
   return String(temp.temperature);
  }
- 
+
 void setup(){
   Serial.begin(9600);
   if(!SPIFFS.begin()){
