@@ -19,6 +19,1306 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global}
+    \entry{Chung2021}{article}{}
+      \name{author}{5}{}{%
+        {{hash=07aacf8ff62f4f3ca8dce97837aaa536}{%
+           family={Chung},
+           familyi={C\bibinitperiod},
+           given={Adrienne\bibnamedelima H},
+           giveni={A\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=38cddc1017715046832c34d605307c2e}{%
+           family={Gevirtz},
+           familyi={G\bibinitperiod},
+           given={Richard\bibnamedelima N},
+           giveni={R\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=d711663a8f3129d222f9b1c7ddcd5faa}{%
+           family={Gharbo},
+           familyi={G\bibinitperiod},
+           given={Raouf\bibnamedelima S},
+           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=977abb58e62a3a3880f6f36cd065f74b}{%
+           family={Thiam},
+           familyi={T\bibinitperiod},
+           given={Melinda\bibnamedelima A},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=e61818a9964f5059512b0c56035cf05a}{%
+           family={Ginsberg},
+           familyi={G\bibinitperiod},
+           given={J.P.\bibnamedelimi Jack},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer US}%
+      }
+      \strng{namehash}{ff542714abcb04d65529071792904a64}
+      \strng{fullhash}{3b698ad38172824bf1c748ac6a154761}
+      \strng{bibnamehash}{3b698ad38172824bf1c748ac6a154761}
+      \strng{authorbibnamehash}{3b698ad38172824bf1c748ac6a154761}
+      \strng{authornamehash}{ff542714abcb04d65529071792904a64}
+      \strng{authorfullhash}{3b698ad38172824bf1c748ac6a154761}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1090-0586}
+      \field{journaltitle}{Applied psychophysiology and biofeedback}
+      \field{number}{4}
+      \field{title}{Pilot Study on Reducing Symptoms of Anxiety with a Heart Rate Variability Biofeedback Wearable and Remote Stress Management Coach}
+      \field{volume}{46}
+      \field{year}{2021}
+      \field{pages}{347\bibrangedash 358}
+      \range{pages}{12}
+    \endentry
+    \entry{Webster2020}{book}{}
+      \list{language}{1}{%
+        {eng}%
+      }
+      \list{location}{1}{%
+        {Hoboken, NJ}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley \& Sons, Inc.}%
+      }
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Medical instrumentation : application and design}
+      \field{edition}{Fifth edition.}
+      \field{isbn}{9781119457336}
+      \field{title}{Medical instrumentation : application and design}
+      \field{year}{2020 - 2020}
+      \keyw{Medical instruments and apparatus}
+    \endentry
+    \entry{Barfield2015}{book}{}
+      \name{author}{1}{}{%
+        {{hash=5000835ace7ebb81abc532f09964f987}{%
+           family={Barfield},
+           familyi={B\bibinitperiod},
+           given={Woodrow},
+           giveni={W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {CRC Press}%
+      }
+      \strng{namehash}{5000835ace7ebb81abc532f09964f987}
+      \strng{fullhash}{5000835ace7ebb81abc532f09964f987}
+      \strng{bibnamehash}{5000835ace7ebb81abc532f09964f987}
+      \strng{authorbibnamehash}{5000835ace7ebb81abc532f09964f987}
+      \strng{authornamehash}{5000835ace7ebb81abc532f09964f987}
+      \strng{authorfullhash}{5000835ace7ebb81abc532f09964f987}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{1482243504}
+      \field{title}{Fundamentals of Wearable Computers and Augmented Reality}
+      \field{year}{2015}
+    \endentry
+    \entry{Hu2020}{article}{}
+      \name{author}{3}{}{%
+        {{hash=9dec12bff2c5f8a5d447090dd5c89c0f}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={Jian},
+           giveni={J\bibinitperiod}}}%
+        {{hash=0311431642470a7b59cea4fbf9543da7}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Junjie},
+           giveni={J\bibinitperiod}}}%
+        {{hash=c26412bb48631e0d1ab53e9b812dbda6}{%
+           family={Xie},
+           familyi={X\bibinitperiod},
+           given={Hangqi},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier B.V}%
+      }
+      \strng{namehash}{49940c26ea6be945537884036d3bcc55}
+      \strng{fullhash}{49940c26ea6be945537884036d3bcc55}
+      \strng{bibnamehash}{49940c26ea6be945537884036d3bcc55}
+      \strng{authorbibnamehash}{49940c26ea6be945537884036d3bcc55}
+      \strng{authornamehash}{49940c26ea6be945537884036d3bcc55}
+      \strng{authorfullhash}{49940c26ea6be945537884036d3bcc55}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0140-3664}
+      \field{journaltitle}{Computer communications}
+      \field{title}{Wearable bracelets with variable sampling frequency for measuring multiple physiological parameter of human}
+      \field{volume}{161}
+      \field{year}{2020}
+      \field{pages}{257\bibrangedash 265}
+      \range{pages}{9}
+    \endentry
+    \entry{Vanveerdeghem2014}{article}{}
+      \name{author}{5}{}{%
+        {{hash=487dd605f9fbc4a5d12298dc535b0c89}{%
+           family={Vanveerdeghem},
+           familyi={V\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=9e81f143de9c6de7a175a06b0013f9e9}{%
+           family={Van\bibnamedelima Torre},
+           familyi={V\bibinitperiod\bibinitdelim T\bibinitperiod},
+           given={Patrick},
+           giveni={P\bibinitperiod}}}%
+        {{hash=f4b280467d61e9d2713fd49de1b94856}{%
+           family={Stevens},
+           familyi={S\bibinitperiod},
+           given={Christiaan},
+           giveni={C\bibinitperiod}}}%
+        {{hash=cc4c383d9804c611557f9c0a2641f9ea}{%
+           family={Knockaert},
+           familyi={K\bibinitperiod},
+           given={Jos},
+           giveni={J\bibinitperiod}}}%
+        {{hash=e11689713762d53040bb11d2f983eb37}{%
+           family={Rogier},
+           familyi={R\bibinitperiod},
+           given={Hendrik},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {MDPI}%
+      }
+      \strng{namehash}{e21770ecdfa8db12a1a39be27c3ef0af}
+      \strng{fullhash}{a584832f8b8216613b779b349981be68}
+      \strng{bibnamehash}{a584832f8b8216613b779b349981be68}
+      \strng{authorbibnamehash}{a584832f8b8216613b779b349981be68}
+      \strng{authornamehash}{e21770ecdfa8db12a1a39be27c3ef0af}
+      \strng{authorfullhash}{a584832f8b8216613b779b349981be68}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1424-8220}
+      \field{journaltitle}{Sensors Basel, Switzerland}
+      \field{number}{10}
+      \field{title}{Synchronous wearable wireless body sensor network composed of autonomous textile nodes}
+      \field{volume}{14}
+      \field{year}{2014}
+      \field{pages}{18583\bibrangedash 18610}
+      \range{pages}{28}
+    \endentry
+    \entry{Atzori2010}{article}{}
+      \name{author}{3}{}{%
+        {{hash=ad2aa762c0a8006a1914b9298952e5d8}{%
+           family={Atzori},
+           familyi={A\bibinitperiod},
+           given={Luigi},
+           giveni={L\bibinitperiod}}}%
+        {{hash=2dbff5b960cb21204fc50b6941f42947}{%
+           family={Iera},
+           familyi={I\bibinitperiod},
+           given={Antonio},
+           giveni={A\bibinitperiod}}}%
+        {{hash=04b46031fe439f48519cec659c1d7e36}{%
+           family={Morabito},
+           familyi={M\bibinitperiod},
+           given={Giacomo},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {eng}%
+      }
+      \list{location}{1}{%
+        {Kidlington}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier B.V}%
+      }
+      \strng{namehash}{d7d33a3e93b65ab811b96314bcf90b0a}
+      \strng{fullhash}{d7d33a3e93b65ab811b96314bcf90b0a}
+      \strng{bibnamehash}{d7d33a3e93b65ab811b96314bcf90b0a}
+      \strng{authorbibnamehash}{d7d33a3e93b65ab811b96314bcf90b0a}
+      \strng{authornamehash}{d7d33a3e93b65ab811b96314bcf90b0a}
+      \strng{authorfullhash}{d7d33a3e93b65ab811b96314bcf90b0a}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1389-1286}
+      \field{journaltitle}{Computer networks (Amsterdam, Netherlands : 1999)}
+      \field{number}{15}
+      \field{title}{The Internet of Things: A survey}
+      \field{volume}{54}
+      \field{year}{2010}
+      \field{pages}{2787\bibrangedash 2805}
+      \range{pages}{19}
+    \endentry
+    \entry{Propeller}{article}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{title}{Propeller Health}
+      \verb{urlraw}
+      \verb https://propellerhealth.com/
+      \endverb
+      \verb{url}
+      \verb https://propellerhealth.com/
+      \endverb
+    \endentry
+    \entry{Mosenia2017}{article}{}
+      \name{author}{2}{}{%
+        {{hash=72555109500892942ca95c1941787f33}{%
+           family={Mosenia},
+           familyi={M\bibinitperiod},
+           given={Arsalan},
+           giveni={A\bibinitperiod}}}%
+        {{hash=ff9e810c52fdaa5e8256abdf616b5875}{%
+           family={Jha},
+           familyi={J\bibinitperiod},
+           given={Niraj\bibnamedelima K},
+           giveni={N\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {eng}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{010fc0469c926133cb1d3bc7804ebb72}
+      \strng{fullhash}{010fc0469c926133cb1d3bc7804ebb72}
+      \strng{bibnamehash}{010fc0469c926133cb1d3bc7804ebb72}
+      \strng{authorbibnamehash}{010fc0469c926133cb1d3bc7804ebb72}
+      \strng{authornamehash}{010fc0469c926133cb1d3bc7804ebb72}
+      \strng{authorfullhash}{010fc0469c926133cb1d3bc7804ebb72}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2168-6750}
+      \field{journaltitle}{IEEE transactions on emerging topics in computing}
+      \field{number}{4}
+      \field{title}{A Comprehensive Study of Security of Internet-of-Things}
+      \field{volume}{5}
+      \field{year}{2017}
+      \field{pages}{586\bibrangedash 602}
+      \range{pages}{17}
+    \endentry
+    \entry{Christopoulos2019}{article}{}
+      \name{author}{3}{}{%
+        {{hash=4361bf50942f7d06bc9c4c2cce166bcb}{%
+           family={Christopoulos},
+           familyi={C\bibinitperiod},
+           given={George\bibnamedelima I},
+           giveni={G\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+        {{hash=347acba32e55d8ffc51e74e11317e2e8}{%
+           family={Uy},
+           familyi={U\bibinitperiod},
+           given={Marilyn\bibnamedelima A},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=8e78348d5bcce5091e6db85ae7ca8692}{%
+           family={Yap},
+           familyi={Y\bibinitperiod},
+           given={Wei\bibnamedelima Jie},
+           giveni={W\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {eng}%
+      }
+      \list{location}{1}{%
+        {Los Angeles, CA}%
+      }
+      \list{publisher}{1}{%
+        {SAGE Publications}%
+      }
+      \strng{namehash}{9ecf4831b8cbaa6908144a84b9605f35}
+      \strng{fullhash}{9ecf4831b8cbaa6908144a84b9605f35}
+      \strng{bibnamehash}{9ecf4831b8cbaa6908144a84b9605f35}
+      \strng{authorbibnamehash}{9ecf4831b8cbaa6908144a84b9605f35}
+      \strng{authornamehash}{9ecf4831b8cbaa6908144a84b9605f35}
+      \strng{authorfullhash}{9ecf4831b8cbaa6908144a84b9605f35}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1094-4281}
+      \field{journaltitle}{Organizational research methods}
+      \field{number}{1}
+      \field{title}{The Body and the Brain: Measuring Skin Conductance Responses to Understand the Emotional Experience}
+      \field{volume}{22}
+      \field{year}{2019}
+      \field{pages}{394\bibrangedash 420}
+      \range{pages}{27}
+    \endentry
+    \entry{Kyriakou2019}{article}{}
+      \name{author}{10}{}{%
+        {{hash=57793ae7913ef09bcb54e5ad7d455a29}{%
+           family={Kyriakou},
+           familyi={K\bibinitperiod},
+           given={Kalliopi},
+           giveni={K\bibinitperiod}}}%
+        {{hash=f6659d7fee3b1fb702fb9238a44d1143}{%
+           family={Resch},
+           familyi={R\bibinitperiod},
+           given={Bernd},
+           giveni={B\bibinitperiod}}}%
+        {{hash=5cc865075435e76a77e3ec73b5edd343}{%
+           family={Sagl},
+           familyi={S\bibinitperiod},
+           given={Günther},
+           giveni={G\bibinitperiod}}}%
+        {{hash=237672d2b17ab9713068cedee83d8d01}{%
+           family={Petutschnig},
+           familyi={P\bibinitperiod},
+           given={Aneas},
+           giveni={A\bibinitperiod}}}%
+        {{hash=7ad0e57e87aa38709d30e25ec1719537}{%
+           family={Werner},
+           familyi={W\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=2aa22366d46215b5443115a6078b881e}{%
+           family={Niederseer},
+           familyi={N\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=1fb551bfc8f043b743268504a7c9e6bb}{%
+           family={Liedlgruber},
+           familyi={L\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=05bea67cb6d74fd15a431326ee5159f6}{%
+           family={Wilhelm},
+           familyi={W\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod}}}%
+        {{hash=29d68739305b9ca2cf38045922c6f845}{%
+           family={Osborne},
+           familyi={O\bibinitperiod},
+           given={Tess},
+           giveni={T\bibinitperiod}}}%
+        {{hash=da44537ddeff428722a2bb0d02ed72d1}{%
+           family={Pykett},
+           familyi={P\bibinitperiod},
+           given={Jessica},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {MDPI AG}%
+      }
+      \strng{namehash}{ab7040e9bb64915c8f84e7218f2363ca}
+      \strng{fullhash}{f9acde9434a8ad058138da4546ea4dcd}
+      \strng{bibnamehash}{ab7040e9bb64915c8f84e7218f2363ca}
+      \strng{authorbibnamehash}{ab7040e9bb64915c8f84e7218f2363ca}
+      \strng{authornamehash}{ab7040e9bb64915c8f84e7218f2363ca}
+      \strng{authorfullhash}{f9acde9434a8ad058138da4546ea4dcd}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1424-8220}
+      \field{journaltitle}{Sensors Basel, Switzerland}
+      \field{number}{17}
+      \field{title}{Detecting Moments of Stress from Measurements of Wearable Physiological Sensors}
+      \field{volume}{19}
+      \field{year}{2019}
+      \field{pages}{3805\bibrangedash}
+      \range{pages}{-1}
+    \endentry
+    \entry{Wolfensberger1967}{article}{}
+      \name{author}{2}{}{%
+        {{hash=774c3fa8e06a5ecc700615235c9047ed}{%
+           family={Wolfensberger},
+           familyi={W\bibinitperiod},
+           given={Wolf},
+           giveni={W\bibinitperiod}}}%
+        {{hash=e23568de6b9c90f36ca8abe811834687}{%
+           family={O'Connor},
+           familyi={O\bibinitperiod},
+           given={Neil},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Oxford, UK}%
+      }
+      \list{publisher}{1}{%
+        {Blackwell Publishing Ltd}%
+      }
+      \strng{namehash}{5d2105bae246f2370b0697fa9a6c711b}
+      \strng{fullhash}{5d2105bae246f2370b0697fa9a6c711b}
+      \strng{bibnamehash}{5d2105bae246f2370b0697fa9a6c711b}
+      \strng{authorbibnamehash}{5d2105bae246f2370b0697fa9a6c711b}
+      \strng{authornamehash}{5d2105bae246f2370b0697fa9a6c711b}
+      \strng{authorfullhash}{5d2105bae246f2370b0697fa9a6c711b}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0048-5772}
+      \field{journaltitle}{Psychophysiology}
+      \field{number}{4}
+      \field{title}{RELATIVE EFFECTIVENESS OF GALVANIC SKIN RESPONSE LATENCY, AMPLITUDE AND DURATION SCORES AS MEASURES OF AROUSAL AND HABITUATION IN NORMAL AND RETARDED ADULTS}
+      \field{volume}{3}
+      \field{year}{1967}
+      \field{pages}{345\bibrangedash 350}
+      \range{pages}{6}
+    \endentry
+    \entry{Nepal2016}{article}{}
+      \name{author}{5}{}{%
+        {{hash=e75ca9bb591a902e2959990d67fbfe76}{%
+           family={Nepal},
+           familyi={N\bibinitperiod},
+           given={Ojashwi},
+           giveni={O\bibinitperiod}}}%
+        {{hash=b32885fa7d9a5e65daddb6f13078526b}{%
+           family={Shrestha},
+           familyi={S\bibinitperiod},
+           given={Sushma},
+           giveni={S\bibinitperiod}}}%
+        {{hash=661ce54387773697d169853113e4f609}{%
+           family={Timalsina},
+           familyi={T\bibinitperiod},
+           given={Binod},
+           giveni={B\bibinitperiod}}}%
+        {{hash=233d13e7c23856345d0d677a38c8da3d}{%
+           family={Bade},
+           familyi={B\bibinitperiod},
+           given={Manisha},
+           giveni={M\bibinitperiod}}}%
+        {{hash=c9975bde005e40946a1dcb7cd4558297}{%
+           family={Jha},
+           familyi={J\bibinitperiod},
+           given={Mukesh},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{ff3929cd04d2260a622bee0b7383ff0f}
+      \strng{fullhash}{b2ddd1fe7b7b3bb12406274b9e288fc2}
+      \strng{bibnamehash}{b2ddd1fe7b7b3bb12406274b9e288fc2}
+      \strng{authorbibnamehash}{b2ddd1fe7b7b3bb12406274b9e288fc2}
+      \strng{authornamehash}{ff3929cd04d2260a622bee0b7383ff0f}
+      \strng{authorfullhash}{b2ddd1fe7b7b3bb12406274b9e288fc2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Health Sciences and Research}
+      \field{month}{03}
+      \field{title}{Detection of Sympathetic Activation by Skin Conductance for a Cognitive Load of Mental Subtraction Task in Medical Undergraduates}
+      \field{volume}{6}
+      \field{year}{2016}
+      \field{pages}{139\bibrangedash 144}
+      \range{pages}{6}
+    \endentry
+    \entry{Boucsein2012}{book}{}
+      \name{author}{1}{}{%
+        {{hash=4e558bf0fe9cd1b7b973fade0ea74f0f}{%
+           family={Boucsein},
+           familyi={B\bibinitperiod},
+           given={Wolfram},
+           giveni={W\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {eng}%
+      }
+      \list{location}{1}{%
+        {New York, NY}%
+      }
+      \list{publisher}{1}{%
+        {Springer-Verlag}%
+      }
+      \strng{namehash}{4e558bf0fe9cd1b7b973fade0ea74f0f}
+      \strng{fullhash}{4e558bf0fe9cd1b7b973fade0ea74f0f}
+      \strng{bibnamehash}{4e558bf0fe9cd1b7b973fade0ea74f0f}
+      \strng{authorbibnamehash}{4e558bf0fe9cd1b7b973fade0ea74f0f}
+      \strng{authornamehash}{4e558bf0fe9cd1b7b973fade0ea74f0f}
+      \strng{authorfullhash}{4e558bf0fe9cd1b7b973fade0ea74f0f}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2. Aufl.}
+      \field{isbn}{1461411254}
+      \field{title}{Electrodermal Activity}
+      \field{year}{2012}
+    \endentry
+    \entry{Hegazy2011}{article}{}
+      \name{author}{2}{}{%
+        {{hash=a5b98682ecf55e2d8f4bc7b447cc6230}{%
+           family={Hegazy},
+           familyi={H\bibinitperiod},
+           given={Shaimaa},
+           giveni={S\bibinitperiod}}}%
+        {{hash=00d5edbe9906e56d823d99957c67b9c0}{%
+           family={Revett},
+           familyi={R\bibinitperiod},
+           given={Kenneth},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{48716acae898221b043cb013650d35b6}
+      \strng{fullhash}{48716acae898221b043cb013650d35b6}
+      \strng{bibnamehash}{48716acae898221b043cb013650d35b6}
+      \strng{authorbibnamehash}{48716acae898221b043cb013650d35b6}
+      \strng{authornamehash}{48716acae898221b043cb013650d35b6}
+      \strng{authorfullhash}{48716acae898221b043cb013650d35b6}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{01}
+      \field{title}{Developing an affective working companion utilising GSR data}
+      \field{year}{2011}
+    \endentry
+    \entry{Caviedes2018}{article}{}
+      \name{author}{2}{}{%
+        {{hash=d3effb8e9f9e72e2b355fda41d393db1}{%
+           family={Caviedes},
+           familyi={C\bibinitperiod},
+           given={Alvaro},
+           giveni={A\bibinitperiod}}}%
+        {{hash=b6e4d7bbc5473cad81d23a9b9b3ad6c0}{%
+           family={Figliozzi},
+           familyi={F\bibinitperiod},
+           given={Miguel},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {eng}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier Ltd}%
+      }
+      \strng{namehash}{5be181eab68d00bad41ac959640341d7}
+      \strng{fullhash}{5be181eab68d00bad41ac959640341d7}
+      \strng{bibnamehash}{5be181eab68d00bad41ac959640341d7}
+      \strng{authorbibnamehash}{5be181eab68d00bad41ac959640341d7}
+      \strng{authornamehash}{5be181eab68d00bad41ac959640341d7}
+      \strng{authorfullhash}{5be181eab68d00bad41ac959640341d7}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1369-8478}
+      \field{journaltitle}{Transportation research. Part F, Traffic psychology and behaviour}
+      \field{title}{Modeling the impact of traffic conditions and bicycle facilities on cyclists’ on-road stress levels}
+      \field{volume}{58}
+      \field{year}{2018}
+      \field{pages}{488\bibrangedash 499}
+      \range{pages}{12}
+    \endentry
+    \entry{HernandoGallego2015}{article}{}
+      \name{author}{2}{}{%
+        {{hash=2c6be52fe4df4d8e1defcf92802ad0b6}{%
+           family={Hernando-Gallego},
+           familyi={H\bibinithyphendelim G\bibinitperiod},
+           given={Francisco},
+           giveni={F\bibinitperiod}}}%
+        {{hash=87e5b09609372377ff7a7f2665733019}{%
+           family={Artés-Rodríguez},
+           familyi={A\bibinithyphendelim R\bibinitperiod},
+           given={Antonio},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {eng}%
+      }
+      \strng{namehash}{51cb00452c7aeedf29f40916b1c6560b}
+      \strng{fullhash}{51cb00452c7aeedf29f40916b1c6560b}
+      \strng{bibnamehash}{51cb00452c7aeedf29f40916b1c6560b}
+      \strng{authorbibnamehash}{51cb00452c7aeedf29f40916b1c6560b}
+      \strng{authornamehash}{51cb00452c7aeedf29f40916b1c6560b}
+      \strng{authorfullhash}{51cb00452c7aeedf29f40916b1c6560b}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Individual performance calibration using physiological stress signals}
+      \field{year}{2015}
+    \endentry
+    \entry{Quazi2012}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=8ef6577fd0696348a9608a062f8ab735}{%
+           family={Quazi},
+           familyi={Q\bibinitperiod},
+           given={M.\bibnamedelimi T},
+           giveni={M\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=d958b437e6d7d375375b639665434565}{%
+           family={Mukhopadhyay},
+           familyi={M\bibinitperiod},
+           given={S.\bibnamedelimi C},
+           giveni={S\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=c0182b0ac098766369964fcac8a1091b}{%
+           family={Suryadevara},
+           familyi={S\bibinitperiod},
+           given={N.\bibnamedelimi K},
+           giveni={N\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=88ee282a38514be9eeef2b5891ef3cf0}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Y.\bibnamedelimi M},
+           giveni={Y\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {eng}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{142d82efedb07bda884b5d6241a53677}
+      \strng{fullhash}{e70dfa232fa38724c2e853ee8b64777f}
+      \strng{bibnamehash}{e70dfa232fa38724c2e853ee8b64777f}
+      \strng{authorbibnamehash}{e70dfa232fa38724c2e853ee8b64777f}
+      \strng{authornamehash}{142d82efedb07bda884b5d6241a53677}
+      \strng{authorfullhash}{e70dfa232fa38724c2e853ee8b64777f}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2012 IEEE International Instrumentation and Measurement Technology Conference Proceedings}
+      \field{isbn}{1457717735}
+      \field{issn}{1091-5281}
+      \field{title}{Towards the smart sensors based human emotion recognition}
+      \field{year}{2012}
+      \field{pages}{2365\bibrangedash 2370}
+      \range{pages}{6}
+    \endentry
+    \entry{Malik1996}{article}{}
+      \name{author}{7}{}{%
+        {{hash=91d33a5f0b3816a2dbff92066bb8a31b}{%
+           family={Malik},
+           familyi={M\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=023a39055c92a692a394ab0227b3936f}{%
+           family={Bigger},
+           familyi={B\bibinitperiod},
+           given={J.\bibnamedelimi T.},
+           giveni={J\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=935351aee66ba2de6bcce27d14e27dd0}{%
+           family={Camm},
+           familyi={C\bibinitperiod},
+           given={A.\bibnamedelimi J.},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=511fd17f9fc18e207e3c3d505704aea0}{%
+           family={Kleiger},
+           familyi={K\bibinitperiod},
+           given={R.\bibnamedelimi E.},
+           giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=e6d7c7dd33d7dbc043b3174d5ba6a74c}{%
+           family={Malliani},
+           familyi={M\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=139060bcba1e7e37f188df9eb7e0eac5}{%
+           family={Moss},
+           familyi={M\bibinitperiod},
+           given={A.\bibnamedelimi J.},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=da57f15c058e5a4a9c1c6ac4236d2406}{%
+           family={Schwartz},
+           familyi={S\bibinitperiod},
+           given={P.\bibnamedelimi J.},
+           giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {eng}%
+      }
+      \list{location}{1}{%
+        {Oxford}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{397d4cfbca3f34286638c0c490a2dd87}
+      \strng{fullhash}{dbfbf78245bc3c553c628576fa604cc0}
+      \strng{bibnamehash}{397d4cfbca3f34286638c0c490a2dd87}
+      \strng{authorbibnamehash}{397d4cfbca3f34286638c0c490a2dd87}
+      \strng{authornamehash}{397d4cfbca3f34286638c0c490a2dd87}
+      \strng{authorfullhash}{dbfbf78245bc3c553c628576fa604cc0}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0195-668X}
+      \field{journaltitle}{European heart journal}
+      \field{number}{3}
+      \field{title}{Heart rate variability : Standards of measurement, physiological interpretation, and clinical use}
+      \field{volume}{17}
+      \field{year}{1996}
+      \field{pages}{354\bibrangedash 381}
+      \range{pages}{28}
+    \endentry
+    \entry{Karthikeyan2013}{article}{}
+      \name{author}{3}{}{%
+        {{hash=5228b257a0d1685c7c94c8cf79f1f0e3}{%
+           family={Palanisamy},
+           familyi={P\bibinitperiod},
+           given={Karthikeyan},
+           giveni={K\bibinitperiod}}}%
+        {{hash=4d9aae3c013e3ed0506c33bf58ec1c01}{%
+           family={M},
+           familyi={M\bibinitperiod},
+           given={Murugappan},
+           giveni={M\bibinitperiod}}}%
+        {{hash=302295339aaec93288b59e1b4cdc84cc}{%
+           family={Yaacob},
+           familyi={Y\bibinitperiod},
+           given={Sazali},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{81a8fd59966dae2a6617fbf242997ad1}
+      \strng{fullhash}{81a8fd59966dae2a6617fbf242997ad1}
+      \strng{bibnamehash}{81a8fd59966dae2a6617fbf242997ad1}
+      \strng{authorbibnamehash}{81a8fd59966dae2a6617fbf242997ad1}
+      \strng{authornamehash}{81a8fd59966dae2a6617fbf242997ad1}
+      \strng{authorfullhash}{81a8fd59966dae2a6617fbf242997ad1}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Electronics and Electrical Engineering}
+      \field{month}{09}
+      \field{title}{Multiple Physiological Signal-Based Human Stress Identification Using Non-Linear Classifiers}
+      \field{volume}{19}
+      \field{year}{2013}
+      \verb{doi}
+      \verb 10.5755/j01.eee.19.7.2232
+      \endverb
+    \endentry
+    \entry{Alberdi2016}{article}{}
+      \name{author}{3}{}{%
+        {{hash=7792b1528b789bb5df8eecb615df4b7f}{%
+           family={Alberdi},
+           familyi={A\bibinitperiod},
+           given={Ane},
+           giveni={A\bibinitperiod}}}%
+        {{hash=11e15ab1343bebba3b0b5ce0b5ae225b}{%
+           family={Aztiria},
+           familyi={A\bibinitperiod},
+           given={Asier},
+           giveni={A\bibinitperiod}}}%
+        {{hash=f0a4be7880aa8e965beeed79dac47d08}{%
+           family={Basarab},
+           familyi={B\bibinitperiod},
+           given={Adrian},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {eng}%
+      }
+      \list{location}{1}{%
+        {United States}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier Inc}%
+      }
+      \strng{namehash}{f43e1e0f3d08da13b26a92e300f59e2b}
+      \strng{fullhash}{f43e1e0f3d08da13b26a92e300f59e2b}
+      \strng{bibnamehash}{f43e1e0f3d08da13b26a92e300f59e2b}
+      \strng{authorbibnamehash}{f43e1e0f3d08da13b26a92e300f59e2b}
+      \strng{authornamehash}{f43e1e0f3d08da13b26a92e300f59e2b}
+      \strng{authorfullhash}{f43e1e0f3d08da13b26a92e300f59e2b}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1532-0464}
+      \field{journaltitle}{Journal of biomedical informatics}
+      \field{title}{Towards an automatic early stress recognition system for office environments based on multimodal measurements: A review}
+      \field{volume}{59}
+      \field{year}{2016}
+      \field{pages}{49\bibrangedash 75}
+      \range{pages}{27}
+    \endentry
+    \entry{Sriramprakash2017}{article}{}
+      \name{author}{3}{}{%
+        {{hash=a5efaf6b926a457ff464c69c8248c18e}{%
+           family={Sriramprakash},
+           familyi={S\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=a391bfba07e3035baf229e04da43f4e6}{%
+           family={Prasanna},
+           familyi={P\bibinitperiod},
+           given={Vadana\bibnamedelima D},
+           giveni={V\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=3201410b8dccf3b13049948d69c16455}{%
+           family={Murthy},
+           familyi={M\bibinitperiod},
+           given={O.V.\bibnamedelimi Ramana},
+           giveni={O\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{330dd6adeb7685dc17d9ddafa1a69a7f}
+      \strng{fullhash}{330dd6adeb7685dc17d9ddafa1a69a7f}
+      \strng{bibnamehash}{330dd6adeb7685dc17d9ddafa1a69a7f}
+      \strng{authorbibnamehash}{330dd6adeb7685dc17d9ddafa1a69a7f}
+      \strng{authornamehash}{330dd6adeb7685dc17d9ddafa1a69a7f}
+      \strng{authorfullhash}{330dd6adeb7685dc17d9ddafa1a69a7f}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1877-0509}
+      \field{journaltitle}{Procedia Computer Science}
+      \field{note}{7th International Conference on Advances in Computing \& Communications, ICACC-2017, 22-24 August 2017, Cochin, India}
+      \field{title}{Stress Detection in Working People}
+      \field{volume}{115}
+      \field{year}{2017}
+      \field{pages}{359\bibrangedash 366}
+      \range{pages}{8}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.procs.2017.09.090
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S187705091731904X
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S187705091731904X
+      \endverb
+    \endentry
+    \entry{Arman2020}{article}{}
+      \name{author}{2}{}{%
+        {{hash=ebe214596cd083126e613018495b32bd}{%
+           family={Arman\bibnamedelima Kuzubasoglu},
+           familyi={A\bibinitperiod\bibinitdelim K\bibinitperiod},
+           given={Burcu},
+           giveni={B\bibinitperiod}}}%
+        {{hash=331a24951cd4ec7b029bcf1c6c7f1814}{%
+           family={Kursun\bibnamedelima Bahadir},
+           familyi={K\bibinitperiod\bibinitdelim B\bibinitperiod},
+           given={Senem},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier B.V}%
+      }
+      \strng{namehash}{56955d4fe450e8687a9ca3b3eb6f1863}
+      \strng{fullhash}{56955d4fe450e8687a9ca3b3eb6f1863}
+      \strng{bibnamehash}{56955d4fe450e8687a9ca3b3eb6f1863}
+      \strng{authorbibnamehash}{56955d4fe450e8687a9ca3b3eb6f1863}
+      \strng{authornamehash}{56955d4fe450e8687a9ca3b3eb6f1863}
+      \strng{authorfullhash}{56955d4fe450e8687a9ca3b3eb6f1863}
+      \field{extraname}{1}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0924-4247}
+      \field{journaltitle}{Sensors and actuators. A. Physical.}
+      \field{title}{Flexible temperature sensors: A review}
+      \field{volume}{315}
+      \field{year}{2020}
+      \field{pages}{112282\bibrangedash}
+      \range{pages}{-1}
+    \endentry
+    \entry{Abouellail2018}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=00ed0a9dce1b9fff0fdb6d5c5ef5882a}{%
+           family={Abouellail},
+           familyi={A\bibinitperiod},
+           given={AA},
+           giveni={A\bibinitperiod}}}%
+        {{hash=b5933ccb102eea66684d547b3bcbd257}{%
+           family={Obach},
+           familyi={O\bibinitperiod},
+           given={II},
+           giveni={I\bibinitperiod}}}%
+        {{hash=9a0b5d4da2f16eaf478125bec6581ea1}{%
+           family={Soldatov},
+           familyi={S\bibinitperiod},
+           given={AA},
+           giveni={A\bibinitperiod}}}%
+        {{hash=9990f6b90b42700123cf5212a41db2ee}{%
+           family={Sorokin},
+           familyi={S\bibinitperiod},
+           given={PV},
+           giveni={P\bibinitperiod}}}%
+        {{hash=8f5238b07ba8cfb8e08ea5fda3333249}{%
+           family={Soldatov},
+           familyi={S\bibinitperiod},
+           given={AI},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Trans Tech Publ}%
+      }
+      \strng{namehash}{09227fd340e8abecc21381347a10ef37}
+      \strng{fullhash}{9b712ee3bbd9bae9d0bb34218f647238}
+      \strng{bibnamehash}{9b712ee3bbd9bae9d0bb34218f647238}
+      \strng{authorbibnamehash}{9b712ee3bbd9bae9d0bb34218f647238}
+      \strng{authornamehash}{09227fd340e8abecc21381347a10ef37}
+      \strng{authorfullhash}{9b712ee3bbd9bae9d0bb34218f647238}
+      \field{extraname}{1}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Materials Science Forum}
+      \field{title}{Research of thermocouple electrical characteristics}
+      \field{volume}{938}
+      \field{year}{2018}
+      \field{pages}{104\bibrangedash 111}
+      \range{pages}{8}
+    \endentry
+    \entry{Li2021}{article}{}
+      \name{author}{5}{}{%
+        {{hash=a99a584749829612e877ec074f612439}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Tong},
+           giveni={T\bibinitperiod}}}%
+        {{hash=c013adfd3f2ed1784aba632cde54ddda}{%
+           family={Fan},
+           familyi={F\bibinitperiod},
+           given={Yali},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=78be8ea0cb80e4e1b59bf06100942e90}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Yong},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=e935e5d3dbf7bbbe18aab2f618b1b740}{%
+           family={Tarkoma},
+           familyi={T\bibinitperiod},
+           given={Sasu},
+           giveni={S\bibinitperiod}}}%
+        {{hash=28777383a6d1b2b7a5a8741ac2ce2e03}{%
+           family={Hui},
+           familyi={H\bibinitperiod},
+           given={Pan},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE Computer Society}%
+      }
+      \strng{namehash}{31cd5d3b2bba7e6d985a473b29ce38bd}
+      \strng{fullhash}{fc4438e159136511c2272a304fe3fc84}
+      \strng{bibnamehash}{fc4438e159136511c2272a304fe3fc84}
+      \strng{authorbibnamehash}{fc4438e159136511c2272a304fe3fc84}
+      \strng{authornamehash}{31cd5d3b2bba7e6d985a473b29ce38bd}
+      \strng{authorfullhash}{fc4438e159136511c2272a304fe3fc84}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Mobile Computing}
+      \field{number}{01}
+      \field{title}{Understanding the Long-term Evolution of Mobile App Usage}
+      \field{year}{2021}
+      \field{pages}{1\bibrangedash 1}
+      \range{pages}{1}
+    \endentry
+    \entry{Mwalongo2016}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=e93d7744782be5ed2d8f3b54f541539d}{%
+           family={Mwalongo},
+           familyi={M\bibinitperiod},
+           given={Finian},
+           giveni={F\bibinitperiod}}}%
+        {{hash=b93b2e88ae8ddf4a65eecd22c2b1897a}{%
+           family={Krone},
+           familyi={K\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=03d597452eae5f0ff57fcfff2c4079e6}{%
+           family={Reina},
+           familyi={R\bibinitperiod},
+           given={Guido},
+           giveni={G\bibinitperiod}}}%
+        {{hash=2340a4b90c94edfaf3df6c480da4885b}{%
+           family={Ertl},
+           familyi={E\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{9f65e0d33e028dabb5e514c44b9fc255}
+      \strng{fullhash}{8010e7c516776e13731e35affd0b20e5}
+      \strng{bibnamehash}{8010e7c516776e13731e35affd0b20e5}
+      \strng{authorbibnamehash}{8010e7c516776e13731e35affd0b20e5}
+      \strng{authornamehash}{9f65e0d33e028dabb5e514c44b9fc255}
+      \strng{authorfullhash}{8010e7c516776e13731e35affd0b20e5}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Computer graphics forum}
+      \field{number}{3}
+      \field{title}{State-of-the-Art Report in Web-based Visualization}
+      \field{volume}{35}
+      \field{year}{2016}
+      \field{pages}{553\bibrangedash 575}
+      \range{pages}{23}
+    \endentry
+    \entry{Healey2005}{article}{}
+      \name{author}{2}{}{%
+        {{hash=7a67c8991e72dc813543c5f8726dc75d}{%
+           family={Healey},
+           familyi={H\bibinitperiod},
+           given={J.A},
+           giveni={J\bibinitperiod}}}%
+        {{hash=0416032fb587ef10e907f9641934d99a}{%
+           family={Picard},
+           familyi={P\bibinitperiod},
+           given={R.W},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {eng}%
+      }
+      \list{location}{1}{%
+        {Piscataway, NJ}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{54a327eaa98ea1014c1c106fdf2de524}
+      \strng{fullhash}{54a327eaa98ea1014c1c106fdf2de524}
+      \strng{bibnamehash}{54a327eaa98ea1014c1c106fdf2de524}
+      \strng{authorbibnamehash}{54a327eaa98ea1014c1c106fdf2de524}
+      \strng{authornamehash}{54a327eaa98ea1014c1c106fdf2de524}
+      \strng{authorfullhash}{54a327eaa98ea1014c1c106fdf2de524}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1524-9050}
+      \field{journaltitle}{IEEE transactions on intelligent transportation systems}
+      \field{number}{2}
+      \field{title}{Detecting stress during real-world driving tasks using physiological sensors}
+      \field{volume}{6}
+      \field{year}{2005}
+      \field{pages}{156\bibrangedash 166}
+      \range{pages}{11}
+    \endentry
+    \entry{Cho2017}{article}{}
+      \name{author}{7}{}{%
+        {{hash=aaa1f7086242c0a9106d7936c49298eb}{%
+           family={Cho},
+           familyi={C\bibinitperiod},
+           given={Dongrae},
+           giveni={D\bibinitperiod}}}%
+        {{hash=2f114146346b9174da56899b429b8c49}{%
+           family={Ham},
+           familyi={H\bibinitperiod},
+           given={Jinsil},
+           giveni={J\bibinitperiod}}}%
+        {{hash=b9433331c13b8168cc605ddcbfbf650e}{%
+           family={Oh},
+           familyi={O\bibinitperiod},
+           given={Jooyoung},
+           giveni={J\bibinitperiod}}}%
+        {{hash=c298697917f6a43078eb4a7b63b5e896}{%
+           family={Park},
+           familyi={P\bibinitperiod},
+           given={Jeanho},
+           giveni={J\bibinitperiod}}}%
+        {{hash=e1f880317acf7478abe63cf3c7e279cb}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Sayup},
+           giveni={S\bibinitperiod}}}%
+        {{hash=aa29c0328743a90d6b769de4491a5136}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Nak-Kyu},
+           giveni={N\bibinithyphendelim K\bibinitperiod}}}%
+        {{hash=0da79c57a2c8f1cdedb45e165f375bc0}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Boreom},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {eng}%
+      }
+      \list{location}{1}{%
+        {Switzerland}%
+      }
+      \list{publisher}{1}{%
+        {MDPI AG}%
+      }
+      \strng{namehash}{f4694ee149adc6a75ce8f8608635e93d}
+      \strng{fullhash}{316aaaae945df1993e1b244fc48026bf}
+      \strng{bibnamehash}{f4694ee149adc6a75ce8f8608635e93d}
+      \strng{authorbibnamehash}{f4694ee149adc6a75ce8f8608635e93d}
+      \strng{authornamehash}{f4694ee149adc6a75ce8f8608635e93d}
+      \strng{authorfullhash}{316aaaae945df1993e1b244fc48026bf}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1424-8220}
+      \field{journaltitle}{Sensors (Basel, Switzerland)}
+      \field{number}{10}
+      \field{title}{Detection of Stress Levels from Biosignals Measured in Virtual Reality Environments Using a Kernel-Based Extreme Learning Machine}
+      \field{volume}{17}
+      \field{year}{2017}
+      \field{pages}{2435\bibrangedash}
+      \range{pages}{-1}
+    \endentry
+    \entry{Porter2019}{article}{}
+      \name{author}{2}{}{%
+        {{hash=209e5236d95b914c33b9cd75e59aece2}{%
+           family={Porter},
+           familyi={P\bibinitperiod},
+           given={Anne\bibnamedelima Marie},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=ee0c4a52878084916ca3e6fff216655d}{%
+           family={Goolkasian},
+           familyi={G\bibinitperiod},
+           given={Paula},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {eng}%
+      }
+      \list{location}{1}{%
+        {Switzerland}%
+      }
+      \list{publisher}{1}{%
+        {Frontiers Research Foundation}%
+      }
+      \strng{namehash}{80222d4b9311bce82a7c7d5cc2ca27e1}
+      \strng{fullhash}{80222d4b9311bce82a7c7d5cc2ca27e1}
+      \strng{bibnamehash}{80222d4b9311bce82a7c7d5cc2ca27e1}
+      \strng{authorbibnamehash}{80222d4b9311bce82a7c7d5cc2ca27e1}
+      \strng{authornamehash}{80222d4b9311bce82a7c7d5cc2ca27e1}
+      \strng{authorfullhash}{80222d4b9311bce82a7c7d5cc2ca27e1}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1664-1078}
+      \field{journaltitle}{Frontiers in psychology}
+      \field{title}{Video Games and Stress: How Stress Appraisals and Game Content Affect Cardiovascular and Emotion Outcomes}
+      \field{volume}{10}
+      \field{year}{2019}
+      \field{pages}{967\bibrangedash 967}
+      \range{pages}{1}
+    \endentry
+    \entry{Gao2021}{article}{}
+      \name{author}{9}{}{%
+        {{hash=433a8fb5c04b207844d1388af13ac49f}{%
+           family={Gao},
+           familyi={G\bibinitperiod},
+           given={Mingyuan},
+           giveni={M\bibinitperiod}}}%
+        {{hash=2053a78b8c7e674d28eabbe236f2f077}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Ping},
+           giveni={P\bibinitperiod}}}%
+        {{hash=c794b92e8de967079fb2391920ea9db6}{%
+           family={Jiang},
+           familyi={J\bibinitperiod},
+           given={Lili},
+           giveni={L\bibinitperiod}}}%
+        {{hash=621afb2f63bcbbb323f8a9935782eef1}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Bowen},
+           giveni={B\bibinitperiod}}}%
+        {{hash=3571c10b6aaf299a5c31017339f283ce}{%
+           family={Yao},
+           familyi={Y\bibinitperiod},
+           given={Ye},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=b51d008c8f8b480734bdad360774940e}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Sheng},
+           giveni={S\bibinitperiod}}}%
+        {{hash=dcc10dbce4774479d70282f83e543f4f}{%
+           family={Chu},
+           familyi={C\bibinitperiod},
+           given={Dewei},
+           giveni={D\bibinitperiod}}}%
+        {{hash=71bf5f94ee7154cade3b1e8c7342e5b4}{%
+           family={Cheng},
+           familyi={C\bibinitperiod},
+           given={Wenlong},
+           giveni={W\bibinitperiod}}}%
+        {{hash=a359e2935272151d8c7c556ddd0df04c}{%
+           family={Lu},
+           familyi={L\bibinitperiod},
+           given={Yuerui},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {The Royal Society of Chemistry}%
+      }
+      \strng{namehash}{dc06ba5196e91078a2e6f94d4a1f0cf2}
+      \strng{fullhash}{7bddeb4ae892f1c7887681efc12782ee}
+      \strng{bibnamehash}{dc06ba5196e91078a2e6f94d4a1f0cf2}
+      \strng{authorbibnamehash}{dc06ba5196e91078a2e6f94d4a1f0cf2}
+      \strng{authornamehash}{dc06ba5196e91078a2e6f94d4a1f0cf2}
+      \strng{authorfullhash}{7bddeb4ae892f1c7887681efc12782ee}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{4}
+      \field{journaltitle}{Energy Environ. Sci.}
+      \field{title}{Power generation for wearable systems}
+      \field{volume}{14}
+      \field{year}{2021}
+      \field{pages}{2114\bibrangedash 2157}
+      \range{pages}{44}
+      \verb{doi}
+      \verb 10.1039/D0EE03911J
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1039/D0EE03911J
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1039/D0EE03911J
+      \endverb
+    \endentry
+    \entry{WearableTutorials}{online}{}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labeltitlesource}{title}
+      \field{title}{Choosing Batteries to Use for Wearables: Beginner’s Guide – Wearable Tech Tutorials and How-Tos}
+      \field{urlday}{20}
+      \field{urlmonth}{5}
+      \field{urlyear}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://www.wearabletutorials.com/how-to-choose-batteries-for-wearable/
+      \endverb
+      \verb{url}
+      \verb http://www.wearabletutorials.com/how-to-choose-batteries-for-wearable/
+      \endverb
+    \endentry
+    \entry{Us2022}{misc}{}
+      \name{author}{3}{}{%
+        {{hash=0d9330d32eb4959992e7529b9032962b}{%
+           family={Patterson},
+           familyi={P\bibinitperiod},
+           given={Oliver},
+           giveni={O\bibinitperiod}}}%
+        {{hash=864f2b70883524d2a029b8d74a227135}{%
+           family={Harbis},
+           familyi={H\bibinitperiod},
+           given={Alec},
+           giveni={A\bibinitperiod}}}%
+        {{hash=93baab78343a724363e1b1a2b20734ee}{%
+           family={Abdul},
+           familyi={A\bibinitperiod},
+           given={Ahad},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{d9781a5fb55d1f26b01fa172a7256f16}
+      \strng{fullhash}{d9781a5fb55d1f26b01fa172a7256f16}
+      \strng{bibnamehash}{d9781a5fb55d1f26b01fa172a7256f16}
+      \strng{authorbibnamehash}{d9781a5fb55d1f26b01fa172a7256f16}
+      \strng{authornamehash}{d9781a5fb55d1f26b01fa172a7256f16}
+      \strng{authorfullhash}{d9781a5fb55d1f26b01fa172a7256f16}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{04}
+      \field{title}{Investigation of Materials to Develop a Wearable Stress Monitoring Device}
+      \field{year}{2022}
+    \endentry
     \entry{Dang2020}{inproceedings}{}
       \name{author}{5}{}{%
         {{hash=ad833e18da8122dd394060f46ae6064a}{%
@@ -53,8 +1353,8 @@
       \strng{authorbibnamehash}{5b1b138d0c722078941bd024eefbfd55}
       \strng{authornamehash}{d9784ee0a8dbb872601c1c2dc62d2e1b}
       \strng{authorfullhash}{5b1b138d0c722078941bd024eefbfd55}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{2020 4th Australian Microwave Symposium AMS}
@@ -86,8 +1386,8 @@
       \strng{authorbibnamehash}{a1984fe2fba1b4254427db13eb9c73cb}
       \strng{authornamehash}{a1984fe2fba1b4254427db13eb9c73cb}
       \strng{authorfullhash}{a1984fe2fba1b4254427db13eb9c73cb}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{2017 IEEE International Symposium on Antennas and Propagation USNC/URSI National Radio Science Meeting}
@@ -119,8 +1419,8 @@
       \strng{authorbibnamehash}{a72076074450fdb7b2932accfe56d343}
       \strng{authornamehash}{a72076074450fdb7b2932accfe56d343}
       \strng{authorfullhash}{a72076074450fdb7b2932accfe56d343}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{2017 IEEE International Conference on Power, Control, Signals and Instrumentation Engineering ICPCSI}
@@ -172,8 +1472,8 @@
       \strng{authorbibnamehash}{78beb41f8fc1028824592bfa6b1ca06b}
       \strng{authornamehash}{bd7e0d3a899fe1803be3cdfa9b5174d1}
       \strng{authorfullhash}{78beb41f8fc1028824592bfa6b1ca06b}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{2018 19th International Conference on Thermal, Mechanical and Multi-Physics Simulation and Experiments in Microelectronics and Microsystems EuroSimE}
@@ -291,8 +1591,8 @@
       \strng{authorbibnamehash}{1f17561dc4d49ecbf4346ec4a0d19454}
       \strng{authornamehash}{0679ee78c36d1e4779ba7a6173fe8d5b}
       \strng{authorfullhash}{1f17561dc4d49ecbf4346ec4a0d19454}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{2019 41st Annual International Conference of the IEEE Engineering in Medicine and Biology Society EMBC}
@@ -324,8 +1624,8 @@
       \strng{authorbibnamehash}{e459aef58c28a11c711e2b195e32342c}
       \strng{authornamehash}{e459aef58c28a11c711e2b195e32342c}
       \strng{authorfullhash}{e459aef58c28a11c711e2b195e32342c}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{2020 Pan Pacific Microelectronics Symposium Pan Pacific}
@@ -387,8 +1687,8 @@
       \strng{authorbibnamehash}{2c7a2e7752ad88744e90e675a3128b7b}
       \strng{authornamehash}{2c7a2e7752ad88744e90e675a3128b7b}
       \strng{authorfullhash}{b69a33342ae425a4b3d6150828359875}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{2004 Proceedings. 54th Electronic Components and Technology Conference IEEE Cat. No.04CH37546}
@@ -431,8 +1731,8 @@
       \strng{authorbibnamehash}{1ba5eaa1eb196e3d4e2ff8e3adfd9a6b}
       \strng{authornamehash}{08b1c0ef01ef3c64553b6b7b87129543}
       \strng{authorfullhash}{1ba5eaa1eb196e3d4e2ff8e3adfd9a6b}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{2018 IEEE International Symposium on Antennas and Propagation USNC/URSI National Radio Science Meeting}
@@ -489,8 +1789,8 @@
       \strng{authorbibnamehash}{4ce858e6abe6e3d9ed377266427a3400}
       \strng{authornamehash}{4ce858e6abe6e3d9ed377266427a3400}
       \strng{authorfullhash}{65561fa504abb2d3aef51baba4f7c272}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{2009 International Symposium on Wearable Computers}
@@ -504,8 +1804,8 @@
       \endverb
     \endentry
     \entry{StellaProject}{online}{}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labeltitlesource}{title}
       \field{title}{STELLA Project}
       \field{urlday}{25}
@@ -539,8 +1839,8 @@
       \strng{authorbibnamehash}{8b59144eaaad8fef93a09e3ce18ca290}
       \strng{authornamehash}{8b59144eaaad8fef93a09e3ce18ca290}
       \strng{authorfullhash}{8b59144eaaad8fef93a09e3ce18ca290}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{2015 IEEE SENSORS}
@@ -602,8 +1902,8 @@
       \strng{authorbibnamehash}{650a3f51c51497eaa2f7cb3423bfd20a}
       \strng{authornamehash}{650a3f51c51497eaa2f7cb3423bfd20a}
       \strng{authorfullhash}{bf1815f0a6d225ebcdde66537d335518}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{2011 5th International Conference on Pervasive Computing Technologies for Healthcare PervasiveHealth and Workshops}
@@ -647,8 +1947,8 @@
       \strng{authorbibnamehash}{eb049d99ef9fdbbe970492d8e40a20a0}
       \strng{authornamehash}{bf2dd07333fd0e1d93f4fce4badcd9f6}
       \strng{authorfullhash}{eb049d99ef9fdbbe970492d8e40a20a0}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{2020 IEEE SENSORS}
@@ -700,8 +2000,8 @@
       \strng{authorbibnamehash}{a3d371f4d3f03e5f975a859e425d8128}
       \strng{authornamehash}{f8f2a26a236b8290afc0b6a041754807}
       \strng{authorfullhash}{a3d371f4d3f03e5f975a859e425d8128}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{IEEE Sensors Journal}
@@ -750,8 +2050,8 @@
       \strng{authorbibnamehash}{35c2fc1221df522d920f582bf0a9194e}
       \strng{authornamehash}{9d65f2d748421654a3490f1061a73277}
       \strng{authorfullhash}{35c2fc1221df522d920f582bf0a9194e}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{2020 IEEE SENSORS}
@@ -778,8 +2078,8 @@
       \strng{authorbibnamehash}{de0ec36267de9c9d01aefefc474dabcb}
       \strng{authornamehash}{de0ec36267de9c9d01aefefc474dabcb}
       \strng{authorfullhash}{de0ec36267de9c9d01aefefc474dabcb}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{DHT11 Humidity and Temperature Sensor}
@@ -849,8 +2149,8 @@
       \strng{authorbibnamehash}{c27e1478b0ec18bb7dd3c7bf473323cc}
       \strng{authornamehash}{c27e1478b0ec18bb7dd3c7bf473323cc}
       \strng{authorfullhash}{aa4fe200df3f59224111fd8a74466865}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1424-8220}
@@ -905,8 +2205,8 @@
       \strng{authorbibnamehash}{da3c44a31c935ad3473711a00d21f2b3}
       \strng{authornamehash}{7e631f852636713866b052e6c6879fae}
       \strng{authorfullhash}{da3c44a31c935ad3473711a00d21f2b3}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0376-8716}
@@ -991,8 +2291,8 @@
       \strng{authorbibnamehash}{ac024420cd47d3f00bdd1f64513cc784}
       \strng{authornamehash}{ac024420cd47d3f00bdd1f64513cc784}
       \strng{authorfullhash}{ce777a11d27231bc41287af711c0fc3b}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{2079-6374}
@@ -1027,8 +2327,8 @@
       \strng{authorbibnamehash}{e938fc223a5174f1d74b97010b8e0833}
       \strng{authornamehash}{e938fc223a5174f1d74b97010b8e0833}
       \strng{authorfullhash}{e938fc223a5174f1d74b97010b8e0833}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0260-2288}
@@ -1058,8 +2358,8 @@
       \strng{authorbibnamehash}{79dba1cde4567126ee8dab74e2630a81}
       \strng{authornamehash}{79dba1cde4567126ee8dab74e2630a81}
       \strng{authorfullhash}{79dba1cde4567126ee8dab74e2630a81}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{AIP conference proceedings}
@@ -1107,8 +2407,8 @@
       \strng{authorbibnamehash}{0e80ed3f44e12494977002f6ae141301}
       \strng{authornamehash}{285660ad28a84317bbb78fe3b6a9c6cd}
       \strng{authorfullhash}{0e80ed3f44e12494977002f6ae141301}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{2169-3536}
@@ -1162,8 +2462,8 @@
       \strng{authorbibnamehash}{263b12b2c043aff91a648d2888f36a81}
       \strng{authornamehash}{db8ed894c2be50e830ac8621666f459f}
       \strng{authorfullhash}{263b12b2c043aff91a648d2888f36a81}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{2169-3536}
@@ -1207,8 +2507,8 @@
       \strng{authorbibnamehash}{3eeb6ee68e23f0de1d0981f2a4e6b118}
       \strng{authornamehash}{a7a20be6efdc75166c0b6f4f68c1848b}
       \strng{authorfullhash}{3eeb6ee68e23f0de1d0981f2a4e6b118}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0140-0118}
@@ -1248,8 +2548,8 @@
       \strng{authorbibnamehash}{5eebda236541df0bd73105b731115b3d}
       \strng{authornamehash}{5eebda236541df0bd73105b731115b3d}
       \strng{authorfullhash}{5eebda236541df0bd73105b731115b3d}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1424-8220}
@@ -1289,8 +2589,8 @@
       \strng{authorbibnamehash}{2fc118ccc4c89365b9a317ed7fa56438}
       \strng{authornamehash}{2fc118ccc4c89365b9a317ed7fa56438}
       \strng{authorfullhash}{2fc118ccc4c89365b9a317ed7fa56438}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1044-7318}
@@ -1325,8 +2625,8 @@
       \strng{authorbibnamehash}{6452ef26b29dde4ee11161592a53a239}
       \strng{authornamehash}{6452ef26b29dde4ee11161592a53a239}
       \strng{authorfullhash}{6452ef26b29dde4ee11161592a53a239}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{2079-9292}
@@ -1338,97 +2638,6 @@
       \true{nocite}
       \field{pages}{405\bibrangedash}
       \range{pages}{-1}
-    \endentry
-    \entry{Hu2020}{article}{}
-      \name{author}{3}{}{%
-        {{hash=9dec12bff2c5f8a5d447090dd5c89c0f}{%
-           family={Hu},
-           familyi={H\bibinitperiod},
-           given={Jian},
-           giveni={J\bibinitperiod}}}%
-        {{hash=0311431642470a7b59cea4fbf9543da7}{%
-           family={Wang},
-           familyi={W\bibinitperiod},
-           given={Junjie},
-           giveni={J\bibinitperiod}}}%
-        {{hash=c26412bb48631e0d1ab53e9b812dbda6}{%
-           family={Xie},
-           familyi={X\bibinitperiod},
-           given={Hangqi},
-           giveni={H\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Elsevier B.V}%
-      }
-      \strng{namehash}{49940c26ea6be945537884036d3bcc55}
-      \strng{fullhash}{49940c26ea6be945537884036d3bcc55}
-      \strng{bibnamehash}{49940c26ea6be945537884036d3bcc55}
-      \strng{authorbibnamehash}{49940c26ea6be945537884036d3bcc55}
-      \strng{authornamehash}{49940c26ea6be945537884036d3bcc55}
-      \strng{authorfullhash}{49940c26ea6be945537884036d3bcc55}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{0140-3664}
-      \field{journaltitle}{Computer communications}
-      \field{title}{Wearable bracelets with variable sampling frequency for measuring multiple physiological parameter of human}
-      \field{volume}{161}
-      \field{year}{2020}
-      \true{nocite}
-      \field{pages}{257\bibrangedash 265}
-      \range{pages}{9}
-    \endentry
-    \entry{Vanveerdeghem2014}{article}{}
-      \name{author}{5}{}{%
-        {{hash=487dd605f9fbc4a5d12298dc535b0c89}{%
-           family={Vanveerdeghem},
-           familyi={V\bibinitperiod},
-           given={Peter},
-           giveni={P\bibinitperiod}}}%
-        {{hash=9e81f143de9c6de7a175a06b0013f9e9}{%
-           family={Van\bibnamedelima Torre},
-           familyi={V\bibinitperiod\bibinitdelim T\bibinitperiod},
-           given={Patrick},
-           giveni={P\bibinitperiod}}}%
-        {{hash=f4b280467d61e9d2713fd49de1b94856}{%
-           family={Stevens},
-           familyi={S\bibinitperiod},
-           given={Christiaan},
-           giveni={C\bibinitperiod}}}%
-        {{hash=cc4c383d9804c611557f9c0a2641f9ea}{%
-           family={Knockaert},
-           familyi={K\bibinitperiod},
-           given={Jos},
-           giveni={J\bibinitperiod}}}%
-        {{hash=e11689713762d53040bb11d2f983eb37}{%
-           family={Rogier},
-           familyi={R\bibinitperiod},
-           given={Hendrik},
-           giveni={H\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {MDPI}%
-      }
-      \strng{namehash}{e21770ecdfa8db12a1a39be27c3ef0af}
-      \strng{fullhash}{a584832f8b8216613b779b349981be68}
-      \strng{bibnamehash}{a584832f8b8216613b779b349981be68}
-      \strng{authorbibnamehash}{a584832f8b8216613b779b349981be68}
-      \strng{authornamehash}{e21770ecdfa8db12a1a39be27c3ef0af}
-      \strng{authorfullhash}{a584832f8b8216613b779b349981be68}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{1424-8220}
-      \field{journaltitle}{Sensors Basel, Switzerland}
-      \field{number}{10}
-      \field{title}{Synchronous wearable wireless body sensor network composed of autonomous textile nodes}
-      \field{volume}{14}
-      \field{year}{2014}
-      \true{nocite}
-      \field{pages}{18583\bibrangedash 18610}
-      \range{pages}{28}
     \endentry
     \entry{Crowley2011}{article}{}
       \name{author}{8}{}{%
@@ -1482,8 +2691,8 @@
       \strng{authorbibnamehash}{bb03d0fa732c86b97b488a8085ed86a3}
       \strng{authornamehash}{bb03d0fa732c86b97b488a8085ed86a3}
       \strng{authorfullhash}{bea6e5212ff54d7923c8184c0d4666f2}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0167-8760}
@@ -1533,8 +2742,8 @@
       \strng{authorbibnamehash}{c6536df57e795cdc87ac75b554d57129}
       \strng{authornamehash}{81e0f185dfa90e5d7979887fac035b4b}
       \strng{authorfullhash}{c6536df57e795cdc87ac75b554d57129}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0269-9931}
@@ -1546,82 +2755,6 @@
       \true{nocite}
       \field{pages}{577\bibrangedash 595}
       \range{pages}{19}
-    \endentry
-    \entry{Kyriakou2019}{article}{}
-      \name{author}{10}{}{%
-        {{hash=57793ae7913ef09bcb54e5ad7d455a29}{%
-           family={Kyriakou},
-           familyi={K\bibinitperiod},
-           given={Kalliopi},
-           giveni={K\bibinitperiod}}}%
-        {{hash=f6659d7fee3b1fb702fb9238a44d1143}{%
-           family={Resch},
-           familyi={R\bibinitperiod},
-           given={Bernd},
-           giveni={B\bibinitperiod}}}%
-        {{hash=5cc865075435e76a77e3ec73b5edd343}{%
-           family={Sagl},
-           familyi={S\bibinitperiod},
-           given={Günther},
-           giveni={G\bibinitperiod}}}%
-        {{hash=237672d2b17ab9713068cedee83d8d01}{%
-           family={Petutschnig},
-           familyi={P\bibinitperiod},
-           given={Aneas},
-           giveni={A\bibinitperiod}}}%
-        {{hash=7ad0e57e87aa38709d30e25ec1719537}{%
-           family={Werner},
-           familyi={W\bibinitperiod},
-           given={Christian},
-           giveni={C\bibinitperiod}}}%
-        {{hash=2aa22366d46215b5443115a6078b881e}{%
-           family={Niederseer},
-           familyi={N\bibinitperiod},
-           given={David},
-           giveni={D\bibinitperiod}}}%
-        {{hash=1fb551bfc8f043b743268504a7c9e6bb}{%
-           family={Liedlgruber},
-           familyi={L\bibinitperiod},
-           given={Michael},
-           giveni={M\bibinitperiod}}}%
-        {{hash=05bea67cb6d74fd15a431326ee5159f6}{%
-           family={Wilhelm},
-           familyi={W\bibinitperiod},
-           given={Frank},
-           giveni={F\bibinitperiod}}}%
-        {{hash=29d68739305b9ca2cf38045922c6f845}{%
-           family={Osborne},
-           familyi={O\bibinitperiod},
-           given={Tess},
-           giveni={T\bibinitperiod}}}%
-        {{hash=da44537ddeff428722a2bb0d02ed72d1}{%
-           family={Pykett},
-           familyi={P\bibinitperiod},
-           given={Jessica},
-           giveni={J\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {MDPI AG}%
-      }
-      \strng{namehash}{ab7040e9bb64915c8f84e7218f2363ca}
-      \strng{fullhash}{f9acde9434a8ad058138da4546ea4dcd}
-      \strng{bibnamehash}{ab7040e9bb64915c8f84e7218f2363ca}
-      \strng{authorbibnamehash}{ab7040e9bb64915c8f84e7218f2363ca}
-      \strng{authornamehash}{ab7040e9bb64915c8f84e7218f2363ca}
-      \strng{authorfullhash}{f9acde9434a8ad058138da4546ea4dcd}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{1424-8220}
-      \field{journaltitle}{Sensors Basel, Switzerland}
-      \field{number}{17}
-      \field{title}{Detecting Moments of Stress from Measurements of Wearable Physiological Sensors}
-      \field{volume}{19}
-      \field{year}{2019}
-      \true{nocite}
-      \field{pages}{3805\bibrangedash}
-      \range{pages}{-1}
     \endentry
     \entry{Sano2018}{article}{}
       \name{author}{7}{}{%
@@ -1670,8 +2803,8 @@
       \strng{authorbibnamehash}{089b016cb38b333c64402d6d9e80e453}
       \strng{authornamehash}{089b016cb38b333c64402d6d9e80e453}
       \strng{authorfullhash}{1c131abbff96d469f011691f6e51e999}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1438-8871}
@@ -1716,8 +2849,8 @@
       \strng{authorbibnamehash}{d0ec0ee8b39efed9e9a76ef64bcf3c4c}
       \strng{authornamehash}{d0e14fd45d7a215bd68c30e652bf6cb2}
       \strng{authorfullhash}{d0ec0ee8b39efed9e9a76ef64bcf3c4c}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0018-9456}
@@ -1772,8 +2905,8 @@
       \strng{authorbibnamehash}{d8f79bb3d9ef04b2f75b57a14708d54b}
       \strng{authornamehash}{1423aafba234ce7aebe7256a86da91f9}
       \strng{authorfullhash}{d8f79bb3d9ef04b2f75b57a14708d54b}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{2296-2646}
@@ -1822,8 +2955,8 @@
       \strng{authorbibnamehash}{6ec8b7f01a63c3fee7ebb493c3aca139}
       \strng{authornamehash}{678b404f29920723b448ff60a5adb603}
       \strng{authorfullhash}{6ec8b7f01a63c3fee7ebb493c3aca139}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{2468-0672}
@@ -1833,42 +2966,6 @@
       \field{year}{2021}
       \true{nocite}
       \field{pages}{e00183\bibrangedash}
-      \range{pages}{-1}
-    \endentry
-    \entry{Arman2020}{article}{}
-      \name{author}{2}{}{%
-        {{hash=ebe214596cd083126e613018495b32bd}{%
-           family={Arman\bibnamedelima Kuzubasoglu},
-           familyi={A\bibinitperiod\bibinitdelim K\bibinitperiod},
-           given={Burcu},
-           giveni={B\bibinitperiod}}}%
-        {{hash=331a24951cd4ec7b029bcf1c6c7f1814}{%
-           family={Kursun\bibnamedelima Bahadir},
-           familyi={K\bibinitperiod\bibinitdelim B\bibinitperiod},
-           given={Senem},
-           giveni={S\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Elsevier B.V}%
-      }
-      \strng{namehash}{56955d4fe450e8687a9ca3b3eb6f1863}
-      \strng{fullhash}{56955d4fe450e8687a9ca3b3eb6f1863}
-      \strng{bibnamehash}{56955d4fe450e8687a9ca3b3eb6f1863}
-      \strng{authorbibnamehash}{56955d4fe450e8687a9ca3b3eb6f1863}
-      \strng{authornamehash}{56955d4fe450e8687a9ca3b3eb6f1863}
-      \strng{authorfullhash}{56955d4fe450e8687a9ca3b3eb6f1863}
-      \field{extraname}{1}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{0924-4247}
-      \field{journaltitle}{Sensors and actuators. A. Physical.}
-      \field{title}{Flexible temperature sensors: A review}
-      \field{volume}{315}
-      \field{year}{2020}
-      \true{nocite}
-      \field{pages}{112282\bibrangedash}
       \range{pages}{-1}
     \endentry
     \entry{Soldatov2018}{article}{}
@@ -1908,8 +3005,8 @@
       \strng{authorbibnamehash}{8df913461eac0e19da93b0c2e03e142a}
       \strng{authornamehash}{09f49ae144cdbc737feac2d88ad677aa}
       \strng{authorfullhash}{8df913461eac0e19da93b0c2e03e142a}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0255-5476}
@@ -1964,8 +3061,8 @@
       \strng{authorbibnamehash}{17229b4609f8c856506445345ee96cfb}
       \strng{authornamehash}{c8e8980a84c75e26489ce7b42fa44a80}
       \strng{authorfullhash}{17229b4609f8c856506445345ee96cfb}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{2398-3396}
@@ -1977,83 +3074,6 @@
       \true{nocite}
       \field{pages}{31\bibrangedash 38}
       \range{pages}{8}
-    \endentry
-    \entry{Barfield2015}{book}{}
-      \name{author}{1}{}{%
-        {{hash=5000835ace7ebb81abc532f09964f987}{%
-           family={Barfield},
-           familyi={B\bibinitperiod},
-           given={Woodrow},
-           giveni={W\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {CRC Press}%
-      }
-      \strng{namehash}{5000835ace7ebb81abc532f09964f987}
-      \strng{fullhash}{5000835ace7ebb81abc532f09964f987}
-      \strng{bibnamehash}{5000835ace7ebb81abc532f09964f987}
-      \strng{authorbibnamehash}{5000835ace7ebb81abc532f09964f987}
-      \strng{authornamehash}{5000835ace7ebb81abc532f09964f987}
-      \strng{authorfullhash}{5000835ace7ebb81abc532f09964f987}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{isbn}{1482243504}
-      \field{title}{Fundamentals of Wearable Computers and Augmented Reality}
-      \field{year}{2015}
-      \true{nocite}
-    \endentry
-    \entry{Chung2021}{article}{}
-      \name{author}{5}{}{%
-        {{hash=07aacf8ff62f4f3ca8dce97837aaa536}{%
-           family={Chung},
-           familyi={C\bibinitperiod},
-           given={Adrienne\bibnamedelima H},
-           giveni={A\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
-        {{hash=38cddc1017715046832c34d605307c2e}{%
-           family={Gevirtz},
-           familyi={G\bibinitperiod},
-           given={Richard\bibnamedelima N},
-           giveni={R\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
-        {{hash=d711663a8f3129d222f9b1c7ddcd5faa}{%
-           family={Gharbo},
-           familyi={G\bibinitperiod},
-           given={Raouf\bibnamedelima S},
-           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
-        {{hash=977abb58e62a3a3880f6f36cd065f74b}{%
-           family={Thiam},
-           familyi={T\bibinitperiod},
-           given={Melinda\bibnamedelima A},
-           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-        {{hash=e61818a9964f5059512b0c56035cf05a}{%
-           family={Ginsberg},
-           familyi={G\bibinitperiod},
-           given={J.P.\bibnamedelimi Jack},
-           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Springer US}%
-      }
-      \strng{namehash}{ff542714abcb04d65529071792904a64}
-      \strng{fullhash}{3b698ad38172824bf1c748ac6a154761}
-      \strng{bibnamehash}{3b698ad38172824bf1c748ac6a154761}
-      \strng{authorbibnamehash}{3b698ad38172824bf1c748ac6a154761}
-      \strng{authornamehash}{ff542714abcb04d65529071792904a64}
-      \strng{authorfullhash}{3b698ad38172824bf1c748ac6a154761}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{1090-0586}
-      \field{journaltitle}{Applied psychophysiology and biofeedback}
-      \field{number}{4}
-      \field{title}{Pilot Study on Reducing Symptoms of Anxiety with a Heart Rate Variability Biofeedback Wearable and Remote Stress Management Coach}
-      \field{volume}{46}
-      \field{year}{2021}
-      \true{nocite}
-      \field{pages}{347\bibrangedash 358}
-      \range{pages}{12}
     \endentry
     \entry{Healey2011}{inproceedings}{}
       \name{author}{1}{}{%
@@ -2072,8 +3092,8 @@
       \strng{authorbibnamehash}{5eca0050897b44a9a24b56879ea8a370}
       \strng{authornamehash}{5eca0050897b44a9a24b56879ea8a370}
       \strng{authorfullhash}{5eca0050897b44a9a24b56879ea8a370}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{2011 15th Annual International Symposium on Wearable Computers}
@@ -2104,8 +3124,8 @@
       \strng{authornamehash}{56955d4fe450e8687a9ca3b3eb6f1863}
       \strng{authorfullhash}{56955d4fe450e8687a9ca3b3eb6f1863}
       \field{extraname}{2}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0924-4247}
@@ -2161,9 +3181,9 @@
       \strng{authorbibnamehash}{9b712ee3bbd9bae9d0bb34218f647238}
       \strng{authornamehash}{09227fd340e8abecc21381347a10ef37}
       \strng{authorfullhash}{9b712ee3bbd9bae9d0bb34218f647238}
-      \field{extraname}{1}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Materials Science Forum}
@@ -2198,8 +3218,8 @@
       \strng{authorbibnamehash}{154408543309136c8a66412febdf2f04}
       \strng{authornamehash}{154408543309136c8a66412febdf2f04}
       \strng{authorfullhash}{154408543309136c8a66412febdf2f04}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{IEEE Transactions on Electron Devices}
@@ -2218,8 +3238,8 @@
       \list{institution}{1}{%
         {State Government of Victoria}%
       }
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labeltitlesource}{title}
       \field{day}{27}
       \field{month}{8}
@@ -2238,73 +3258,6 @@
       \verb{url}
       \verb https://content.legislation.vic.gov.au/sites/default/files/2020-08/01-2aa046%5C%20authorised.pdf
       \endverb
-    \endentry
-    \entry{WearableTutorials}{online}{}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
-      \field{labeltitlesource}{title}
-      \field{title}{Choosing Batteries to Use for Wearables: Beginner’s Guide – Wearable Tech Tutorials and How-Tos}
-      \field{urlday}{20}
-      \field{urlmonth}{5}
-      \field{urlyear}{2022}
-      \field{urldateera}{ce}
-      \true{nocite}
-      \verb{urlraw}
-      \verb http://www.wearabletutorials.com/how-to-choose-batteries-for-wearable/
-      \endverb
-      \verb{url}
-      \verb http://www.wearabletutorials.com/how-to-choose-batteries-for-wearable/
-      \endverb
-    \endentry
-    \entry{Abouellail2018}{inproceedings}{}
-      \name{author}{5}{}{%
-        {{hash=00ed0a9dce1b9fff0fdb6d5c5ef5882a}{%
-           family={Abouellail},
-           familyi={A\bibinitperiod},
-           given={AA},
-           giveni={A\bibinitperiod}}}%
-        {{hash=b5933ccb102eea66684d547b3bcbd257}{%
-           family={Obach},
-           familyi={O\bibinitperiod},
-           given={II},
-           giveni={I\bibinitperiod}}}%
-        {{hash=9a0b5d4da2f16eaf478125bec6581ea1}{%
-           family={Soldatov},
-           familyi={S\bibinitperiod},
-           given={AA},
-           giveni={A\bibinitperiod}}}%
-        {{hash=9990f6b90b42700123cf5212a41db2ee}{%
-           family={Sorokin},
-           familyi={S\bibinitperiod},
-           given={PV},
-           giveni={P\bibinitperiod}}}%
-        {{hash=8f5238b07ba8cfb8e08ea5fda3333249}{%
-           family={Soldatov},
-           familyi={S\bibinitperiod},
-           given={AI},
-           giveni={A\bibinitperiod}}}%
-      }
-      \list{organization}{1}{%
-        {Trans Tech Publ}%
-      }
-      \strng{namehash}{09227fd340e8abecc21381347a10ef37}
-      \strng{fullhash}{9b712ee3bbd9bae9d0bb34218f647238}
-      \strng{bibnamehash}{9b712ee3bbd9bae9d0bb34218f647238}
-      \strng{authorbibnamehash}{9b712ee3bbd9bae9d0bb34218f647238}
-      \strng{authornamehash}{09227fd340e8abecc21381347a10ef37}
-      \strng{authorfullhash}{9b712ee3bbd9bae9d0bb34218f647238}
-      \field{extraname}{2}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Materials Science Forum}
-      \field{title}{Research of thermocouple electrical characteristics}
-      \field{volume}{938}
-      \field{year}{2018}
-      \true{nocite}
-      \field{pages}{104\bibrangedash 111}
-      \range{pages}{8}
     \endentry
     \entry{Phongtraychack2018}{article}{}
       \true{moreauthor}
@@ -2327,62 +3280,13 @@
       \strng{authorbibnamehash}{5d1b3e15cdac01ddac7af8f5a603fe21}
       \strng{authornamehash}{5d1b3e15cdac01ddac7af8f5a603fe21}
       \strng{authorfullhash}{5d1b3e15cdac01ddac7af8f5a603fe21}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Evolution of mobile applications}
       \field{year}{2018}
       \true{nocite}
-    \endentry
-    \entry{Li2021}{article}{}
-      \name{author}{5}{}{%
-        {{hash=a99a584749829612e877ec074f612439}{%
-           family={Li},
-           familyi={L\bibinitperiod},
-           given={Tong},
-           giveni={T\bibinitperiod}}}%
-        {{hash=c013adfd3f2ed1784aba632cde54ddda}{%
-           family={Fan},
-           familyi={F\bibinitperiod},
-           given={Yali},
-           giveni={Y\bibinitperiod}}}%
-        {{hash=78be8ea0cb80e4e1b59bf06100942e90}{%
-           family={Li},
-           familyi={L\bibinitperiod},
-           given={Yong},
-           giveni={Y\bibinitperiod}}}%
-        {{hash=e935e5d3dbf7bbbe18aab2f618b1b740}{%
-           family={Tarkoma},
-           familyi={T\bibinitperiod},
-           given={Sasu},
-           giveni={S\bibinitperiod}}}%
-        {{hash=28777383a6d1b2b7a5a8741ac2ce2e03}{%
-           family={Hui},
-           familyi={H\bibinitperiod},
-           given={Pan},
-           giveni={P\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {IEEE Computer Society}%
-      }
-      \strng{namehash}{31cd5d3b2bba7e6d985a473b29ce38bd}
-      \strng{fullhash}{fc4438e159136511c2272a304fe3fc84}
-      \strng{bibnamehash}{fc4438e159136511c2272a304fe3fc84}
-      \strng{authorbibnamehash}{fc4438e159136511c2272a304fe3fc84}
-      \strng{authornamehash}{31cd5d3b2bba7e6d985a473b29ce38bd}
-      \strng{authorfullhash}{fc4438e159136511c2272a304fe3fc84}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{IEEE Transactions on Mobile Computing}
-      \field{number}{01}
-      \field{title}{Understanding the Long-term Evolution of Mobile App Usage}
-      \field{year}{2021}
-      \true{nocite}
-      \field{pages}{1\bibrangedash 1}
-      \range{pages}{1}
     \endentry
     \entry{Thomas2021}{article}{}
       \name{author}{2}{}{%
@@ -2403,8 +3307,8 @@
       \strng{authorbibnamehash}{25b4d1873c3efc2587a2b8f560b6360f}
       \strng{authornamehash}{25b4d1873c3efc2587a2b8f560b6360f}
       \strng{authorfullhash}{25b4d1873c3efc2587a2b8f560b6360f}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{International Journal of Applied Engineering and Management Letters}
@@ -2414,362 +3318,7 @@
       \field{pages}{115\bibrangedash 130}
       \range{pages}{16}
     \endentry
-    \entry{Mwalongo2016}{inproceedings}{}
-      \name{author}{4}{}{%
-        {{hash=e93d7744782be5ed2d8f3b54f541539d}{%
-           family={Mwalongo},
-           familyi={M\bibinitperiod},
-           given={Finian},
-           giveni={F\bibinitperiod}}}%
-        {{hash=b93b2e88ae8ddf4a65eecd22c2b1897a}{%
-           family={Krone},
-           familyi={K\bibinitperiod},
-           given={Michael},
-           giveni={M\bibinitperiod}}}%
-        {{hash=03d597452eae5f0ff57fcfff2c4079e6}{%
-           family={Reina},
-           familyi={R\bibinitperiod},
-           given={Guido},
-           giveni={G\bibinitperiod}}}%
-        {{hash=2340a4b90c94edfaf3df6c480da4885b}{%
-           family={Ertl},
-           familyi={E\bibinitperiod},
-           given={Thomas},
-           giveni={T\bibinitperiod}}}%
-      }
-      \list{organization}{1}{%
-        {Wiley Online Library}%
-      }
-      \strng{namehash}{9f65e0d33e028dabb5e514c44b9fc255}
-      \strng{fullhash}{8010e7c516776e13731e35affd0b20e5}
-      \strng{bibnamehash}{8010e7c516776e13731e35affd0b20e5}
-      \strng{authorbibnamehash}{8010e7c516776e13731e35affd0b20e5}
-      \strng{authornamehash}{9f65e0d33e028dabb5e514c44b9fc255}
-      \strng{authorfullhash}{8010e7c516776e13731e35affd0b20e5}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Computer graphics forum}
-      \field{number}{3}
-      \field{title}{State-of-the-Art Report in Web-based Visualization}
-      \field{volume}{35}
-      \field{year}{2016}
-      \true{nocite}
-      \field{pages}{553\bibrangedash 575}
-      \range{pages}{23}
-    \endentry
-    \entry{Christopoulos2019}{article}{}
-      \name{author}{3}{}{%
-        {{hash=4361bf50942f7d06bc9c4c2cce166bcb}{%
-           family={Christopoulos},
-           familyi={C\bibinitperiod},
-           given={George\bibnamedelima I},
-           giveni={G\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
-        {{hash=347acba32e55d8ffc51e74e11317e2e8}{%
-           family={Uy},
-           familyi={U\bibinitperiod},
-           given={Marilyn\bibnamedelima A},
-           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-        {{hash=8e78348d5bcce5091e6db85ae7ca8692}{%
-           family={Yap},
-           familyi={Y\bibinitperiod},
-           given={Wei\bibnamedelima Jie},
-           giveni={W\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {eng}%
-      }
-      \list{location}{1}{%
-        {Los Angeles, CA}%
-      }
-      \list{publisher}{1}{%
-        {SAGE Publications}%
-      }
-      \strng{namehash}{9ecf4831b8cbaa6908144a84b9605f35}
-      \strng{fullhash}{9ecf4831b8cbaa6908144a84b9605f35}
-      \strng{bibnamehash}{9ecf4831b8cbaa6908144a84b9605f35}
-      \strng{authorbibnamehash}{9ecf4831b8cbaa6908144a84b9605f35}
-      \strng{authornamehash}{9ecf4831b8cbaa6908144a84b9605f35}
-      \strng{authorfullhash}{9ecf4831b8cbaa6908144a84b9605f35}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{1094-4281}
-      \field{journaltitle}{Organizational research methods}
-      \field{number}{1}
-      \field{title}{The Body and the Brain: Measuring Skin Conductance Responses to Understand the Emotional Experience}
-      \field{volume}{22}
-      \field{year}{2019}
-      \true{nocite}
-      \field{pages}{394\bibrangedash 420}
-      \range{pages}{27}
-    \endentry
-    \entry{Wolfensberger1967}{article}{}
-      \name{author}{2}{}{%
-        {{hash=774c3fa8e06a5ecc700615235c9047ed}{%
-           family={Wolfensberger},
-           familyi={W\bibinitperiod},
-           given={Wolf},
-           giveni={W\bibinitperiod}}}%
-        {{hash=e23568de6b9c90f36ca8abe811834687}{%
-           family={O'Connor},
-           familyi={O\bibinitperiod},
-           given={Neil},
-           giveni={N\bibinitperiod}}}%
-      }
-      \list{location}{1}{%
-        {Oxford, UK}%
-      }
-      \list{publisher}{1}{%
-        {Blackwell Publishing Ltd}%
-      }
-      \strng{namehash}{5d2105bae246f2370b0697fa9a6c711b}
-      \strng{fullhash}{5d2105bae246f2370b0697fa9a6c711b}
-      \strng{bibnamehash}{5d2105bae246f2370b0697fa9a6c711b}
-      \strng{authorbibnamehash}{5d2105bae246f2370b0697fa9a6c711b}
-      \strng{authornamehash}{5d2105bae246f2370b0697fa9a6c711b}
-      \strng{authorfullhash}{5d2105bae246f2370b0697fa9a6c711b}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{0048-5772}
-      \field{journaltitle}{Psychophysiology}
-      \field{number}{4}
-      \field{title}{RELATIVE EFFECTIVENESS OF GALVANIC SKIN RESPONSE LATENCY, AMPLITUDE AND DURATION SCORES AS MEASURES OF AROUSAL AND HABITUATION IN NORMAL AND RETARDED ADULTS}
-      \field{volume}{3}
-      \field{year}{1967}
-      \true{nocite}
-      \field{pages}{345\bibrangedash 350}
-      \range{pages}{6}
-    \endentry
-    \entry{Nepal2016}{article}{}
-      \name{author}{5}{}{%
-        {{hash=e75ca9bb591a902e2959990d67fbfe76}{%
-           family={Nepal},
-           familyi={N\bibinitperiod},
-           given={Ojashwi},
-           giveni={O\bibinitperiod}}}%
-        {{hash=b32885fa7d9a5e65daddb6f13078526b}{%
-           family={Shrestha},
-           familyi={S\bibinitperiod},
-           given={Sushma},
-           giveni={S\bibinitperiod}}}%
-        {{hash=661ce54387773697d169853113e4f609}{%
-           family={Timalsina},
-           familyi={T\bibinitperiod},
-           given={Binod},
-           giveni={B\bibinitperiod}}}%
-        {{hash=233d13e7c23856345d0d677a38c8da3d}{%
-           family={Bade},
-           familyi={B\bibinitperiod},
-           given={Manisha},
-           giveni={M\bibinitperiod}}}%
-        {{hash=c9975bde005e40946a1dcb7cd4558297}{%
-           family={Jha},
-           familyi={J\bibinitperiod},
-           given={Mukesh},
-           giveni={M\bibinitperiod}}}%
-      }
-      \strng{namehash}{ff3929cd04d2260a622bee0b7383ff0f}
-      \strng{fullhash}{b2ddd1fe7b7b3bb12406274b9e288fc2}
-      \strng{bibnamehash}{b2ddd1fe7b7b3bb12406274b9e288fc2}
-      \strng{authorbibnamehash}{b2ddd1fe7b7b3bb12406274b9e288fc2}
-      \strng{authornamehash}{ff3929cd04d2260a622bee0b7383ff0f}
-      \strng{authorfullhash}{b2ddd1fe7b7b3bb12406274b9e288fc2}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{International Journal of Health Sciences and Research}
-      \field{month}{03}
-      \field{title}{Detection of Sympathetic Activation by Skin Conductance for a Cognitive Load of Mental Subtraction Task in Medical Undergraduates}
-      \field{volume}{6}
-      \field{year}{2016}
-      \true{nocite}
-      \field{pages}{139\bibrangedash 144}
-      \range{pages}{6}
-    \endentry
-    \entry{Boucsein2012}{book}{}
-      \name{author}{1}{}{%
-        {{hash=4e558bf0fe9cd1b7b973fade0ea74f0f}{%
-           family={Boucsein},
-           familyi={B\bibinitperiod},
-           given={Wolfram},
-           giveni={W\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {eng}%
-      }
-      \list{location}{1}{%
-        {New York, NY}%
-      }
-      \list{publisher}{1}{%
-        {Springer-Verlag}%
-      }
-      \strng{namehash}{4e558bf0fe9cd1b7b973fade0ea74f0f}
-      \strng{fullhash}{4e558bf0fe9cd1b7b973fade0ea74f0f}
-      \strng{bibnamehash}{4e558bf0fe9cd1b7b973fade0ea74f0f}
-      \strng{authorbibnamehash}{4e558bf0fe9cd1b7b973fade0ea74f0f}
-      \strng{authornamehash}{4e558bf0fe9cd1b7b973fade0ea74f0f}
-      \strng{authorfullhash}{4e558bf0fe9cd1b7b973fade0ea74f0f}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{edition}{2. Aufl.}
-      \field{isbn}{1461411254}
-      \field{title}{Electrodermal Activity}
-      \field{year}{2012}
-      \true{nocite}
-    \endentry
-    \entry{Hegazy2011}{article}{}
-      \name{author}{2}{}{%
-        {{hash=a5b98682ecf55e2d8f4bc7b447cc6230}{%
-           family={Hegazy},
-           familyi={H\bibinitperiod},
-           given={Shaimaa},
-           giveni={S\bibinitperiod}}}%
-        {{hash=00d5edbe9906e56d823d99957c67b9c0}{%
-           family={Revett},
-           familyi={R\bibinitperiod},
-           given={Kenneth},
-           giveni={K\bibinitperiod}}}%
-      }
-      \strng{namehash}{48716acae898221b043cb013650d35b6}
-      \strng{fullhash}{48716acae898221b043cb013650d35b6}
-      \strng{bibnamehash}{48716acae898221b043cb013650d35b6}
-      \strng{authorbibnamehash}{48716acae898221b043cb013650d35b6}
-      \strng{authornamehash}{48716acae898221b043cb013650d35b6}
-      \strng{authorfullhash}{48716acae898221b043cb013650d35b6}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{month}{01}
-      \field{title}{Developing an affective working companion utilising GSR data}
-      \field{year}{2011}
-      \true{nocite}
-    \endentry
-    \entry{Caviedes2018}{article}{}
-      \name{author}{2}{}{%
-        {{hash=d3effb8e9f9e72e2b355fda41d393db1}{%
-           family={Caviedes},
-           familyi={C\bibinitperiod},
-           given={Alvaro},
-           giveni={A\bibinitperiod}}}%
-        {{hash=b6e4d7bbc5473cad81d23a9b9b3ad6c0}{%
-           family={Figliozzi},
-           familyi={F\bibinitperiod},
-           given={Miguel},
-           giveni={M\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {eng}%
-      }
-      \list{publisher}{1}{%
-        {Elsevier Ltd}%
-      }
-      \strng{namehash}{5be181eab68d00bad41ac959640341d7}
-      \strng{fullhash}{5be181eab68d00bad41ac959640341d7}
-      \strng{bibnamehash}{5be181eab68d00bad41ac959640341d7}
-      \strng{authorbibnamehash}{5be181eab68d00bad41ac959640341d7}
-      \strng{authornamehash}{5be181eab68d00bad41ac959640341d7}
-      \strng{authorfullhash}{5be181eab68d00bad41ac959640341d7}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{1369-8478}
-      \field{journaltitle}{Transportation research. Part F, Traffic psychology and behaviour}
-      \field{title}{Modeling the impact of traffic conditions and bicycle facilities on cyclists’ on-road stress levels}
-      \field{volume}{58}
-      \field{year}{2018}
-      \true{nocite}
-      \field{pages}{488\bibrangedash 499}
-      \range{pages}{12}
-    \endentry
-    \entry{Hernando-GallegoFrancisco2015}{article}{}
-      \name{author}{2}{}{%
-        {{hash=2c6be52fe4df4d8e1defcf92802ad0b6}{%
-           family={Hernando-Gallego},
-           familyi={H\bibinithyphendelim G\bibinitperiod},
-           given={Francisco},
-           giveni={F\bibinitperiod}}}%
-        {{hash=87e5b09609372377ff7a7f2665733019}{%
-           family={Artés-Rodríguez},
-           familyi={A\bibinithyphendelim R\bibinitperiod},
-           given={Antonio},
-           giveni={A\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {eng}%
-      }
-      \strng{namehash}{51cb00452c7aeedf29f40916b1c6560b}
-      \strng{fullhash}{51cb00452c7aeedf29f40916b1c6560b}
-      \strng{bibnamehash}{51cb00452c7aeedf29f40916b1c6560b}
-      \strng{authorbibnamehash}{51cb00452c7aeedf29f40916b1c6560b}
-      \strng{authornamehash}{51cb00452c7aeedf29f40916b1c6560b}
-      \strng{authorfullhash}{51cb00452c7aeedf29f40916b1c6560b}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Individual performance calibration using physiological stress signals}
-      \field{year}{2015}
-      \true{nocite}
-    \endentry
-    \entry{Quazi2012}{inproceedings}{}
-      \name{author}{4}{}{%
-        {{hash=8ef6577fd0696348a9608a062f8ab735}{%
-           family={Quazi},
-           familyi={Q\bibinitperiod},
-           given={M.\bibnamedelimi T},
-           giveni={M\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
-        {{hash=d958b437e6d7d375375b639665434565}{%
-           family={Mukhopadhyay},
-           familyi={M\bibinitperiod},
-           given={S.\bibnamedelimi C},
-           giveni={S\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
-        {{hash=c0182b0ac098766369964fcac8a1091b}{%
-           family={Suryadevara},
-           familyi={S\bibinitperiod},
-           given={N.\bibnamedelimi K},
-           giveni={N\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
-        {{hash=88ee282a38514be9eeef2b5891ef3cf0}{%
-           family={Huang},
-           familyi={H\bibinitperiod},
-           given={Y.\bibnamedelimi M},
-           giveni={Y\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {eng}%
-      }
-      \list{publisher}{1}{%
-        {IEEE}%
-      }
-      \strng{namehash}{142d82efedb07bda884b5d6241a53677}
-      \strng{fullhash}{e70dfa232fa38724c2e853ee8b64777f}
-      \strng{bibnamehash}{e70dfa232fa38724c2e853ee8b64777f}
-      \strng{authorbibnamehash}{e70dfa232fa38724c2e853ee8b64777f}
-      \strng{authornamehash}{142d82efedb07bda884b5d6241a53677}
-      \strng{authorfullhash}{e70dfa232fa38724c2e853ee8b64777f}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{2012 IEEE International Instrumentation and Measurement Technology Conference Proceedings}
-      \field{isbn}{1457717735}
-      \field{issn}{1091-5281}
-      \field{title}{Towards the smart sensors based human emotion recognition}
-      \field{year}{2012}
-      \true{nocite}
-      \field{pages}{2365\bibrangedash 2370}
-      \range{pages}{6}
-    \endentry
-    \entry{KaklauskasA2011}{article}{}
+    \entry{Kaklauskas2011}{article}{}
       \name{author}{13}{}{%
         {{hash=ddc2f00c4cc0b000bb626d549182c061}{%
            family={Kaklauskas},
@@ -2849,8 +3398,8 @@
       \strng{authorbibnamehash}{44c03a7f05eb034e4ca9727eaa49d3f6}
       \strng{authornamehash}{44c03a7f05eb034e4ca9727eaa49d3f6}
       \strng{authorfullhash}{2a1b93e28cdcced6115a1beb334334ad}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0952-1976}
@@ -2863,325 +3412,7 @@
       \field{pages}{928\bibrangedash 945}
       \range{pages}{18}
     \endentry
-    \entry{Malik1996}{article}{}
-      \name{author}{7}{}{%
-        {{hash=91d33a5f0b3816a2dbff92066bb8a31b}{%
-           family={Malik},
-           familyi={M\bibinitperiod},
-           given={M.},
-           giveni={M\bibinitperiod}}}%
-        {{hash=023a39055c92a692a394ab0227b3936f}{%
-           family={Bigger},
-           familyi={B\bibinitperiod},
-           given={J.\bibnamedelimi T.},
-           giveni={J\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
-        {{hash=935351aee66ba2de6bcce27d14e27dd0}{%
-           family={Camm},
-           familyi={C\bibinitperiod},
-           given={A.\bibnamedelimi J.},
-           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-        {{hash=511fd17f9fc18e207e3c3d505704aea0}{%
-           family={Kleiger},
-           familyi={K\bibinitperiod},
-           given={R.\bibnamedelimi E.},
-           giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
-        {{hash=e6d7c7dd33d7dbc043b3174d5ba6a74c}{%
-           family={Malliani},
-           familyi={M\bibinitperiod},
-           given={A.},
-           giveni={A\bibinitperiod}}}%
-        {{hash=139060bcba1e7e37f188df9eb7e0eac5}{%
-           family={Moss},
-           familyi={M\bibinitperiod},
-           given={A.\bibnamedelimi J.},
-           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-        {{hash=da57f15c058e5a4a9c1c6ac4236d2406}{%
-           family={Schwartz},
-           familyi={S\bibinitperiod},
-           given={P.\bibnamedelimi J.},
-           giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {eng}%
-      }
-      \list{location}{1}{%
-        {Oxford}%
-      }
-      \list{publisher}{1}{%
-        {Oxford University Press}%
-      }
-      \strng{namehash}{397d4cfbca3f34286638c0c490a2dd87}
-      \strng{fullhash}{dbfbf78245bc3c553c628576fa604cc0}
-      \strng{bibnamehash}{397d4cfbca3f34286638c0c490a2dd87}
-      \strng{authorbibnamehash}{397d4cfbca3f34286638c0c490a2dd87}
-      \strng{authornamehash}{397d4cfbca3f34286638c0c490a2dd87}
-      \strng{authorfullhash}{dbfbf78245bc3c553c628576fa604cc0}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{0195-668X}
-      \field{journaltitle}{European heart journal}
-      \field{number}{3}
-      \field{title}{Heart rate variability : Standards of measurement, physiological interpretation, and clinical use}
-      \field{volume}{17}
-      \field{year}{1996}
-      \true{nocite}
-      \field{pages}{354\bibrangedash 381}
-      \range{pages}{28}
-    \endentry
-    \entry{Karthikeyan2013}{article}{}
-      \name{author}{3}{}{%
-        {{hash=5228b257a0d1685c7c94c8cf79f1f0e3}{%
-           family={Palanisamy},
-           familyi={P\bibinitperiod},
-           given={Karthikeyan},
-           giveni={K\bibinitperiod}}}%
-        {{hash=4d9aae3c013e3ed0506c33bf58ec1c01}{%
-           family={M},
-           familyi={M\bibinitperiod},
-           given={Murugappan},
-           giveni={M\bibinitperiod}}}%
-        {{hash=302295339aaec93288b59e1b4cdc84cc}{%
-           family={Yaacob},
-           familyi={Y\bibinitperiod},
-           given={Sazali},
-           giveni={S\bibinitperiod}}}%
-      }
-      \strng{namehash}{81a8fd59966dae2a6617fbf242997ad1}
-      \strng{fullhash}{81a8fd59966dae2a6617fbf242997ad1}
-      \strng{bibnamehash}{81a8fd59966dae2a6617fbf242997ad1}
-      \strng{authorbibnamehash}{81a8fd59966dae2a6617fbf242997ad1}
-      \strng{authornamehash}{81a8fd59966dae2a6617fbf242997ad1}
-      \strng{authorfullhash}{81a8fd59966dae2a6617fbf242997ad1}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Electronics and Electrical Engineering}
-      \field{month}{09}
-      \field{title}{Multiple Physiological Signal-Based Human Stress Identification Using Non-Linear Classifiers}
-      \field{volume}{19}
-      \field{year}{2013}
-      \true{nocite}
-      \verb{doi}
-      \verb 10.5755/j01.eee.19.7.2232
-      \endverb
-    \endentry
-    \entry{AlberdiAne2016}{article}{}
-      \name{author}{3}{}{%
-        {{hash=7792b1528b789bb5df8eecb615df4b7f}{%
-           family={Alberdi},
-           familyi={A\bibinitperiod},
-           given={Ane},
-           giveni={A\bibinitperiod}}}%
-        {{hash=11e15ab1343bebba3b0b5ce0b5ae225b}{%
-           family={Aztiria},
-           familyi={A\bibinitperiod},
-           given={Asier},
-           giveni={A\bibinitperiod}}}%
-        {{hash=f0a4be7880aa8e965beeed79dac47d08}{%
-           family={Basarab},
-           familyi={B\bibinitperiod},
-           given={Adrian},
-           giveni={A\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {eng}%
-      }
-      \list{location}{1}{%
-        {United States}%
-      }
-      \list{publisher}{1}{%
-        {Elsevier Inc}%
-      }
-      \strng{namehash}{f43e1e0f3d08da13b26a92e300f59e2b}
-      \strng{fullhash}{f43e1e0f3d08da13b26a92e300f59e2b}
-      \strng{bibnamehash}{f43e1e0f3d08da13b26a92e300f59e2b}
-      \strng{authorbibnamehash}{f43e1e0f3d08da13b26a92e300f59e2b}
-      \strng{authornamehash}{f43e1e0f3d08da13b26a92e300f59e2b}
-      \strng{authorfullhash}{f43e1e0f3d08da13b26a92e300f59e2b}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{1532-0464}
-      \field{journaltitle}{Journal of biomedical informatics}
-      \field{title}{Towards an automatic early stress recognition system for office environments based on multimodal measurements: A review}
-      \field{volume}{59}
-      \field{year}{2016}
-      \true{nocite}
-      \field{pages}{49\bibrangedash 75}
-      \range{pages}{27}
-    \endentry
-    \entry{Sriramprakash2017}{article}{}
-      \name{author}{3}{}{%
-        {{hash=a5efaf6b926a457ff464c69c8248c18e}{%
-           family={Sriramprakash},
-           familyi={S\bibinitperiod},
-           given={S.},
-           giveni={S\bibinitperiod}}}%
-        {{hash=a391bfba07e3035baf229e04da43f4e6}{%
-           family={Prasanna},
-           familyi={P\bibinitperiod},
-           given={Vadana\bibnamedelima D},
-           giveni={V\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
-        {{hash=3201410b8dccf3b13049948d69c16455}{%
-           family={Murthy},
-           familyi={M\bibinitperiod},
-           given={O.V.\bibnamedelimi Ramana},
-           giveni={O\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
-      }
-      \strng{namehash}{330dd6adeb7685dc17d9ddafa1a69a7f}
-      \strng{fullhash}{330dd6adeb7685dc17d9ddafa1a69a7f}
-      \strng{bibnamehash}{330dd6adeb7685dc17d9ddafa1a69a7f}
-      \strng{authorbibnamehash}{330dd6adeb7685dc17d9ddafa1a69a7f}
-      \strng{authornamehash}{330dd6adeb7685dc17d9ddafa1a69a7f}
-      \strng{authorfullhash}{330dd6adeb7685dc17d9ddafa1a69a7f}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{1877-0509}
-      \field{journaltitle}{Procedia Computer Science}
-      \field{note}{7th International Conference on Advances in Computing \& Communications, ICACC-2017, 22-24 August 2017, Cochin, India}
-      \field{title}{Stress Detection in Working People}
-      \field{volume}{115}
-      \field{year}{2017}
-      \true{nocite}
-      \field{pages}{359\bibrangedash 366}
-      \range{pages}{8}
-      \verb{doi}
-      \verb https://doi.org/10.1016/j.procs.2017.09.090
-      \endverb
-      \verb{urlraw}
-      \verb https://www.sciencedirect.com/science/article/pii/S187705091731904X
-      \endverb
-      \verb{url}
-      \verb https://www.sciencedirect.com/science/article/pii/S187705091731904X
-      \endverb
-    \endentry
-    \entry{WebsterG2020}{book}{}
-      \list{language}{1}{%
-        {eng}%
-      }
-      \list{location}{1}{%
-        {Hoboken, NJ}%
-      }
-      \list{publisher}{1}{%
-        {John Wiley \& Sons, Inc.}%
-      }
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Medical instrumentation : application and design}
-      \field{edition}{Fifth edition.}
-      \field{isbn}{9781119457336}
-      \field{title}{Medical instrumentation : application and design}
-      \field{year}{2020 - 2020}
-      \true{nocite}
-      \keyw{Medical instruments and apparatus}
-    \endentry
-    \entry{AtzoriLuigi2010}{article}{}
-      \name{author}{3}{}{%
-        {{hash=ad2aa762c0a8006a1914b9298952e5d8}{%
-           family={Atzori},
-           familyi={A\bibinitperiod},
-           given={Luigi},
-           giveni={L\bibinitperiod}}}%
-        {{hash=2dbff5b960cb21204fc50b6941f42947}{%
-           family={Iera},
-           familyi={I\bibinitperiod},
-           given={Antonio},
-           giveni={A\bibinitperiod}}}%
-        {{hash=04b46031fe439f48519cec659c1d7e36}{%
-           family={Morabito},
-           familyi={M\bibinitperiod},
-           given={Giacomo},
-           giveni={G\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {eng}%
-      }
-      \list{location}{1}{%
-        {Kidlington}%
-      }
-      \list{publisher}{1}{%
-        {Elsevier B.V}%
-      }
-      \strng{namehash}{d7d33a3e93b65ab811b96314bcf90b0a}
-      \strng{fullhash}{d7d33a3e93b65ab811b96314bcf90b0a}
-      \strng{bibnamehash}{d7d33a3e93b65ab811b96314bcf90b0a}
-      \strng{authorbibnamehash}{d7d33a3e93b65ab811b96314bcf90b0a}
-      \strng{authornamehash}{d7d33a3e93b65ab811b96314bcf90b0a}
-      \strng{authorfullhash}{d7d33a3e93b65ab811b96314bcf90b0a}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{1389-1286}
-      \field{journaltitle}{Computer networks (Amsterdam, Netherlands : 1999)}
-      \field{number}{15}
-      \field{title}{The Internet of Things: A survey}
-      \field{volume}{54}
-      \field{year}{2010}
-      \true{nocite}
-      \field{pages}{2787\bibrangedash 2805}
-      \range{pages}{19}
-    \endentry
-    \entry{Propeller}{article}{}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
-      \field{labeltitlesource}{title}
-      \field{title}{Propeller Health}
-      \true{nocite}
-      \verb{urlraw}
-      \verb https://propellerhealth.com/
-      \endverb
-      \verb{url}
-      \verb https://propellerhealth.com/
-      \endverb
-    \endentry
-    \entry{MoseniaArsalan2017ACSo}{article}{}
-      \name{author}{2}{}{%
-        {{hash=72555109500892942ca95c1941787f33}{%
-           family={Mosenia},
-           familyi={M\bibinitperiod},
-           given={Arsalan},
-           giveni={A\bibinitperiod}}}%
-        {{hash=ff9e810c52fdaa5e8256abdf616b5875}{%
-           family={Jha},
-           familyi={J\bibinitperiod},
-           given={Niraj\bibnamedelima K},
-           giveni={N\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {eng}%
-      }
-      \list{publisher}{1}{%
-        {IEEE}%
-      }
-      \strng{namehash}{010fc0469c926133cb1d3bc7804ebb72}
-      \strng{fullhash}{010fc0469c926133cb1d3bc7804ebb72}
-      \strng{bibnamehash}{010fc0469c926133cb1d3bc7804ebb72}
-      \strng{authorbibnamehash}{010fc0469c926133cb1d3bc7804ebb72}
-      \strng{authornamehash}{010fc0469c926133cb1d3bc7804ebb72}
-      \strng{authorfullhash}{010fc0469c926133cb1d3bc7804ebb72}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{2168-6750}
-      \field{journaltitle}{IEEE transactions on emerging topics in computing}
-      \field{number}{4}
-      \field{title}{A Comprehensive Study of Security of Internet-of-Things}
-      \field{volume}{5}
-      \field{year}{2017}
-      \true{nocite}
-      \field{pages}{586\bibrangedash 602}
-      \range{pages}{17}
-    \endentry
-    \entry{alma9916593110001341}{book}{}
+    \entry{MedicalDevicesAndSystems}{book}{}
       \list{language}{1}{%
         {eng}%
       }
@@ -3191,8 +3422,8 @@
       \list{publisher}{1}{%
         {CRC/Taylor \& Francis}%
       }
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labeltitlesource}{title}
       \field{booktitle}{Medical devices and systems}
       \field{isbn}{0-429-12304-3}
@@ -3201,48 +3432,6 @@
       \field{year}{2006}
       \true{nocite}
       \keyw{Medical instruments and apparatus}
-    \endentry
-    \entry{Healey2005}{article}{}
-      \name{author}{2}{}{%
-        {{hash=7a67c8991e72dc813543c5f8726dc75d}{%
-           family={Healey},
-           familyi={H\bibinitperiod},
-           given={J.A},
-           giveni={J\bibinitperiod}}}%
-        {{hash=0416032fb587ef10e907f9641934d99a}{%
-           family={Picard},
-           familyi={P\bibinitperiod},
-           given={R.W},
-           giveni={R\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {eng}%
-      }
-      \list{location}{1}{%
-        {Piscataway, NJ}%
-      }
-      \list{publisher}{1}{%
-        {IEEE}%
-      }
-      \strng{namehash}{54a327eaa98ea1014c1c106fdf2de524}
-      \strng{fullhash}{54a327eaa98ea1014c1c106fdf2de524}
-      \strng{bibnamehash}{54a327eaa98ea1014c1c106fdf2de524}
-      \strng{authorbibnamehash}{54a327eaa98ea1014c1c106fdf2de524}
-      \strng{authornamehash}{54a327eaa98ea1014c1c106fdf2de524}
-      \strng{authorfullhash}{54a327eaa98ea1014c1c106fdf2de524}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{1524-9050}
-      \field{journaltitle}{IEEE transactions on intelligent transportation systems}
-      \field{number}{2}
-      \field{title}{Detecting stress during real-world driving tasks using physiological sensors}
-      \field{volume}{6}
-      \field{year}{2005}
-      \true{nocite}
-      \field{pages}{156\bibrangedash 166}
-      \range{pages}{11}
     \endentry
     \entry{deSantos2011}{inproceedings}{}
       \name{author}{4}{}{%
@@ -3281,8 +3470,8 @@
       \strng{authorbibnamehash}{07f4dd3fccccb1dc1c6fc2e92c30339d}
       \strng{authornamehash}{5f0191e131d055196d728ff071b7a60e}
       \strng{authorfullhash}{07f4dd3fccccb1dc1c6fc2e92c30339d}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{2011 Third World Congress on Nature and Biologically Inspired Computing}
@@ -3292,73 +3481,6 @@
       \true{nocite}
       \field{pages}{131\bibrangedash 136}
       \range{pages}{6}
-    \endentry
-    \entry{Cho2017}{article}{}
-      \name{author}{7}{}{%
-        {{hash=aaa1f7086242c0a9106d7936c49298eb}{%
-           family={Cho},
-           familyi={C\bibinitperiod},
-           given={Dongrae},
-           giveni={D\bibinitperiod}}}%
-        {{hash=2f114146346b9174da56899b429b8c49}{%
-           family={Ham},
-           familyi={H\bibinitperiod},
-           given={Jinsil},
-           giveni={J\bibinitperiod}}}%
-        {{hash=b9433331c13b8168cc605ddcbfbf650e}{%
-           family={Oh},
-           familyi={O\bibinitperiod},
-           given={Jooyoung},
-           giveni={J\bibinitperiod}}}%
-        {{hash=c298697917f6a43078eb4a7b63b5e896}{%
-           family={Park},
-           familyi={P\bibinitperiod},
-           given={Jeanho},
-           giveni={J\bibinitperiod}}}%
-        {{hash=e1f880317acf7478abe63cf3c7e279cb}{%
-           family={Kim},
-           familyi={K\bibinitperiod},
-           given={Sayup},
-           giveni={S\bibinitperiod}}}%
-        {{hash=aa29c0328743a90d6b769de4491a5136}{%
-           family={Lee},
-           familyi={L\bibinitperiod},
-           given={Nak-Kyu},
-           giveni={N\bibinithyphendelim K\bibinitperiod}}}%
-        {{hash=0da79c57a2c8f1cdedb45e165f375bc0}{%
-           family={Lee},
-           familyi={L\bibinitperiod},
-           given={Boreom},
-           giveni={B\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {eng}%
-      }
-      \list{location}{1}{%
-        {Switzerland}%
-      }
-      \list{publisher}{1}{%
-        {MDPI AG}%
-      }
-      \strng{namehash}{f4694ee149adc6a75ce8f8608635e93d}
-      \strng{fullhash}{316aaaae945df1993e1b244fc48026bf}
-      \strng{bibnamehash}{f4694ee149adc6a75ce8f8608635e93d}
-      \strng{authorbibnamehash}{f4694ee149adc6a75ce8f8608635e93d}
-      \strng{authornamehash}{f4694ee149adc6a75ce8f8608635e93d}
-      \strng{authorfullhash}{316aaaae945df1993e1b244fc48026bf}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{1424-8220}
-      \field{journaltitle}{Sensors (Basel, Switzerland)}
-      \field{number}{10}
-      \field{title}{Detection of Stress Levels from Biosignals Measured in Virtual Reality Environments Using a Kernel-Based Extreme Learning Machine}
-      \field{volume}{17}
-      \field{year}{2017}
-      \true{nocite}
-      \field{pages}{2435\bibrangedash}
-      \range{pages}{-1}
     \endentry
     \entry{Zhang2016}{article}{}
       \name{author}{6}{}{%
@@ -3399,8 +3521,8 @@
       \strng{authorbibnamehash}{a1e64d01577e5dbfe212f336fd20224a}
       \strng{authornamehash}{e2be197b1763f497ce5f56d8a63aa389}
       \strng{authorfullhash}{a1e64d01577e5dbfe212f336fd20224a}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Image and Graphics}
@@ -3442,8 +3564,8 @@
       \strng{authorbibnamehash}{b8e19f971f9bbd8eaa981496be3295d7}
       \strng{authornamehash}{b8e19f971f9bbd8eaa981496be3295d7}
       \strng{authorfullhash}{b8e19f971f9bbd8eaa981496be3295d7}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0096-140X}
@@ -3455,126 +3577,6 @@
       \true{nocite}
       \field{pages}{64\bibrangedash 70}
       \range{pages}{7}
-    \endentry
-    \entry{Porter2019}{article}{}
-      \name{author}{2}{}{%
-        {{hash=209e5236d95b914c33b9cd75e59aece2}{%
-           family={Porter},
-           familyi={P\bibinitperiod},
-           given={Anne\bibnamedelima Marie},
-           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
-        {{hash=ee0c4a52878084916ca3e6fff216655d}{%
-           family={Goolkasian},
-           familyi={G\bibinitperiod},
-           given={Paula},
-           giveni={P\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {eng}%
-      }
-      \list{location}{1}{%
-        {Switzerland}%
-      }
-      \list{publisher}{1}{%
-        {Frontiers Research Foundation}%
-      }
-      \strng{namehash}{80222d4b9311bce82a7c7d5cc2ca27e1}
-      \strng{fullhash}{80222d4b9311bce82a7c7d5cc2ca27e1}
-      \strng{bibnamehash}{80222d4b9311bce82a7c7d5cc2ca27e1}
-      \strng{authorbibnamehash}{80222d4b9311bce82a7c7d5cc2ca27e1}
-      \strng{authornamehash}{80222d4b9311bce82a7c7d5cc2ca27e1}
-      \strng{authorfullhash}{80222d4b9311bce82a7c7d5cc2ca27e1}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{1664-1078}
-      \field{journaltitle}{Frontiers in psychology}
-      \field{title}{Video Games and Stress: How Stress Appraisals and Game Content Affect Cardiovascular and Emotion Outcomes}
-      \field{volume}{10}
-      \field{year}{2019}
-      \true{nocite}
-      \field{pages}{967\bibrangedash 967}
-      \range{pages}{1}
-    \endentry
-    \entry{Gao2021}{article}{}
-      \name{author}{9}{}{%
-        {{hash=433a8fb5c04b207844d1388af13ac49f}{%
-           family={Gao},
-           familyi={G\bibinitperiod},
-           given={Mingyuan},
-           giveni={M\bibinitperiod}}}%
-        {{hash=2053a78b8c7e674d28eabbe236f2f077}{%
-           family={Wang},
-           familyi={W\bibinitperiod},
-           given={Ping},
-           giveni={P\bibinitperiod}}}%
-        {{hash=c794b92e8de967079fb2391920ea9db6}{%
-           family={Jiang},
-           familyi={J\bibinitperiod},
-           given={Lili},
-           giveni={L\bibinitperiod}}}%
-        {{hash=621afb2f63bcbbb323f8a9935782eef1}{%
-           family={Wang},
-           familyi={W\bibinitperiod},
-           given={Bowen},
-           giveni={B\bibinitperiod}}}%
-        {{hash=3571c10b6aaf299a5c31017339f283ce}{%
-           family={Yao},
-           familyi={Y\bibinitperiod},
-           given={Ye},
-           giveni={Y\bibinitperiod}}}%
-        {{hash=b51d008c8f8b480734bdad360774940e}{%
-           family={Liu},
-           familyi={L\bibinitperiod},
-           given={Sheng},
-           giveni={S\bibinitperiod}}}%
-        {{hash=dcc10dbce4774479d70282f83e543f4f}{%
-           family={Chu},
-           familyi={C\bibinitperiod},
-           given={Dewei},
-           giveni={D\bibinitperiod}}}%
-        {{hash=71bf5f94ee7154cade3b1e8c7342e5b4}{%
-           family={Cheng},
-           familyi={C\bibinitperiod},
-           given={Wenlong},
-           giveni={W\bibinitperiod}}}%
-        {{hash=a359e2935272151d8c7c556ddd0df04c}{%
-           family={Lu},
-           familyi={L\bibinitperiod},
-           given={Yuerui},
-           giveni={Y\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {The Royal Society of Chemistry}%
-      }
-      \strng{namehash}{dc06ba5196e91078a2e6f94d4a1f0cf2}
-      \strng{fullhash}{7bddeb4ae892f1c7887681efc12782ee}
-      \strng{bibnamehash}{dc06ba5196e91078a2e6f94d4a1f0cf2}
-      \strng{authorbibnamehash}{dc06ba5196e91078a2e6f94d4a1f0cf2}
-      \strng{authornamehash}{dc06ba5196e91078a2e6f94d4a1f0cf2}
-      \strng{authorfullhash}{7bddeb4ae892f1c7887681efc12782ee}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issue}{4}
-      \field{journaltitle}{Energy Environ. Sci.}
-      \field{title}{Power generation for wearable systems}
-      \field{volume}{14}
-      \field{year}{2021}
-      \true{nocite}
-      \field{pages}{2114\bibrangedash 2157}
-      \range{pages}{44}
-      \verb{doi}
-      \verb 10.1039/D0EE03911J
-      \endverb
-      \verb{urlraw}
-      \verb http://dx.doi.org/10.1039/D0EE03911J
-      \endverb
-      \verb{url}
-      \verb http://dx.doi.org/10.1039/D0EE03911J
-      \endverb
     \endentry
   \enddatalist
 \endrefsection
