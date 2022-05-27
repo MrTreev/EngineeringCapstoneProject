@@ -783,8 +783,8 @@ setInterval(function ( ) {
 | Preliminary Findings: Overall Architecture                       | Alec               | 100%                                 |
 | Preliminary Findings: GSR                                        | Alec               | 100%                                 |
 | Preliminary Findings: Application and Data Visualisation         | Ahad               | 100%                                 |
-| Recommendations: NOT FINISHED                                    |                    |                                      |
-| Critical Analysis: NOT FINISHED                                  |                    |                                      |
+| Recommendations:                                			 | Alec, Ahad, Oliver | 33%, 33%, 33%                        |
+| Critical Analysis:                              			 | Alec, Ahad, Oliver | 33%, 33%, 33%                        |
 | Project Management and Timeline                                  | Alec               | 100%                                 |
 | Conclusion                                                       | Ahad               | 100%                                 |
-| Editing NOT FINISHED                                             |                    |                                      |
+| Editing                                            			 | Alec, Ahad, Oliver | 33%, 33%, 33%                        |
