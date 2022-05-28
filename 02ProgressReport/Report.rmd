@@ -16,8 +16,6 @@ geometry: margin=2cm
 output:
         pdf_document:
                 fig_caption: yes
-                fig_height: 2
-                fig_width: 4.5
                 latex_engine: pdflatex
                 number_sections: yes
                 citation_package: "biblatex"
@@ -37,6 +35,10 @@ nocite: '@*'
 \begin{centering}
 
 \vspace{5 cm}
+
+```{r,echo=FALSE,}
+knitr::opts_chunk$set(fig.align='center')
+```
 
 \Huge
 
@@ -167,27 +169,37 @@ The table below outlines the ways in which the design and research questions wil
 ## Overall System Architecture
 The overall system architecture is outlined in Figure \ref{fig:HighLevelDesign}. Indicated on the left-hand side of the diagram the on-body section of the system is illustrated, which represents the componentry that will be included in the wearable portion of the stress monitoring device. On the right-hand side, the off-body section is illustrated. This includes everything that will not be included in the wearable component of the device.
 
-![High Level Design](Images/HighLevelDesign.png){#fig:HighLevelDesign}
+```{r, echo=FALSE, out.width="50%", fig.cap="\\label{fig:HighLevelDesign}High Level Design"}
+knitr::include_graphics("Images/HighLevelDesign.png")
+```
 
 ## Low-Level Design
 ### Sensor-MCU Pin Connections:
 The pin connections of the sensors to the MCU were decided by ensuring the analogue components are connected to the ADC pins and that each component does not interfere with another. The final design settled upon as in Figure \ref{fig:MCUPinConnections}.
 
-![Sensor to MCU Connections](Images/MCUPinConnections.png){#fig:MCUPinConnections}
+```{r, echo=FALSE, out.height="40%", fig.cap="\\label{fig:MCUPinConnections}Sensor to MCU Connections"}
+knitr::include_graphics("Images/MCUPinConnections.png")
+```
 
 ### Data Logging and Visualisation
 When creating the data visualization application, the initial steps were designing early prototypes of the application interface using Figma. As shown on the left of  Figure \ref{fig:MobileApplication}, the interface will first require the user to connect to the internet via networks that are available near the wearable device. After successful connection, the sensors will begin outputting relevant health data, which will be updated live on the application through graphs and other forms of data analytics as shown on the right of  Figure \ref{fig:MobileApplication}. The graphs are displayed in a column format and the user should be able to access multiple sensor readings in the one page. Furthermore, the interface also includes a calendar icon as well as the menu icon on the header of the data visualization page. Ideally, the calendar icon is planned to allow the user to access health data records from previous time periods, and the menu item allows the user to navigate to other application functionalities.
 
-![Mobile Application](Images/MobileApplication.png){#fig:MobileApplication}
+```{r, echo=FALSE, out.height="25%", fig.cap="\\label{fig:MobileApplication}Mobile Application"}
+knitr::include_graphics("Images/MobileApplication.png")
+```
 
 To build a prototype of a web-based application, different libraries were used, and certain hardware specifications were explored, as previewed in Figure \ref{fig:WebServerAndClient}. The ESP32 board includes a Serial Peripheral Interface Flash File System (SPIFFS), a lightweight file system designed for microcontrollers that contain a flash chip. The SPIFFS gives access to flash memory but is simpler and more limited relative to traditional filesystems. A few notable features include saving data permanently, saving HTML and CSS files and creating files to save relatively small amounts of data. The next component includes implementing the ESPAsyncWebServer library, which ultimately allows the data interchange between the microcontroller and other devices connected to the web. Furthermore, the library offers a quick template to build an asynchronous web server capable of handling multiple connections simultaneously. The outcome of the network architecture below involves the following: a request is sent to the ESP async server, which responds with the relevant files saved in SPIFFS. This loops for each data point reading, alternating between requests and responses.
 
-![Web Server and Client](Images/WebServerAndClient.png){#fig:WebServerAndClient}
+```{r, echo=FALSE, out.height="20%", fig.cap="\\label{fig:WebServerAndClient}Web Server and Client"}
+knitr::include_graphics("Images/WebServerAndClient.png")
+```
 
 ### Galvanic Skin Response Sensor
 Based on the conclusion that there a large variation of GSR sensors is not available on the market, and those which are, are obtrusively designed, it was decided that a custom GSR sensor will be used to measure skin conductance. The general functionality of a GSR can be seen below in Figure \ref{fig:GSRFunctionality}, where electrodes are used as part of a voltage divider to measure skin resistivity. The output of the voltage divider is then input into a unity gain buffer to match input and output impedance. Subsequently, the signal is then filtered and amplified and passed to the MCU ADC.
 
-![GSR Functionality](Images/GSRFunctionality.png){#fig:GSRFunctionality}
+```{r, echo=FALSE, out.width="100%", fig.cap="\\label{fig:GSRFunctionality}GSR Functionality"}
+knitr::include_graphics("Images/GSRFunctionality.png")
+```
 
 The Voltage Range of the ESP32 ADC is 0.2-2.4V, thus the output of the GSR sensor must be within this range. Therefore, supplying the sensor with 3.3V means that the output voltage must be divided by a certain factor to ensure compatibility with the MCU.
 
@@ -195,24 +207,51 @@ The voltage divider of the GSR sensor is used to translate the resistivity or co
 
 The circuit design for the voltage divider can be seen in Figure \ref{fig:GSRVoltageDivider}, where Rs (the resistance of the skin) is added in parallel to R2:
 
-![GSR Voltage Divider](Images/GSRVoltageDivider.png){#fig:GSRVoltageDivider}
-
 Subsequently, a voltage follower circuit is added to strengthen the signal and add high input impedance as seen in Figure \ref{fig:VoltageFollower}.
 
-![Voltage Follower](Images/VoltageFollower.png){#fig:VoltageFollower}
+\begin{figure}
+\centering
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{Images/GSRVoltageDivider.png}
+  \captionof{figure}{Voltage Follower}
+  \label{fig:GSRVoltageDivider}
+\end{minipage}%
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{Images/VoltageFollower.png}
+  \captionof{figure}{GSR Voltage Divider}
+  \label{fig:VoltageFollower}
+\end{minipage}
+\end{figure}
+
+\newpage
 
 [@Webster2020] states that Galvanic Skin Response typically oscillates within the 1Hz frequency, thus an LPF is used as seen in Figure \ref{fig:LPFAndAmp} to cut off the signal above 1Hz. Subsequently, the maximum voltage that can be achieved at the output of the LPF is 1.65V and occurs when RS is open circuited or has infinite resistance. Thus, the maximum gain of the circuit can be 1.455 V/V as anything higher would exceed the limitations of the ESP32 ADC Voltage Range.
 
-![LPF and Amplification](Images/LPFAmplification){#fig:LPFAndAmp}
+```{r, echo=FALSE, out.width="100%", fig.cap="\\label{fig:LPFAndAmp}LPF and Amplification"}
+knitr::include_graphics("Images/LPFAmplification.png")
+```
 
 When RS is 35K (relatively low = high stress), the output voltage is 165.6mV as seen in Figure \ref{fig:HighStressTheoreticalVout}. When RS is 600K (relatively high = low stress), the output voltage is 1.33V as seen in \ref{fig:LowStressTheoreticalVout}.
 
 Thus, in theory the circuit can be confirmed to be working.
 
-![High Stress Theoretical $V_{out}$](Images/HighStressTheoreticalVout.png){#fig:HighStressTheoreticalVout}
+![](Images/HighStressTheoreticalVout.png){width=50%}
+\hfill
+![](Images/LowStressTheoreticalVout.png){width=50%}
+\begin{figure}
+\begin{subfigure}{0.5\textwidth}
+\caption{\label{fig:HighStressTheoreticalVout}High Stress}
+\end{subfigure}
+\hfill
+\begin{subfigure}{0.5\textwidth}
+\caption{\label{fig:LowStressTheoreticalVout}Low Stress}
+\end{subfigure}
+\caption{Theoretical $V_{Out}$}
+\end{figure}
 
-![Low Stress Theoretical $V_{out}$](Images/LowStressTheoreticalVout.png){#fig:LowStressTheoreticalVout}
-
+\newpage
 ### Pulse Sensor
 The Pulse Sensor is an analogue device which gives a value of the light the photodiode is receiving. There is a library for use with this device to calculate the heart rate and/or the Inter-Beat-Interval which is created by the same group as the device [@PulseSensor].
 
@@ -220,9 +259,13 @@ The waveform generated by the pulse sensor can be seen in Figure \ref{fig:PulseW
 
 By setting a threshold for the analogue value read by the MCU, beats per minute can be derived.
 
-![Pulse Sensor Waveform](Images/Pulse.png){#fig:PulseWaveform}
+```{r, echo=FALSE, out.width="60%", fig.cap="\\label{fig:PulseWaveform}Pulse Sensor Waveform"}
+knitr::include_graphics("Images/Pulse.png")
+```
 
-![Pulse Waveform and BPM](Images/PulseAndBPM){#fig:PulseAndBPM}
+```{r, echo=FALSE, out.width="60%", fig.cap="\\label{fig:PulseAndBPM}Pulse Waveform and BPM"}
+knitr::include_graphics("Images/PulseAndBPM.png")
+```
 
 ### Temperature Sensor
 The Temperature Sensor is a digital sensor which communicates using I2C. There also exists a manufacturer’s library for this component by Adafruit [@Adafruit2022] Which makes the output of the graphs for temperature and humidity a trivial exercise in setting which pins are which and running the manufacturer provided sample code.
@@ -254,7 +297,9 @@ This section briefly outlines the relevant literature on IoT Based medical devic
 
 Current examples of IoT Based medical devices include a digital respiratory health manage platform using sensors to monitor, record and transmit data for chronic obstructive respiratory diseases. An example of such a project is available Propeller Health [@Propeller].
 
-![Simplified IoT Based Medical Device (Adapted from [@Webster2020])](Images/SimplifiedIotBasedMedicalDevice.png){#fig:SimplifiedIoT}
+```{r, echo=FALSE, out.width="50%", fig.cap="\\label{fig:SimplifiedIoT}Simplified IoT Based Medical Device (Adapted from \\cite{Webster2020})"}
+knitr::include_graphics("Images/SimplifiedIotBasedMedicalDevice.png")
+```
 
 However, the use of standardised communication protocols, security concerns surrounding personal privacy can arise. Eavesdropping or packet sniffing where attackers can intercept and read private information could lead to loss of confidentiality [@Webster2020]. Furthermore, this could lead to life-threatening implications in devices such as insulin pumps, pacemakers, dialysis units [@Mosenia2017].
 
@@ -263,7 +308,9 @@ This section briefly reviews the literature surrounding the selected physiologic
 
 Galvanic Skin Response (GSR), also called skin conductance (SC) or electrodermal activity (EDA), is a biomarker of the sympathetic nervous system and is considered one of the most sensitive and valid markers of emotional arousal [@Kyriakou2019]. GSR comprises two main components. The first is skin conductance level (SCL), which is the baseline without any emotional arousal and the second is skin conductance response (SCR) represents the body’s response to stimulus [@Wolfensberger1967] [@Nepal2016]. The main point of analysis of a GSR signal relies on the basis that there is a linear relationship between skin conductance and arousal [@Boucsein2012] and is represented in the amplitude of the measured signal [@Hegazy2011]. Subsequently, steeper gradients in the rise time of a measured GSR signal indicate more intense stimuli [@Caviedes2018] [@HernandoGallego2015]. A hypothetical measured GSR signal can be seen in Figure \ref{fig:HypotheticalSkinConductanceResponse}.
 
-![Hypothetical Skin Conductance Response](Images/HypotheticalSkinConductanceResponse.png){#fig:HypotheticalSkinConductanceResponse}
+```{r, echo=FALSE, out.width="40%", fig.cap="\\label{fig:HypotheticalSkinConductanceResponse}Hypothetical Skin Conductance Response"}
+knitr::include_graphics("Images/HypotheticalSkinConductanceResponse.png")
+```
 
 Skin temperature usually varies from 32 – 35 degrees Celsius [@Quazi2012], and has been shown to increase in response to stress [@Kaklauskas2011]. The skin responds to such hormonal milieu by regulating skin perfusion [@Bronzino2006].
 
@@ -272,11 +319,15 @@ The most promising signal for stress detection is heart rate variability (HRV) [
 ## Photoplethysmography (PPG)
 First discovered by Alrick Hertzman in 1937 [@Hertzman1937], PPG is linked to changes in blood volume of tissue. Its functionality relies heavily on Beer-Lambert’s law of light, where light absorption is directly proportional to the path length, concentration of substances, and the light absorption by each of those substances [@Aymen2014].
 
-![Output of PPG Photodetector](Images/OutputOfPPGPhotodetector.png){#fig:OutputOfPPG}
+```{r, echo=FALSE, out.width="50%", fig.cap="\\label{fig:OutputOfPPG}Output of PPG Photodetector"}
+knitr::include_graphics("Images/OutputOfPPGPhotodetector.png")
+```
 
 The output of a PPG sensor can be seen above where, “DC” refers to the unchanging background absorption of light and “AC” refers to the changing levels of absorption when blood volume in tissue changes (usually with each heartbeat) [@Aymen2014].
 
-![Typical PPG Circuit (Adapted from: [@Webster2020])](Images/TypicalPPGCircuit.png){#fig:TypicalPPG}
+```{r, echo=FALSE, out.width="70%", fig.cap="\\label{fig:TypicalPPG}Typical PPG Circuit (Adapted from: [@Webster2020])"}
+knitr::include_graphics("Images/TypicalPPGCircuit.png")
+```
 
 [@Webster2020] illustrates a typical PPG circuit as seen in Figure \ref{fig:TypicalPPG}. Where T1 is a phototransistor.
 
@@ -288,7 +339,7 @@ Temperature sensors are devices capable of measuring temperature using an electr
 Temperature sensors play an active role in providing real-time health data. With growing popularity in monitoring health data, current gaps include improvements in the sensors hardware structure to become more flexible, which encompasses thermistors, thermocouples, and thermochromic sensors [@Islam2020]. Important factors that determine the possibility of flexible temperature sensors include structure, material, fabrication, and performance. Regarding the design of wearable healthcare devices, the structure of the temperature sensor must be relatively compact and discrete as the physical dimensions play an important in the placement of the sensor into the case. The material aspect involves the medium used to build the structure of the device, ensuring maximal comfort to the user whilst maintaining a high degree of data measurement accuracy. The material component goes hand in hand with the fabrication process, which entails the processes required to create highly flexible material ensuring compatibility with other components. The final aspect and the most important one is performance. Ideally, the sensor should be capable of satisfying the above requirements whilst showing no performance drop-offs in an extraneous environment.
 
 ## User Interfacing and Application Development
-Unprecedented advances in mobile technology have changed daily aspects of human lifestyle, pacifying technology to its parent and changing the way information is stored and10ccessed through mobile applications providing the user with a plethora of functionality. The first mobile app was the arcade game "Snake", built into the Nokia 6110 [@Phongtraychack2018] and other typical applications soon followed, including ring tone editors, calculators and calendars. With the snake game quickly becoming a phenomenon, other early phone models followed, adding games such as Pong, Tetris and Tic-Tac-Toe. This changed the way individuals viewed communication, and with mobile prices also dropping and becoming more accessible for middle-class and low-income individuals, the number of people carrying these devices grew, as did the customer's demand for more features and games. However, manufacturers lacked the resources to build applications proportional to the user's demand, thus needing a portal for functional services independent from the mobile to develop applications. Jumping to the year 2007, the iPhone was announced, with Google soon after releasing the first android phone and Microsoft falling last releasing the windows phone in 2010. A common trait among these phones was their different application stores named App Store for Apple, Windows phone store for Microsoft and Google Play for Android. These stores allowed software developers to build apps and publish them in an application store, changing how users interact with mobile devices [@Li2021].
+Unprecedented advances in mobile technology have changed daily aspects of human lifestyle, pacifying technology to its parent and changing the way information is stored and accessed through mobile applications providing the user with a plethora of functionality. The first mobile app was the arcade game "Snake", built into the Nokia 6110 [@Phongtraychack2018] and other typical applications soon followed, including ring tone editors, calculators and calendars. With the snake game quickly becoming a phenomenon, other early phone models followed, adding games such as Pong, Tetris and Tic-Tac-Toe. With mobile prices also dropping and becoming more accessible for middle-class and low-income individuals, the number of people carrying these devices grew, as did the customer's demand for more features and games. However, manufacturers lacked the resources to build applications proportional to the user's demand, thus needing a portal for functional services independent from the mobile to develop applications. In 2007, the iPhone was announced, with Google soon after releasing the first android phone and Microsoft releasing the windows phone in 2010. A common trait among these phones was their different application stores named App Store for Apple, Windows phone store for Microsoft and Google Play for Android. These stores allowed software developers to build apps and publish them in an application store, changing how users interact with mobile devices [@Li2021].
 
 Although mobile devices started by not allowing the development of new programs, that soon changed, and the introduction of application stores accelerated the transition of third parties developing software. Notably, the two most popular proprietary mobile platforms were Apple's IOS and Google's Android, starting a platforms war with each having its own benefits and drawbacks. In general, mobile developers work with various programming environments, different tools and different programming languages. For the IOS apps, the two main programming languages are Swift and Objective-C [@Thomas2021]. Swift was personally designed by apple to replace Objective-C, and in comparison, swift has better speed, performance and memory handling features and is generally easier to read. Objective-C was the original IOS language and a child of the C language containing similar syntax and coding rules; however, Objective-C implemented robust object-oriented programming functionality. For android apps, two programming languages were recognized, both Java and Kotlin [@Thomas2021], but also due to the open-source nature of the Android ecosystem, other languages such as C/C++ can be used. Java was popularized as the first object-oriented programming language for android app development, having a long history of stability and reliability starting from the early 2000s. Kotlin is an open-source programming language that serves as a viable alternative to Java and is noted to be a concise and clear language allowing shorter and easier-to-main code to be written.
 
@@ -309,7 +360,8 @@ One of the most popular methods of powering wearable devices integrated into clo
 ## Gap Analysis
 The main challenge when developing wearable devices is making them unobtrusive. That is, developing devices so that they do not intrude the regular bodily movement, including most prominently, the challenge of how to power such devices.
 
-### Feasibility and Proof of Concept
+\newpage
+## Feasibility and Proof of Concept
 
 For feasibility we ask four main questions [@WikiFeasibility2021]
 
@@ -324,10 +376,26 @@ To expedite the prototyping process, it has been decided that readily available 
 
 Ultimately, we were able to combine the sections into a complete, fully functional prototype. Where in which, the sensors communicate to an MCU, which is hosting a web server. This web server is then accessed via a web browser to view the data that is captured. Figure \ref{fig:SensorReadings} illustrates the utilisation of Google Chrome to view the captured waveforms of data. Figure 18 illustrates the complete proof of concept.
 
-![Complete Proof of Concept](Images/CompleteProofOfConcept.jpg){#fig:CompleteProofOfConcept}
+\begin{figure}
+\centering
+\hfill
+\begin{minipage}{.4\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{Images/CompleteProofOfConcept.jpg}
+  \captionof{figure}{Proof of Concept Board}
+  \label{fig:CompleteProofOfConcept}
+\end{minipage}%
+\hfill
+\begin{minipage}{.4\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{Images/WebPortalSensorReadings.png}
+  \captionof{figure}{Sensor Readings Data Portal}
+  \label{fig:SensorReadings}
+\end{minipage}
+\hfill
+\end{figure}
 
-![Sensor Readings Data Portal](Images/WebPortalSensorReadings.png){#fig:SensorReadings}
-
+\newpage
 # Preliminary Findings
 ## Overall Architecture
 nitially the project considered the inclusion of an array of different sensors, however, primarily because of literature review, the three main physiological signals were chosen: galvanic skin response, skin temperature and pulse rate. It was found that these physiological signals correlate most heavily with stress and are require a reasonably low level of sophisticated techniques to acquire.
@@ -339,19 +407,50 @@ Fundamentally, the overall architecture of the design thus far has been quite ap
 ## Galvanic Skin Response
 To verify and validate the GSR Sensor, first the components of the circuit were soldered to a verification PCB board. The board includes a position for the MCU as can be seen in Figure \ref{fig:GSRSensorTop}. The contact points are shown in Figure \ref{fig:GSRSensorTop}, outlined in red. Whilst this prototype is somewhat chunky it provides the functionality required to verify the design.
 
-![GSR Sensor Top](Images/GSRSensorTop.jpg){#fig:GSRSensorTop}
+\begin{figure}
+\centering
+\hfill
+\begin{minipage}{.4\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{Images/GSRSensorTop.jpg}
+  \captionof{figure}{GSR Sensor Top}
+  \label{fig:GSRSensorTop}
+\end{minipage}%
+\hfill
+\begin{minipage}{.4\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{Images/GSRSensorBottom.png}
+  \captionof{figure}{GSR Sensor Bottom}
+  \label{fig:GSRSensorBottom}
+\end{minipage}
+\hfill
+\end{figure}
 
-![GSR Sensor Bottom](Images/GSRSensorBottom.png){#fig:GSRSensorBottom}
-
+\newpage
 As the voltage measured from the sensor is outputted via BLE, a BLE scanning app can be used to detect the changes in measurement. Figure \ref{fig:BLEScanning} shows the past five results received from the device and from this, the measured voltage level can be determined.
 
 The used BLE scanner deciphers transmissions in HEX with swapped endianness which can then be converted to a floating-point number as a representation of the voltage measured by the sensor.
 
-![BLE Scanning](Images/BleScanning.jpg){#fig:BLEScanning}
-
 Using an online converter, the first reading `0x1b4fcb3f` can be converted and the result is as follows in Figure \ref{fig:HexConversionResult}. The output is 1.58V which corresponds to a relatively low skin conductance.
 
-![HEX Conversion Result](Images/HexConversionResult.png){#fig:HexConversionResult}
+\begin{figure}
+\centering
+\hfill
+\begin{minipage}{.4\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{Images/HexConversionResult.png}
+  \captionof{figure}{HEX Conversion Result}
+  \label{fig:HexConversionResult}
+\end{minipage}%
+\hfill
+\begin{minipage}{.4\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{Images/BleScanning.jpg}
+  \captionof{figure}{BLE Scanning}
+  \label{fig:BLEScanning}
+\end{minipage}
+\hfill
+\end{figure}
 
 Plans for testing the GSR sensor include:
 1. Logging data over a period of multiple of multiple hours to gauge how it performs in response to flux in skin conductance.
@@ -367,6 +466,7 @@ Subsequently, the development of a prototyping PCB helped to conclude the functi
 ## Application and Data Visualisation
 The first steps in creating a data visualization application included creating a prototype using MIT app inventor that would connect to an android device via Bluetooth. To test the application, a simple breadboard circuit was created with an ESP pin connected to a LED and resistor, and the goal of the app was to toggle a button to turn on/off the LED connected. Despite the success in creating a simple application, MIT app inventor was only compatible with android devices, isolating all IOS devices and alienating most of the group from accessing the app using their device. To address this problem, a switch was made, changing our focus to design a web-based application utilizing a web server to host our sensor data. This provided access to both android and IOS devices, ensuring compatibility of different mobile operating systems.
 
+\newpage
 ## Recommendations
 The recommendations for future work, based on the findings from initial research and testing include:
 
@@ -399,9 +499,13 @@ Additionally, when powering the device whether it be for testing or validation, 
 # Project Management and Timeline
 The original timeline for semester 1 can be seen in Appendix A. The difference is largely in the materials investigation section where, initially, a more generous amount of time was allocated. Whilst initially thought a fixed amount of time would suffice, in practice, a large effort was required initially but a more flexible testing regime was implemented ongoing. Additionally, significantly more time was allocated to prototype verification.
 
-![Refined Semester 1 Timeline](Images/TimelineTwo.png){#fig:RefSem1Timeline}
+```{r, echo=FALSE, out.width="60%", fig.cap="\\label{fig:RefSem1Timeline}Refined Semester 1 Timeline"}
+knitr::include_graphics("Images/TimelineTwo.png")
+```
 
-![Semester 2 Timeline](Images/TimelineThree.png){#fig:Sem2Timeline}
+```{r, echo=FALSE, out.width="90%", fig.cap="\\label{fig:Sem2Timeline}Semester 2 Timeline"}
+knitr::include_graphics("Images/TimelineThree.png")
+```
 
 Figure \ref{fig:Sem2Timeline} represents the plan which is intended to be followed throughout semester 2. It is structured in a way which allows for redundancy to be built into each stage of the project. Of additional note, the task “custom PCB for MCU” is indicated in orange in red. This is because we have identified this task as something that will greatly improve the produced quality of the project but is not completely necessary to the functionality. We intend to follow this timeline to the best of our ability but recognise that alterations may be necessary.
 
@@ -420,8 +524,11 @@ Wearable devices are becoming increasingly popular in providing the user with he
 
 ## Original Semester 1 Timeline
 
-![Original Semester 1 Timeline](Images/TimelineOne.png){#fig:OriginalSem1Timeline}
+```{r, echo=FALSE, out.width="100%", fig.cap="\\label{fig:OriginalSem1Timeline}Original Semester 1 Timeline"}
+knitr::include_graphics("Images/TimelineOne.png")
+```
 
+\newpage
 ## Heart Rate Sensor Options and Requirements \label{HeartRateSensorOptions}
 
 | No | Requirement                                            | Reason                      |
@@ -440,6 +547,7 @@ Wearable devices are becoming increasingly popular in providing the user with he
 | 6  | Duinotech Heart Rate Sensor Kit     | ECG  | Chest                | 3.3               | 28    |
 | 7  | MAX30101                            | PPG  | Anywhere             | 3.3               | 56    |
 
+\newpage
 ## GSR Sensor Options and Requirements \label{GSRSensorOptions}
 
 | No | Requirement                                  | Reason                                   |
@@ -451,6 +559,7 @@ Wearable devices are becoming increasingly popular in providing the user with he
 |----|--------------------|----------|-------------------|
 | 1  | Grove - GSR Sensor | Fingers  | 3.3/5             |
 
+\newpage
 ## Skin Temperature Sensor Options and Requirements \label{TempSensorOptions}
 
 | No | Requirement                             | Reason                 |
@@ -471,6 +580,7 @@ Wearable devices are becoming increasingly popular in providing the user with he
 | 7  | ADT7410  | N/A             | -40-105     | 0.5           | 2.7/5.5 | Yes  | 5.95  |
 | 8  | HTU21D-F | 5-95            | -30-90      | 1             | 3.3/5   | Yes  | 10.95 |
 
+\newpage
 ## MCU Options and Requirements \label{MCUOptions}
 
 | No | Requirement           | Reason                              |
@@ -493,20 +603,25 @@ Wearable devices are becoming increasingly popular in providing the user with he
 | 7  | ADT7410  | ESP32           | 13       | 2.7-3.6 | Yes                |
 | 8  | HTU21D-F | ATmega32u4      | 8        | 2.7-5.5 | Yes                |
 
+\newpage
 ## Data Visualisation Options
 
 | No | Requirement                                                                                                                                        | Reason                                                                        |
-|----|---------------------|---------------|
+|----|----------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
 | 1  | Microcontroller IDE contains tools and libraries to visualize input data. E.g. Arduino Serial Plotter, Adafruit: Make Code and CircuitPython, etc. | Provides the user visual context of the information provided from the sensors |
 | 2  | Receiving accurate and constant sensor data.                                                                                                       | Ensures the integrity of the data that is visualized.                         |
 
+\newpage
 ## Finalised List of Components
+
 | Component          | Link                                                                  | Qty. |
+|--------------------|-----------------------------------------------------------------------|------|
 | Temperature Sensor | https://core-electronics.com.au/qwiic-humidity-aht20.htm              | 3    |
 | GSR Sensor         | https://www.digikey.com.au/short/n2hjtmtj                             | 1    |
 | Heart Rate Sensor  | https://core-electronics.com.au/pulse-sensor.html                     | 3    |
 | Microcontroller    | https://core-electronics.com.au/esp32-pico-kit-development-board.html | 3    |
 
+\newpage
 ## BLE Server Code \label{BLEServerCode}
 ```{c,eval=FALSE}
 #include <BLEDevice.h>
@@ -551,6 +666,7 @@ void loop() {
 }
 ```
 
+\newpage
 ## Web Server and Client Code \label{WebServerAndClient}
 ```{c,eval=FALSE}
 #include <WiFi.h>
@@ -606,6 +722,7 @@ void setup(){
 }
 ```
 
+\newpage
 ```
 <!DOCTYPE HTML>
 <html>
@@ -757,7 +874,7 @@ setInterval(function ( ) {
 </html>
 ```
 
-
+\newpage
 ## Group member contribution table \label{GroupMemberContributionTable}
 
 | Section                                                          | Contributor(s)     | Person(s) responsible and percentage |
@@ -790,4 +907,4 @@ setInterval(function ( ) {
 | Critical Analysis:                                               | Alec, Ahad, Oliver | 33%, 33%, 33%                        |
 | Project Management and Timeline                                  | Alec               | 100%                                 |
 | Conclusion                                                       | Ahad               | 100%                                 |
-| Editing                                                          | Alec, Ahad, Oliver | 33%, 33%, 33%                        |
+| Editing                                                          | Alec, Ahad, Oliver | 20%, 20%, 60%                        |
