@@ -5,8 +5,8 @@
 #include <stdlib.h>
 #include <string>
 #include <Adafruit_AHTX0.h>
-const char* ssid = "DaBoisWireless_2G";
-const char* password = "dungyreamyxmPgG";
+const char* ssid = "Alec";
+const char* password = "12345678";
 AsyncWebServer server(80);
 
 Adafruit_AHTX0 aht;
@@ -23,8 +23,8 @@ int sampleCounter = 0;
 int lastBeatTime = 0;
 int P = 2048;
 int T = 2048;
-int threshSetting = 2400;
-int thresh = 2400;
+int threshSetting = 2000;
+int thresh = 2000;
 int amp = 410;
 bool firstBeat = true;
 bool secondBeat = false;
@@ -47,13 +47,9 @@ String sensorReading2() { // return string of sensor information
 String sensorReading3() { // return string of sensor information
   sensors_event_t humidity, temp;
   aht.getEvent(&humidity, &temp);
-<<<<<<< HEAD
-=======
-
->>>>>>> 8353302 (Renaming and first run of reporting)
   return String(temp.temperature);
  }
-
+ 
 void setup(){
   Serial.begin(9600);
   if(!SPIFFS.begin()){
@@ -65,13 +61,13 @@ void setup(){
   WiFi.begin(ssid, password);
   while (WiFi.status() != WL_CONNECTED) {
     delay(1000);
-    //Serial.println("Connecting to WiFi..");
+    Serial.println("Connecting to WiFi..");
   }
 
-  //Serial.println(WiFi.localIP());
+  Serial.println(WiFi.localIP());
 
   if (! aht.begin(&AHTI2C)) {
-    //Serial.println("Could not find AHT? Check wiring");
+    Serial.println("Could not find AHT? Check wiring");
     while (1) delay(10);
   }
   //Serial.println("AHT10 or AHT20 found");
