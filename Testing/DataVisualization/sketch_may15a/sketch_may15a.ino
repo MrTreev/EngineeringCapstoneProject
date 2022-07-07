@@ -5,8 +5,8 @@
 #include <stdlib.h>
 #include <string>
 #include <Adafruit_AHTX0.h>
-const char* ssid = "Alec";
-const char* password = "12345678";
+const char* ssid = "DaBoisWireless_2G";
+const char* password = "dungyreamyxmPgG";
 AsyncWebServer server(80);
 
 Adafruit_AHTX0 aht;
@@ -49,7 +49,7 @@ String sensorReading3() { // return string of sensor information
   aht.getEvent(&humidity, &temp);
   return String(temp.temperature);
  }
- 
+
 void setup(){
   Serial.begin(9600);
   if(!SPIFFS.begin()){
@@ -128,5 +128,5 @@ void loop() {
     Pulse = false;
     amp = 410;                  // beat amplitude 1/10 of input range.
   }
-  delay(delayMs);                    
+  delay(delayMs);
 }
