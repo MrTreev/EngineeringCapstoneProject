@@ -1,0 +1,9 @@
+Warning: LaTeX Warning: Citation 'PulseSensor' on page 8 undefined on input line 675.
+Warning: LaTeX Warning: Citation 'Adafruit2022' on page 9 undefined on input line 704.
+Warning: LaTeX Warning: Citation 'Bronzino2006' on page 12 undefined on input line 894.
+Warning: LaTeX Warning: Citation 'Hertzman1937' on page 12 undefined on input line 907.
+Warning: LaTeX Warning: Citation 'Aymen2014' on page 12 undefined on input line 912.
+Warning: LaTeX Warning: Citation 'Aymen2014' on page 12 undefined on input line 925.
+Warning: LaTeX Warning: Citation 'Shelley2007' on page 13 undefined on input line 940.
+Warning: LaTeX Warning: Citation 'Islam2020' on page 13 undefined on input line 974.
+Warning: LaTeX Warning: Citation 'Hassan2013' on page 14 undefined on input line 1073.
