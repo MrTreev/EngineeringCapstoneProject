@@ -67,7 +67,7 @@ setInterval(function ( ) {
   };
   xhttp.open("GET", "/PulseSensor", true);
   xhttp.send();
-}, 1000 ) ;
+}, 200 ) ;
 
 var chartT = new Highcharts.Chart({
   chart:{ renderTo : 'sensor-two' },
@@ -106,7 +106,7 @@ setInterval(function ( ) {
   };
   xhttp.open("GET", "/AHT-Temp", true);
   xhttp.send();
-}, 1000 ) ;
+}, 200 ) ;
 
 var chartT = new Highcharts.Chart({
   chart:{ renderTo : 'sensor-three' },
@@ -145,7 +145,7 @@ setInterval(function ( ) {
   };
   xhttp.open("GET", "/AHT-Humidity", true);
   xhttp.send();
-}, 1000 ) ;
+}, 200 ) ;
 
 var chartT = new Highcharts.Chart({
   chart:{ renderTo : 'sensor-four' },
@@ -184,7 +184,7 @@ setInterval(function ( ) {
   };
   xhttp.open("GET", "/GSR", true);
   xhttp.send();
-}, 1000 ) ;
+}, 200 ) ;
 
 </script>
 </html>

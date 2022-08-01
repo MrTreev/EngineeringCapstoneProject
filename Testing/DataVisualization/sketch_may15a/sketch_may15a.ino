@@ -1,4 +1,4 @@
-#include <WiFi.h>
+//#include <WiFi.h>
 #include <ESPAsyncWebServer.h>
 #include <SPIFFS.h>
 #include <Wire.h>
@@ -23,8 +23,8 @@ int sampleCounter = 0;
 int lastBeatTime = 0;
 int P = 2048;
 int T = 2048;
-int threshSetting = 2000;
-int thresh = 2000;
+int threshSetting = 1700;
+int thresh = 1700;
 int amp = 410;
 bool firstBeat = true;
 bool secondBeat = false;
@@ -33,8 +33,6 @@ int delayMs = 20;
 int rate[10];
 
 String sensorReading() { // return string of sensor information
-  //return String(random(100));
-
   int voltageReading = analogRead(38);
   voltage = voltageReading * (vs/4095);
   return String(voltage);
@@ -68,7 +66,7 @@ void setup(){
 
   if (! aht.begin(&AHTI2C)) {
     Serial.println("Could not find AHT? Check wiring");
-    while (1) delay(10);
+    //while (1) delay(10);
   }
   //Serial.println("AHT10 or AHT20 found");
 
@@ -93,6 +91,7 @@ void loop() {
   int N = sampleCounter - lastBeatTime;
 
   Signal = analogRead(35);
+  Serial.println(Signal);
 
   if (N > 250 && N < 3000){
     if (Signal > thresh){
