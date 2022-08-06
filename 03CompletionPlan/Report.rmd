@@ -96,7 +96,7 @@ Engineering
 \pagenumbering{roman}
 
 # Executive Summary
-The aim of this report is to develop a detailed plan with respect to the completion of the project. A general overview of completed tasks is provided and a brief explanation of the current stage which the project is at. The report then goes on to provide a list of tasks that need to be completed to achieve what the team set out in the Project Proposal. Overall, it will become clear the limitations the current device possesses, and the methods employ by which we hope to proceed towards a version which is appropriate for commercialisation. To visualise the expected trajectory of the project, a Gantt chart is provided with both a high-level overview and a more detailed breakdown of sub tasks. The project team aims to develop an unobtrusive version of the device with comprehensive functions which increase usability.
+The aim of this report is to develop a detailed plan with respect to the completion of the project. A general overview of completed tasks is provided and a brief explanation of the current stage of the project. The report will then provide a list of tasks that need to be completed, to achieve what the team set out in the project proposal. Overall, it will become clear the limitations the current device possesses, and the methods employ by which we hope to proceed towards a version which is appropriate for commercialisation. To visualise the expected trajectory of the project, a Gantt chart is provided with both a high-level overview and a more detailed breakdown of sub tasks. The project team aims to develop an unobtrusive version of the device with comprehensive functions which increase usability.
 
 \newpage
 \tableofcontents
@@ -104,12 +104,12 @@ The aim of this report is to develop a detailed plan with respect to the complet
 \pagenumbering{arabic}
 
 # Introduction
-With the growing popularity of IoT technologies and the continual development of computational power relative to size, wearable technology is expected to become an indispensable and integral part of our daily life. A valued adoption of wearable technology includes the use of wearables to enhance health monitoring more specifically stress monitoring. Stress is any physical, chemical or emotional factor that causes the human body to release hormones which consequently elicits other bodily responses such as increased muscle tension, higher pulse rate and generally increased alertness. Stress plays an important part in people's daily lifestyles having both short-term and long-term effects when not managed properly, thus this ultimately ushered in the opportunity to develop a wearable device that is capable of measuring stress whilst being integrated on the wearer's body. The current prototype of our device is capable of reading sensor data from our microcontroller and displaying the data on a mobile device, however further developments are still required to make our prototype fully functional. 
+With the growing popularity of IoT technologies and the continual development of computational power relative to size, wearable technologies are expected to become an indispensable and integral part of our daily life. A valued adoption of wearable technology includes the use of wearables to enhance health monitoring more specifically stress monitoring. Stress is any physical, chemical or emotional factor that causes the human body to release hormones which consequently elicits other bodily responses such as increased muscle tension, higher pulse rate and generally increased alertness. Stress plays an important part in people's daily lifestyles having both short-term and long-term effects when not managed properly, thus this ultimately ushered in the opportunity to develop a wearable device that is capable of measuring stress whilst being integrated on the wearer's body. The current prototype of our device is capable of reading sensor data from our microcontroller and displaying the data on a mobile device, however further developments are still required to make our prototype fully functional. 
 
-The main aim of this completion report is to provide an outline of the tasks required to complete the development of a wearable device that can capture data related to stress.  The tasks required range from research, design and engineering, and an extensive timeline has been established to ensure that milestones are met, and the development is on track to finish within the time period allocated. Furthermore, for the required tasks that need to be completed, a risk matrix has been created to evaluate any obstacles or pitfalls that the team may encounter for the duration of the project, and contingency plans have been created to prepare for the possibility of certain scenarios. 
+The main aim of this completion report is to provide an outline of the tasks required to complete the development of a wearable device that can capture data related to stress.  The tasks required include research, design and engineering, and an extensive timeline has been established to ensure that milestones are met, and the development is on track to finish within the time allocated. Furthermore, for the required tasks that need to be completed, a risk matrix has been created to evaluate any obstacles or pitfalls that the team may encounter for the duration of the project, and contingency plans have been put in place to prepare for the possibility of certain scenarios. 
 
 # Completed Tasks
-To date, the completed tasks in aggregation have successfully achieved the construction and testing of a prototype which demonstrated the ability to collect measurements of the three main physiological signals: galvanic skin response, skin temperature and pulse. The prototype was then able to display the data on a web server hosted on the microcontroller and accessed via web browser. Figure \ref{fig:PhysicalDevice} demonstrates the physical aspects of the device and Figure \ref{fig:WebBrowser} illustrates the web browser access portal.
+To date, the completed tasks in aggregate have successfully achieved the construction and testing of a prototype which demonstrated the ability to collect measurements of the three main physiological signals: galvanic skin response, skin temperature and pulse. The prototype was then able to display the data on a web server hosted on the microcontroller and accessed via web browser. Figure \ref{fig:PhysicalDevice} demonstrates the physical aspects of the device and Figure \ref{fig:WebBrowser} illustrates the web browser access portal.
 
 
 \begin{figure}
@@ -133,113 +133,117 @@ To date, the completed tasks in aggregation have successfully achieved the const
 \end{figure}
 
 ## Tasks Completed
-An itemised list of completed tasks categorised into both engineering and research is as follows.
+An itemised list of completed tasks categorised into engineering and research is as follows.
 
 ### Engineering
-1. Design of a circuit which can record and collect data from skin conductivity measurements.
-2. Design of electrodes which press against the skin and facilitate the collection of data.
-3. Testing associated with the design and implementation electrodes.
+1. Design of a circuit which can record skin conductivity measurements.
+2. Design of electrodes for use with the skin conductance sensor.
+3. Testing the design and implementation of electrodes.
 4. Testing of circuitry to collect and filter skin conductivity measurements.
 
 ### Research and Literature Review
-1. Investigated options for sensors to collect physiological signals
-2. Preliminary research into PPG, GSR, ECG, EEG Skin temperature.
+1. Investigation of options for sensors to collect physiological signals
+2. Preliminary research into PPG, GSR, ECG, EEG, and Skin temperature.
 3. Preliminary research into testing procedures.
-4. Initial research into physiological signals and their correlation to stress.
+4. Preliminary research into physiological signals with a relationship to stress.
 
 ## Current Limitations
-Due to the nature of prototypes, the current state of the device is restricted in functionality by several limitations. Firstly, the device has no method of mounting to the body which restricts us from testing with respect to mobility. Secondly, the device is bulky which if it were mounted on the body in its current state, would render some natural movements of limbs uncomfortable or impossible. Thirdly, the web server is hosted on the microcontroller itself. Whilst this affords some benefits such as speed of development, it restricts both the amount data able to be held and the methods by data can be accessed.
-
+The current state of the device, being a prototype, is restricted in functionality. Firstly, the device currently has no method of securely mounting to the body without completely restricting movement while testing. Secondly, the web server is currently hosted directly on the microcontroller. Whilst this increases the speed of development, it restricts both the amount data able to be stored as well as the accessibility of the data.
 \newpage
+
 # Tasks to be Completed
-The following itemised list of tasks to be completed aims to resolve some of the above listed limitations and develop the device into a more functional and ideally be of the standard which would enable commercial viability. The intention of each task is briefly outlined.
+The following itemised list of tasks to be completed aims to resolve some of the above listed limitations and develop the device into a fully functional system. The intention of each task is briefly outlined.
 
 ## Research
-1. Review of mounting options (to body)\
+1. Review of mounting options\
 	Research into the different potential locations for sensor placement given the literature on body mobility, sensor efficacy, sensitivity to locomotion, and other factors which could influence the placement of sensors on the body.
-	1. Pulse Sensor: Ensuring the signal for the heartbeat is significantly above the level of noise and variability when moving
-	2. GSR Sensor: Ensuring the signal for the GSR is consistent with the commercial sensor when active
-	3. Temperature Sensor: Ensuring the reading from the temperature sensor is only influenced by skin temperature and external factors are negligible
+	1. Pulse Sensor: Ensure the signal for the heartbeat is significantly above the level of noise and variability during locomotion.
+	2. GSR Sensor: Ensure the signal for the GSR is consistent with the commercial sensor when mounted during testing.
+	3. Temperature Sensor: Ensure the reading from the temperature sensor is only influenced by skin temperature and external factors are negligible
 2. Sensor placement locations
-	- Research into the different methods of mounting PCBs (Flexi, Rigid-Flex and Rigid) will be conducted by looking through existing wearable devices, DIY projects, and commercially available attachment systems for suitable methods to mount the PCBs and other components to the human body in a way that does not interfere with data collection for the device.
+	- Research into the different methods of mounting PCBs (Flexible, Rigid-Flex and Rigid) will be conducted by looking through existing wearable devices, DIY projects, and commercially available attachment systems for suitable methods to mount the PCBs and other components to the human body in a way that does not interfere with data collection for the device and provides a high level of comfort.
 3. Research of testing procedures
-	- Research into different testing procedures used throughout literature to measure stress levels in order to determine the testing procedure for our system.
+	Research different testing procedures used throughout literature to measure stress levels in order to determine the best testing procedure for our system.
 4. Methods to derive stress from collected data
-	- Research through the existing literature to determine relationships between the physiological signals we are measuring and stress, as well as collecting the potential methods for categorising stressed and relaxed states used in literature to better inform testing procedures.
+	Research through the existing literature to determine relationships between the physiological signals being measured and stress, as well as collecting the potential methods for categorising stressed and relaxed states used in literature to better inform testing procedures.
 5. Research Battery and Charging Options
-	- The intent of this task is to identify options which can both sufficiently power the device and simultaneously possess a small form factor to limit the impairment of mobility of the user.
+	Investigate options which can both sufficiently power the device and simultaneously possess a small form factor to limit the impairment of mobility of the user.
 6. Investigate power saving methods
-	- The intent of this task is to identify methods by which power consumption can be kept to an absolute minimum. This may include sleep modes of the microcontroller and or special functions of sensors.
+	Identify methods by which power consumption can be kept to an absolute minimum. This may include sleep modes of the microcontroller and or special functions of sensors.
 7. Investigate options for PCB material
-	- The intention of this task is to investigate the possibilities of material construction type of the PCB which contains the GSR sensor and the Temperature Sensor. For example, flexible PCBs
+	Identify the possibilities for materials and construction of the PCB which contains the GSR sensor and the Temperature Sensor.
+\newpage
 
 ## Engineering
 1. Design and build mobile application
 	1. Front-end Tasks
-		1. Creating a Figma design for the user interface. This task involves using the popular browser-based interface design tool Figma, this will allow us to create a prototype of the user interface and will be used as a baseline when programming the front-end begins.
-		2. Develop UI in HTML and JS. In this task, programming the front-end will begin mainly using HTML & JS to layout the interface and display the data obtained from the relevant sensors. A large amount is dedicated to this task to ensure that the user experience is smooth, and that the wearer of the device can access stress related information from their mobile device.
-		3. Add display and user responsiveness. This task aims to cater for the wearers need in terms of the display size of their mobile device and involves creating a responsive interface regarding the user-journey. Although this task may be an additional feature, it is imperative for user inclusiveness and ensures the best user experience is created to inform the wearer of relevant biomarker data.
-		4. Creating a Figma design for user interface. This task involves using the popular browser-based interface design tool Figma, this will allow us to create a prototype of the user interface and will be used as a baseline when programming the front-end begins.
+		1. Create a Figma design for the user interface.
+			Create a prototype of the user interface which will be used as a baseline when the front-end programming begins.
+		2. Develop UI in HTML and JS.
+			Program the front-end layout the interface and display the data obtained from the relevant sensors.
+		3. Adding display and user responsiveness.
+			Create a responsive interface to improve the user-journey.
 	2. Back-end Tasks
-		1. Setting up MySQL database. This task is one of the first back-end tasks and one of the most important tasks. This task will involve setting up the database schema and creating the best models to store our data in a specific format. Furthermore, relationships between different tables will be established.
-		2. Developing PHP script. This task will involve programming the PHP script that is responsible for receiving incoming requests from the ESP32 microcontroller board and inserting that data into our MySQL database.
-		3. Setup domain name and web hosting service. Both these tasks will involve signing up for a hosting service and picking a certain domain name. Ample amount of time is provided to complete this task, if setting up the hosting service is completed before projected time, transition into the front-end stage can start early.
+		1. Setting up MySQL database.
+			Set up the database schema and creating the models to store the data. Relationships between different tables will also be established.
+		2. Developing PHP script.
+			Create the PHP script that is responsible for receiving incoming requests from the ESP32 microcontroller board and inserting the data into the database.
+		3. Setup domain name and web hosting service.
+			Sign up for a hosting service and picking a certain domain name.
 2. Finalise Schematic for Galvanic Skin Response Sensor and Temperature Sensor
+	Compile the schematic for the GSR Sensor and Temperature Sensor and combining the two into a unified schematic.
 3. Design and build PCB for temperature and GSR sensors
-	- The intent of this task to achieve the design of a custom PCB which possesses the ability to measure both GSR and skin temperature with an extremely small form factor as to limit the impairment of mobility.
+	Design a custom PCB which possesses the ability to measure both GSR and skin temperature with a small form factor.
 4. Test PCBs
-	- This task is to ensure that the fabricated PCBs perform the required functions and to eliminate any faults.
+	Ensure the fabricated PCBs perform the required functions and eliminating any faults.
 5. Testing of sensors for placement on body
-	- This involves testing multiple locations around the body for the physiological responses received by all the sensors to better understand the available mounting positions to inform the mounting systems available for the device.
+	Test multiple locations around the body for the physiological responses received by all the sensors to better understand the mounting systems available for the device.
 
-\newpage
 ## Testing
-1. Determine what exactly is being measured in terms of stress
-	- Creating a robust definition for stress which can be used to label a user as stressed in a way which can relate to physiological responses.
+1. Determine what is being measured in terms of stress
+	Create a robust definition for stress which can be used to label a user as stressed in a way which can relate to physiological responses.
 2. Determine a relationship between stress and physiological signals
-	- Determining a method to categorise a user as stressed based on the physiological data collected by the device, as well as creating a calibration process for the method should the method be user specific.
+	Determine a method to categorise a user as stressed based on the physiological data collected by the device, as well as creating a calibration process for the method should this be user specific.
 3. Design testing procedure for the system
-	- Designing a procedure to test the reliability, accuracy, comfort, and consistency of the system.
+	Design a procedure to test the reliability, accuracy, comfort, and consistency of the system.
+\newpage
 
 # Risks and Obstacles
 This section is an exploration of the possible events which constrain the ability of the project team to complete the required tasks on time.
 
 ## Research
-1. The risk that pre-existing literature does not exist that can facilitate or expedite the process by which the project team develops the device.
-2. The risk that significant literature is found which alters the course of the project.
-3. Appropriate options for powering the device cannot be identified in an appropriate timeline suitable to the success of the project.
-4. An appropriate relationship cannot be determined or identified that links the various physiological signals that are being collected to causal level or value of stress.
-5. The various options for PCB material are inappropriate to the application of the device for one reason or another and thus limit the possibility of achieving minimal obstructiveness.
+1. Pre-existing literature not being available that facilitates the development of the device.
+2. Significant literature being found which alters the course of the project.
+3. Appropriate options for powering the device cannot be identified by the allotted time.
+4. An appropriate relationship cannot be determined or identified that links the various physiological signals that are being collected to the level of stress.
+5. The various options for PCB material are inappropriate to the application of the device for one reason or another.
 
 ## Engineering
-1. The manufacture of PCBs by the manufacturer is delayed and thus renders it impossible to utilise a custom PCB in the final delivery of the project.
+1. The manufacture of PCBs by the manufacturer is delayed to the point where it is impossible to utilise a custom PCB in the final delivery of the project.
 2. The purchase of components is delayed and extends beyond a reasonable timeline.
-3. Faults exist in the custom PCB because of poor design or manufacture and render the manufactured PCBs useless.
-4. Database schema relationship is incompatible with the applications need. This would make it difficult to interact with the database running the overall user experience.
-5. Database models are not optimized for frequent queries. Based on the need for application, the user will be able to view real-time health data as well as previous time period data, this would ultimately mean that information from the database would be pulled continuously thus the database models have to be performant in high traffic scenarios.
-6. Unable to configure the PHP script to communicate with microcontroller. Creating the PHP script serves as the middleman between the front-end and the back end however there may be technical obstacles regarding the streamlining the connection with the database.
+3. Faults exist in the custom PCB because of poor design or manufacture which make the manufactured PCBs unusable.
+4. Database schema relationship is incompatible with the applications need.
+5. Database models are not optimized for frequent queries.
+6. Failure to configure the PHP script to communicate with microcontroller.
 
 ## Design
-1. An appropriate design of the GSR sensor custom PCB cannot be achieved the pre-determined timeline.
+1. An appropriate design of the GSR sensor custom PCB cannot be achieved in the pre-determined timeline.
 2. An appropriate design of the Skin Temperature sensor custom PCB cannot be achieved in the pre-determined timeline.
 3. Appropriate locations cannot be determined for the various sensors.
 4. Appropriate locations cannot be determined for the various components (MCU, Battery).
-5. An appropriate physical proportioning of the custom PCB cannot be achieved and thus restrict the movement of the user.
-6. User interface and layout doesn’t meet UX expectations. Although the primal focus of this project is to ensure that our device is wearable and capable of providing health data, we believe how we communicate and display that health data is an important component of this project.
+5. An appropriate physical proportioning of the custom PCB cannot be achieved to not restrict the movement of the user.
+6. User interface and layout doesn’t meet UX expectations.
 
 ## Testing
-1. Stress cannot be defined in a manner that is able to be tested
-2. A relationship between stress and the measured physiological signals cannot be reliably established
-3. Testing of the device proves that the desired outcome has not been achieved, with respect to the initially laid out plans for the device
+1. Stress cannot be defined in a manner that is able to be qualified.
+2. A relationship between stress and the measured physiological signals cannot be reliably established.
+3. Testing of the device proves that the desired outcome has not been achieved, with respect to the initial plans for the device.
 
 ## Other
-1. Communication within the project team breaks down and influences negatively upon the outcome of the project
-2. Communication with the project supervisor or other important stakeholders breaks down
-
-\newpage
+1. Communication within the project team breaks down and influences negatively upon the outcome of the project.
+2. Communication with the project supervisor or other important stakeholders breaks down.
 
 ## Risk Matrix
-
 \begin{table}[ht]
 \centering
 \begin{tabular}{@{}|c|c|c|c|c|c|c|@{}} \hline
@@ -282,33 +286,34 @@ Extreme    & \cellcolor[HTML]{FFC000} & \cellcolor[HTML]{FF0000} & \cellcolor[HT
 \multirow{-2}{*}{OTHER}        & (2)                          & Unlikely   & Major       & \cellcolor[HTML]{00B050}Medium Risk    \\ \hline
 \end{tabular}
 \end{table}
-
 \newpage
-# Mitigation Strategies to Ensure Completion
-This section intends to pre-emptively identify possible solutions to the complications and obstacles identified above. It will likewise be categorised the same way as the previous section. The number of each mitigation strategy refers to the corresponding risk.
+
+# Mitigation Strategies
+This section intends to preemptively identify possible solutions to the complications and obstacles identified above. It will likewise be categorised the same way as the previous section. The number of each mitigation strategy refers to the corresponding risk.
 
 ## Research
-1. In the case that the pre-existing literature does not exist to support our claims or advise our future decisions, we will have to conduct the relevant testing to achieve our own understanding of the complication at hand.
-2. If in the case that existing literature is found that alters the course of our project, the project team will conduct an evaluation of the current state of the project and significant components that could be reused in the continuation of the project down a new path.
-3. If, in the case that an appropriate option cannot be found to appropriately power the device, an auxiliary power device could be used to demonstrate the feasibility and work that has been completed to date. The long-term powering of the device will be relegated to a section for future work.
-4. If in the case that an appropriate relationship cannot be established through testing or by research that the collected data from physiological signals is found not to bear any significance to the feeling commonly connoted as “stress”, an appropriate new path or outcome for the project will be devised which utilise the fundamental components already developed. For example, a health monitoring device.
-5. If in the case that, for example, flexible PCBs are not found to be appropriate for the application of, or obstruct regular movements of the common user, an appropriate solution will have to be found. This may include the use of conductive thread with stitched components onto fabric.
+1. In the case that preexisting literature does not exist to support our claims or advise our future decisions, relevant testing will be conducted.
+2. In the case that existing literature is found that alters the course of our project, the project team will conduct an evaluation of the current state of the project and significant components that could be reused in the continuation of the project down a new path.
+3. In the case that an appropriate option cannot be found to appropriately power the device, an auxiliary power device could be used to demonstrate the feasibility and work that has been completed to date.
+4. If an appropriate relationship cannot be determined between the physiological signals and stress, the project will be modified into a health monitoring system which will not require any additional components.
+5. In the case that flexible PCBs are not found to be appropriate for the application, or that they obstruct regular movements of the user, an appropriate solution will have to be found.
 
 ## Engineering
-1. If in the case that the manufacture of PCBs by the manufacturer are delayed, the PCB design will be included as an item for future development and the project team will resort to the utilisation of Veroboard for the demonstration of the complete system.
-2. If in the case that the purchase of the componentry is delayed beyond a reasonable time frame, in the same instance, alternative components will be utilised where the original cannot be reasonable acquired.
-3. If faults exist within the manufacture of the PCB, and a reasonably expected amount of testing cannot determine the root cause, in the same instance verification PCB will be used to construct a method of demonstration.
-4. To address the database relationship risk, risk a possible solution is to create a database schema mapping out models and parent/child relationships.
-5. If models are not optimized for frequent queries, an alternative mitigation plan is to have trade-offs between user experience and performance.
-6. If the PHP script can’t communicate with the microcontroller, the prototype network architecture can be used as a backup.
+1. In the case that manufacture of the PCBs is delayed, the PCB design will be included as an item for future development and the Veroboard will be used for the final demonstration.
+2. In the case that the purchase of the componentry is delayed , alternative components will be utilised where the originals cannot be reasonably acquired.
+3. If faults exist within the manufacture of the PCB, and a reasonably expected amount of testing cannot determine the root cause the Veroboard will be used to construct a method of demonstration.
+4. To address the database relationship risk, a database schema will be created and thoroughly mapped.
+5. If models are not optimized for frequent queries, an alternative mitigation plan is to sacrifice some user experience for performance.
+6. If the PHP script can’t communicate with the microcontroller, the prototype network architecture will be used as a backup.
+\newpage
 
 ## Design
-1. If in the case that an appropriate design of the custom GSR sensor cannot be achieved, an off the shelf GSR sensor will have to be utilised to emulate and augment the collection of data from the physiological signal.
-2. If in the case that an appropriate design for the skin temperature sensor custom PCB, an off the shelf version will implemented, thus sacrificing mobility.
-3. The best-fit locations we determined for testing will be used for each sensor
-4. The additional components will be put into a small bag and carried with the user
+1. In the case that an appropriate design of the custom GSR sensor cannot be achieved, an off the shelf GSR sensor will be used.
+2. In the case that an appropriate design for the skin temperature sensor PCB cannot be achieved, the AHT20 development board already acquired will be used.
+3. If appropriate locations cannot be determined for the sensors, the best-fit locations we determined for testing will be used for each sensor
+4. If appropriate locations cannot be determined for the components, the additional components will be put into a small bag and carried with the user
 5. If an appropriate sizing of the custom PCB cannot be identified, it will determine that mobility with respect to movement of the user will be sacrificed. Subsequently, the system may be demonstrated irrespective of human connection.
-6. For the possible risk that the user interface and layout don’t meet the UX expectations, a possible strategy is to begin rapid prototyping starting from early stages of development.
+6. If the user interface and layout don’t meet the UX expectations, a possible strategy is to begin rapid prototyping starting from early stages of development.
 
 ## Testing
 1. Stress will be first defined as a physical, mental, or emotional factor that causes bodily or mental tension and refined from there.
@@ -316,20 +321,20 @@ This section intends to pre-emptively identify possible solutions to the complic
 3. See all above strategies
 
 ## Other
-1. Ensure that we have regularly scheduled meetings with both the project and supervisors. With set tasks to complete and achievable milestones.
+1. Ensuring that regular scheduled meetings with both the project and supervisors are undertaken.
 
 # Expected Project Finances
-| Item                 | Projected Cost |
-|----------------------|----------------|
-| PCB Manufacturing    | 100            |
-| PCB Components       | 90             |
-| Textile Components   | 50             |
-| E-Textile Components | 25             |
-
+| Item                 | Projected Cost (AUD) |
+|----------------------|----------------------|
+| PCB Manufacturing    | $100                 |
+| PCB Components       | $90                  |
+| Textile Components   | $50                  |
+| E-Textile Components | $25                  |
 \newpage
+
 \blandscape
 # Timeline
-\scalebox{0.47}{
+\scalebox{0.46}{
 \begin{gantt}[xunitlength=0.5cm,fontsize=\small,titlefontsize=\small,drawledgerline=true]{39}{92}
 	\begin{ganttitle}
 		\titleelement{July}{14}
@@ -346,8 +351,8 @@ This section intends to pre-emptively identify possible solutions to the complic
 	\ganttbar			{ Analysis of Mounting Options     }{ 00 }{ 11 }
 	\ganttbar			{ Component Placement Selection    }{ 00 }{ 11 }
 	\ganttbarcon		{ Power System Research            }{ 15 }{ 31 }
-	\ganttbarcon		{ Power System Purchasing          }{ 46 }{ 07 }
-	\ganttbarcon		{ Power System Mounting            }{ 53 }{ 24 }
+	\ganttbarcon		{ Purchase Power System            }{ 46 }{ 07 }
+	\ganttbarcon		{ Mount Power System               }{ 53 }{ 24 }
 	\ganttmilestonecon	{ Power System Complete            }{ 77 }
 	\ganttbar			{ GSR Schematic Layout             }{ 00 }{ 05 }
 	\ganttbar			{ ST Schematic Layout              }{ 00 }{ 05 }
@@ -356,30 +361,30 @@ This section intends to pre-emptively identify possible solutions to the complic
 	\ganttbarcon		{ PCB Trace Layout                 }{ 10 }{ 05 }
 	\ganttmilestonecon	{ PCB Sent to Manufacturer         }{ 15 }
 	\ganttbarcon		{ Manufacture PCB                  }{ 15 }{ 31 }
-	\ganttmilestonecon	{ PCB Recieved from Manufacturer   }{ 46 }
-	\ganttbarcon		{ Solder componentry to PCB        }{ 46 }{ 14 }
+	\ganttmilestonecon	{ PCB Received from Manufacturer   }{ 46 }
+	\ganttbarcon		{ Solder Componentry to PCB        }{ 46 }{ 14 }
 	\ganttbarcon		{ Test PCB                         }{ 60 }{ 17 }
-	\ganttbar			{ Implement PCB as wearable device }{ 60 }{ 17 }
+	\ganttbar			{ Implement PCB as Wearable Device }{ 60 }{ 17 }
 	\ganttmilestonecon	{ PCB Verified                     }{ 77 }
-	\ganttbar			{ Setting up MySQL database        }{ 00 }{ 08 }
-	\ganttbarcon		{ Develop PHP script               }{ 08 }{ 10 }
-	\ganttbarcon		{ Setup domain name                }{ 18 }{ 14 }
-	\ganttbar			{ Setup web hosting service        }{ 22 }{ 10 }
+	\ganttbar			{ Setup MySQL Database             }{ 00 }{ 08 }
+	\ganttbarcon		{ Develop PHP Script               }{ 08 }{ 10 }
+	\ganttbarcon		{ Setup Domain Name                }{ 18 }{ 14 }
+	\ganttbar			{ Setup Web Hosting Service        }{ 22 }{ 10 }
 	\ganttbarcon		{ Create Figma for UI              }{ 32 }{ 03 }
 	\ganttbarcon		{ Develop UI in HTML \& JS         }{ 35 }{ 42 }
-	\ganttbar			{ Add CSS styling                  }{ 40 }{ 37 }
-	\ganttbar			{ Add display responsiveness       }{ 47 }{ 30 }
-	\ganttmilestonecon	{ App Completion                   }{ 77 }
+	\ganttbar			{ Add CSS Styling                  }{ 40 }{ 37 }
+	\ganttbar			{ Add Display Responsiveness       }{ 47 }{ 30 }
+	\ganttmilestonecon	{ App Completed                    }{ 77 }
 	\ganttbar			{ Initial Testing Procedure Design }{ 00 }{ 32 }
 	\ganttbarcon		{ Conduct Testing Procedure        }{ 32 }{ 45 }
-	\ganttbar			{ Testing Procedure Refinement     }{ 32 }{ 45 }
+	\ganttbar			{ Refine Testing Procedure         }{ 32 }{ 45 }
 	\ganttmilestonecon	{ Testing Complete                 }{ 77 }
-	\ganttbar			{ Completion Plan Writing          }{ 00 }{ 21 }
+	\ganttbar			{ Write Completion Plan            }{ 00 }{ 21 }
 	\ganttmilestonecon	{ Completion Plan Submitted        }{ 21 }
-	\ganttbar			{ Final Report Writing             }{ 21 }{ 69 }
+	\ganttbar			{ Write Final Report               }{ 21 }{ 69 }
 	\ganttmilestonecon	{ Final Report Submission          }{ 90 }
-	\ganttbar			{ Presentation Writing             }{ 78 }{ 12 }
-	\ganttmilestonecon	{ Presentation Done                }{ 92 }
+	\ganttbar			{ Write Final Presentation         }{ 78 }{ 12 }
+	\ganttmilestonecon	{ Presentation Completed            }{ 92 }
 	\ganttcon			{ 5}{ 8}{ 5}{10}
 	\ganttcon			{ 5}{ 8}{ 5}{11}
 	\ganttcon			{ 5}{ 9}{ 5}{10}
@@ -399,45 +404,8 @@ This section intends to pre-emptively identify possible solutions to the complic
 \end{gantt}
 }
 \elandscape
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 \newpage
+
 # Appendix
 ## Contribution Table
 | Section                   | Contributor(s)     | Percentage Responsibility |
