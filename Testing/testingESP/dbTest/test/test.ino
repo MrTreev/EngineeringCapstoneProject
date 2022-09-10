@@ -44,13 +44,13 @@ String sensorReading() { // return string of sensor information
  }
 
 String sensorReading2() { // return string of sensor information
-  return String(random(100)); // placeholder value
+  return String(BPM); // placeholder value
  }
 
 String sensorReading3() { // return string of sensor information
   //sensors_event_t humidity, temp;
   //aht.getEvent(&humidity, &temp);
-  return String(random(100)); // placeholder value
+  return String(1); // placeholder value
  }
 void setup(){
   Serial.begin(9600);
@@ -92,7 +92,7 @@ void loop() {
 
     // Prepare your HTTP POST request data
     String httpRequestData = "api_key=" + apiKeyValue + "&value1=" + String(sensorReading())
-                           + "&value2=" + String(sensorReading()) + "&value3=" + String(sensorReading()) + "";
+                           + "&value2=" + String(sensorReading2()) + "&value3=" + String(sensorReading3()) + "" + "&value3=" + "Alec";
     Serial.print("httpRequestData: ");
     Serial.println(httpRequestData);
 
@@ -126,7 +126,7 @@ void loop() {
     Serial.println("WiFi Disconnected");
   }
 
-  sampleCounter = sampleCounter + delayMs; // keeping track of time in ms
+    sampleCounter = sampleCounter + delayMs; // keeping track of time in ms
   int N = sampleCounter - lastBeatTime;
 
   Signal = analogRead(35);
