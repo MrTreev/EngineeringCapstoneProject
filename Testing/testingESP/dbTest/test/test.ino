@@ -6,13 +6,13 @@
 #include <Wire.h>
 #include <stdlib.h>
 #include <string>
-const char* ssid = "";
-const char* password = "";
+const char* ssid = "TP-LINK_3E17";
+const char* password = "61967274";
 //AsyncWebServer server(80);
 int i = 0;
 
-Adafruit_AHTX0 aht;
-TwoWire AHTI2C = TwoWire(0);
+//Adafruit_AHTX0 aht;
+//TwoWire AHTI2C = TwoWire(0);
 
 float voltage = 0;
 float vs = 3.3;
@@ -44,13 +44,13 @@ String sensorReading() { // return string of sensor information
  }
 
 String sensorReading2() { // return string of sensor information
-  return String(BPM);
+  return String(random(100)); // placeholder value
  }
 
 String sensorReading3() { // return string of sensor information
-  sensors_event_t humidity, temp;
-  aht.getEvent(&humidity, &temp);
-  return String(temp.temperature);
+  //sensors_event_t humidity, temp;
+  //aht.getEvent(&humidity, &temp);
+  return String(random(100)); // placeholder value
  }
 void setup(){
   Serial.begin(9600);
