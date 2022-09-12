@@ -16,6 +16,11 @@ int i = 0;
 
 float voltage = 0;
 float vs = 3.3;
+#define FILTER_LEN 100
+float skinResponse = 0;
+int count = 0;
+uint32_t filterBuffer[FILTER_LEN] = {0};
+
 int Signal = 0;
 bool QS = false;
 int BPM = 0;
@@ -37,10 +42,11 @@ int rate[10];
 const char* serverName = "http://your-mindshift.com/post-data.php";
 String apiKeyValue = "tPmAT5Ab3j7F9";
 
-String sensorReading() { // return string of sensor information
+int sensorReading() { // return string of sensor information
   int voltageReading = analogRead(38);
   voltage = voltageReading * (vs/4095);
-  return String(voltage);
+  skinResponse = ((voltage - 1.75) * -1) * 1000;
+  return skinResponse;
  }
 
 String sensorReading2() { // return string of sensor information
@@ -59,9 +65,9 @@ void setup(){
   WiFi.begin(ssid, password);
   while (WiFi.status() != WL_CONNECTED) {
     delay(1000);
-    Serial.println("Connecting to WiFi...");
+    //Serial.println("Connecting to WiFi...");
   }
-  Serial.println(WiFi.localIP()); // This will print out local ip address for the ESP32
+  //Serial.println(WiFi.localIP()); // This will print out local ip address for the ESP32
 //  server.on("/", HTTP_GET, [](AsyncWebServerRequest *request){
 //    request->send(SPIFFS, "/index.html"); // Sends HTML file in SPIFFS when server receives a request on root URL
 //  });
@@ -91,10 +97,11 @@ void loop() {
     http.addHeader("Content-Type", "application/x-www-form-urlencoded");
 
     // Prepare your HTTP POST request data
-    String httpRequestData = "api_key=" + apiKeyValue + "&value1=" + String(sensorReading())
-                           + "&value2=" + String(sensorReading2()) + "&value3=" + String(sensorReading3()) + "" + "&value3=" + "Alec";
-    Serial.print("httpRequestData: ");
-    Serial.println(httpRequestData);
+    Serial.println(filtered(sensorReading()));
+    String httpRequestData = "api_key=" + apiKeyValue + "&value1=" + String(filtered(sensorReading()))
+                           + "&value2=" + String(sensorReading2()) + "&value3=" + String(sensorReading3()) + "" + "&user=" + "alec";
+    //Serial.print("httpRequestData: ");
+    //Serial.println(httpRequestData);
 
     // You can comment the httpRequestData variable above
     // then, use the httpRequestData variable below (for testing purposes without the BME280 sensor)
@@ -112,25 +119,25 @@ void loop() {
     //int httpResponseCode = http.POST("{\"value1\":\"19\",\"value2\":\"67\",\"value3\":\"78\"}");
 
     if (httpResponseCode>0) {
-      Serial.print("HTTP Response code: ");
-      Serial.println(httpResponseCode);
+      //Serial.print("HTTP Response code: ");
+      //Serial.println(httpResponseCode);
     }
     else {
-      Serial.print("Error code: ");
-      Serial.println(httpResponseCode);
+      //Serial.print("Error code: ");
+      //Serial.println(httpResponseCode);
     }
     // Free resources
     http.end();
   }
   else {
-    Serial.println("WiFi Disconnected");
+    //Serial.println("WiFi Disconnected");
   }
 
     sampleCounter = sampleCounter + delayMs; // keeping track of time in ms
   int N = sampleCounter - lastBeatTime;
 
   Signal = analogRead(35);
-  Serial.println(Signal);
+  //Serial.println(Signal);
 
   if (N > 250 && N < 3000){
     if (Signal > thresh){
@@ -168,5 +175,25 @@ void loop() {
   }
   
   //Send an HTTP POST request every 30 seconds
-  delay(30000);
+  delay(500);
+}
+
+uint32_t filtered(int ADC_Raw)
+{
+  int i = 0;
+  uint32_t Sum = 0;
+
+  filterBuffer[count++] = ADC_Raw;
+  if(count == FILTER_LEN){
+    count = 0;
+    }
+  for (i = 0; i < FILTER_LEN; i++){
+    Sum += filterBuffer[i];
+    }
+
+  uint32_t result = Sum/FILTER_LEN;
+  if(result>5000){
+    return 0;
+    }
+  return (Sum/FILTER_LEN);
 }
