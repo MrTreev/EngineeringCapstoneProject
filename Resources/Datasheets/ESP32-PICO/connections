@@ -1,0 +1,15 @@
+GSR
+	3.3Vin 		- 3V3
+	Ground 		- GND
+	Signal 		- IO38
+
+AHT20
+	3.3Vin 		- 3V3
+	Ground 		- GND
+	SDA 		- IO21
+	SCL 		- IO22
+
+Pulse Sensor
+	5Vin 		- 3.3V
+	Ground 		- GND
+	S 			- IO35

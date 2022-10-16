@@ -91,7 +91,6 @@ void loop() {
   int N = sampleCounter - lastBeatTime;
 
   Signal = analogRead(35);
-  Serial.println(Signal);
 
   if (N > 250 && N < 3000){
     if (Signal > thresh){

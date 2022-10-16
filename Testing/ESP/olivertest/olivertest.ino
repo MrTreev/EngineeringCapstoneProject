@@ -6,13 +6,13 @@
 
 //Parameters
 	#define FILTER_LEN 100
-	const char* ssid 		= "ThiccPhon";
-	const char* password 	= "asdfawesome";
-	const char* user 		= "oliver";
-	const int PIN_Heart 	= 35;
-	const int PIN_GSR 		= 38;
-	const int PIN_SDA 		= 21; // Does not change with assignment
-	const int PIN_SCL 		= 22; // Does not change with assignment
+	const char* ssid		= "DaBoisWireless_2G";
+	const char* password	= "dungyreamyxmPgG";
+	const char* user		= "oliver";
+	const int PIN_Heart		= 37;
+	const int PIN_GSR		= 34;
+	const int PIN_SDA		= 21; // Does not change with assignment
+	const int PIN_SCL		= 22; // Does not change with assignment
 
 //	Web
 	const char* serverName 	= "http://your-mindshift.com/post-data.php";
@@ -72,8 +72,8 @@ String sensorReading3() { // return string of sensor information
 void setup(){
   Serial.begin(9600);
 // Power
-	pinMode(34, OUTPUT);
-	digitalWrite(34, HIGH);
+	pinMode(35, OUTPUT);
+	digitalWrite(3:, HIGH);
 	pinMode(38, OUTPUT);
 	digitalWrite(38, HIGH);
 
@@ -98,10 +98,9 @@ void loop() {
     http.addHeader("Content-Type", "application/x-www-form-urlencoded");
 
     // Prepare your HTTP POST request data
-    Serial.println(filtered(sensorReading()));
-    String httpRequestData = "api_key=" + apiKeyValue + "&value1=" + String(filtered(sensorReading()))
-                           + "&value2=" + String(sensorReading2()) + "&value3=" + String(sensorReading3()) + "" + "&user=" + user;
+    String httpRequestData = "api_key=" + apiKeyValue + "&value1=" + String(filtered(sensorReading())) + "&value2=" + String(sensorReading2()) + "&value3=" + String(sensorReading3()) + "" + "&user=" + user;
     int httpResponseCode = http.POST(httpRequestData);
+    Serial.println("&value1=" + String(filtered(sensorReading())) + "&value2=" + String(sensorReading2()) + "&value3=" + String(sensorReading3()));
     if (httpResponseCode>0) {
     }
     else {
@@ -115,7 +114,7 @@ void loop() {
   int N = sampleCounter - lastBeatTime;
 
   Signal = analogRead(PIN_Heart);
-  //Serial.println(Signal);
+  Serial.println(Signal);
 
   if (N > 250 && N < 3000){
     if (Signal > thresh){

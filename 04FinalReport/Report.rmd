@@ -1,0 +1,1523 @@
+---
+params:
+    auth: "Oliver Patterson (S3723206), Alec Harbis (S3661092), Ahad Abdul (S3791936)"
+    date: "16/10/2022"
+    subj: "Engineering Capstone Project"
+    ccod: "OENG1168"
+    titl: "Final Report"
+    sttl: "Investigation of Materials to Develop a Wearable Stress Monitoring Device"
+author: "`r params$auth`"
+date: "`r params$date`"
+fontsize: 12pt
+header-includes:
+    - \usepackage{booktabs}
+    - \usepackage{dcolumn}
+    - \usepackage{wrapfig}
+    - \usepackage{subcaption}
+    - \usepackage{caption}
+    - \usepackage{graphicx}
+    - \usepackage{float}
+    - \usepackage{fancyhdr}
+    - \usepackage{lscape}
+    - \usepackage{multirow}
+documentclass: "article"
+geometry: margin=2cm
+output:
+    pdf_document:
+        fig_caption: yes
+        fig_height: 3
+        fig_width: 4.5
+        latex_engine: pdflatex
+        number_sections: yes
+        citation_package: "biblatex"
+bibliography: referencing/cites.bib
+link-citations: TRUE
+biblio-style: ieee
+---
+\pagestyle{empty}
+
+```{r,echo=FALSE}
+knitr::opts_chunk$set(fig.align='center')
+def.chunk.hook  <- knitr::knit_hooks$get("chunk")
+knitr::knit_hooks$set(chunk = function(x, options) {
+  x <- def.chunk.hook(x, options)
+  paste0("\n \\", "footnotesize","\n\n", x, "\n\n \\normalsize")
+})
+```
+
+\let\origfigure\figure
+\let\endorigfigure\endfigure
+\renewenvironment{figure}[1][2] {
+    \expandafter\origfigure\expandafter[H]
+} {
+    \endorigfigure
+}
+\begin{centering}
+
+\vspace{5 cm}
+
+\Huge
+
+{\bf `r params$subj` \\ (`r params$ccod`) \\ `r params$titl`}
+
+\vspace{1 cm}
+
+Investigation of Materials to Develop a Wearable Stress Monitoring Device
+
+\vspace{3 cm}
+
+\huge
+
+`r params$auth`
+
+\vspace{4 cm}
+
+\Large
+
+\vspace{0.5 cm}
+
+Date: \\
+`r params$date`
+
+\vspace{4 cm}
+
+
+RMIT School of \\
+Engineering
+
+\normalsize
+\end{centering}
+\newpage
+\pagenumbering{roman}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{1pt}
+\setlength{\headheight}{15pt}
+\fancyhf{}
+\fancyhead[L]{`r params$auth`}
+\fancyhead[R]{}
+\fancyfoot[C]{\thepage}
+\clearpage
+\pagenumbering{roman}
+
+# Executive Summary
+With the fast increase in demand for smartphone devices coupled with the surge of health-based wearables, wearable technology plays a vital role in delivering health data to users in real-time becoming indispensable and improving standards of living. The main goal of this project was to develop a wearable device that can capture real-time sensor data and evaluate the user’s level of stress. This report includes the outcome of our project delving into the software & hardware components that were required to build our device as well as the health research required to create relationships indicative of stress. Our wearable devices were built in three concurrent phases, the first phase pertains to the hardware aspect of our device which encompasses the physical dimensions of our wearable ranging from PCB design to sensor selection, the second phase pertains to the software aspect of our wearable, this involved building an app that could display and retrieve sensor data from a particular user, and finally, the last phase that helped complete our wearable device is stress derivation and research, this required utilizing our biomarker data to categorize the users stress levels. Ultimately, a wearable device was created that displayed accurate sensor data via a web-based app and the stress level categorization was implemented successfully providing the wearer with insights into their stress levels both in real-time and in previous time periods.
+
+\newpage
+\tableofcontents
+\newpage
+\pagenumbering{arabic}
+
+# Introduction
+Stress is a normal physical response to daily circumstances and challenges. Stress is composed of two components, one component is mental, and the other is physical. When stress is induced, the human body instinctively responds by releasing adrenaline and other hormones. Although stress can be helpful as it allows humans to be productive and efficient, if stress is left unchecked, the individual can fall through a spiral of emotions ranging from lack of motivation, anxiety, or even extreme cases such as mental/physical illnesses.
+
+By managing and recognizing periods of high-stress levels, people can increase their understanding of how stress affects productivity and overall health. Studies show that devices that can monitor Skin Temperature, Electrodermal Activity (EDA) and Heart Rate Variability (HRV) can help analyse stress levels.
+
+The consequences of untreated stress can have a negative long-term effect and a ripple effect on an individual's mental and physical health. Thus, aligned with the growing adoption of tele-health and tele-medicine for managing stress, wearable devices can be leveraged to monitor an individual's physiological signals that are indicative of stress ultimately providing the user with feedback that can help them identify causes of stress.
+
+## Statement of Problem
+This project aims to develop a wearable device that can provide real-time health data to users who will be informed of their stress levels. This project will involve utilizing knowledge of core electronic principles, including micro-controllers and sensors, as well as potentially basic textile skills. Project success will be determined mainly by the wearability of the device and accuracy of the data
+
+\newpage
+# Background and Literature Review
+## Design
+### PCB Design Best Practices
+This section outlines the best practices associated with the design, development, and manufacturing of PCBs. As seen from Figure \ref{fig:PCBDesignProcess}, the process follows a logical flow from design through verification and review to production and test. Typically, best practice emphasises problem prevention as opposed to problem solving/re-designs. Furthermore, the process by which a PCB is designed from ideation can be seen in Figure \ref{fig:SchematicToPCB}, where functional blocks come together as schematics in combination with part selection. This, ultimately, forms the basis of PCB layout along with any required housing, board outlines and connectors.
+
+
+\begin{figure}
+\centering
+
+\begin{minipage}{0.45\textwidth}
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{images/PCBDesignProcess.png}
+\caption{PCB Design Process \cite{Tulkoff2021}}
+\label{fig:PCBDesignProcess}
+\end{figure}
+\end{minipage}
+\hfill
+\begin{minipage}{0.45\textwidth}
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{images/SchematicToPCB.png}
+\caption{Schematic to PCB \cite{Tulkoff2021}}
+\label{fig:SchematicToPCB}
+\end{figure}
+\end{minipage}
+
+\end{figure}
+
+Subsequently, PCB design reaches the point of acceptance testing and validation, in which often errors arise. Figure \ref{fig:RootCausePCBAnalysis}, outlines a systematic approach to identifying, analysing and solving errors through what is known as root cause analysis.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.45\linewidth]{images/RootCausePCBAnalysis.png}
+\caption{Root Cause PCB Analysis \cite{Tulkoff2021}}
+\label{fig:RootCausePCBAnalysis}
+\end{figure}
+
+### Web-based Application
+Over the last decade web technologies have developed rapidly over time giving users access to unprecedented information. The evolution of the Web is broken down into three phases, the first being Web 1.0 or the Web of documents, the second is Web 2.0 or the Web of the people and the final is Web 3.0 or the Web of data. The first iteration of Web 1.0 was invented by Tim Burners-Lee and was recognised as the ‘read-only web’ as users were limited to only searching and reading any content provided by developers. These websites had zero user responsiveness and were only static web pages. Web 2.0 is known for being the ‘read-write web’ as it accommodates for user interaction allowing content to be modified, created and removed \cite{Newman2016}. These were changes introduced a large paradigm shift in the current landscape introducing popular applications such YouTube or Facebook that completely rely on user submissions to thrive. Finally, web 3.0 coined the Semantic Web is built on the core ideas of decentralization and user utility. Due to information being found relative to its contents, it could potentially be stored in many locations simultaneously and hence be decentralize ultimately breaking down massive databases that currently being used my big tech companies \cite{Rudman2016}.
+
+With the rapid expansion the web undertook it was predicated that mobile devices would directly cater for web-based applications however this was not the case. In the year 2007, the iPhone was first announced, with Google following releasing the first android phone and Microsoft releasing the windows phone in 2010. A common feature among these phones was their different application stores that allowed software developers to build and publish apps ultimately changing the way users interact with their mobile devices. Seeing the success that applications stores had for their relative user base, companies invested into proprietary tools that streamline the development process for third parties, however many developers came across a pitfall in that dedicated resources are required for the developing an app that is compatible with both android and IOS devices. Although there are native tools that allow developers to build apps for multiple platforms with one codebase, these tools are limited to lowest common denominator consequently having long-term issues when fully cross-platforms apps. This downfall of mobile apps ultimately highlighted the benefits of web-based apps where the user can access an application with the minimal requirement being a stable internet connection \cite{Mwalongo2016}. Furthermore, web-based applications cost significantly less and exert lower demands on the end-user system.
+
+\newpage
+## Research
+### General Overview of Wearable Devices and IoT Based Medical Devices
+Typically defined as “fully functional and self-powered” computers that are attached in some fashion to the body, provide access to and derive information from data, wearable devices are designed for continuous monitoring \cite{Barfield2015}. Further definitions can be seen in \cite{Atzori2010} and \cite{Webster2020}. Examples of such devices are seen in \cite{Hu2020} and \cite{Vanveerdeghem2014}. However, these projects focussed primarily on the design of the system and made no real progress on implementation or confined the scope of the project excessively. A simplified IoT-Based Medical Device can be seen in Figure \ref{fig:SimplifiedIoTBasedMedicalDevice}.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.7\linewidth]{images/SimplifiedIoTBasedMedicalDevice.png}
+\caption{Simplified IoT-Based Medical Device \cite{Webster2020}}
+\label{fig:SimplifiedIoTBasedMedicalDevice}
+\end{figure}
+
+### Physiological Signals as Indicators of Stress
+Links between physiological signals and stress were covered in previous reports, however it remains pertinent to the ongoing development of the project and thus will be covered again here in a more concise manner.
+
+The human nervous system is divided between both the central and peripheral nervous system (CNS and PNS) \cite{Christopoulos2019}. The PNS comprises automatic functions and includes the sympathetic nervous system, which is responsible for involuntary changes in physiological signals such as heart rate, sweating and blinking \cite{Christopoulos2019}. Galvanic Skin Response (GSR) (also known as SC or EDA) is a biomarker of the sympathetic nervous system and changes in GSR can be used to benchmark levels of stress \cite{Kyriakou2019}. Once a baseline is established, changes above or below the baseline can be used to identify periods of stress \cite{Wolfensberger1967}. Skin temperature has also been shown to bear relationship to stress in a similar manner, where changes above or below a baseline can indicate stress levels \cite{Bronzino2006}. The most correlated physiological signal with stress, however, is HRV. Heart Rate Variability is the difference in time between heart beats, an increase represents an increase in stress \cite{Karthikeyan2013}.
+
+### Stress Derivation
+Mental stress can be categorised into two main types, Acute and Chronic. Chronic stress is long-term and requires repeated and continuous exposure to a stressor\cite{Rohleder2019}. This makes it difficult to detect \cite{Fernandes2014} and therefore is not tested by this system. Acute stress is short-term stress which activates the sympathetic nervous system (SNS) directing energy away from non-essential functions such as digestion, and towards functions necessary for the fight-or-flight response \cite{BioDictStress}. The functions of the SNS are what can be tested by the biosensors. The acute stress response causes the physiological changes measured by this system.
+
+\newpage
+## Testing
+### Testing of individual Components
+Each component was tested before attempting to integrate it into the full system. The temperature sensor was tested by running it for an extended period next to a digital thermometer and comparing the measurements at various intervals both sitting at ambient temperature and placed under the arm to test the sensor at body temperature.
+
+The pulsesensor was tested using both the pulsesensor Arduino library and the ESP32 ADC to read the analogue signal directly. Reading the signal directly was found to be more reliable for detecting the heart beats. The threshold for the heartbeat sensor must be altered between users to ensure the proper heart rate is calculated. The pulsesensor was verified by calculating the BPM of the wearer manually using the radial artery and a wristwatch, the result was then compared to the calculated pulse sensor value.
+
+### Mental Stress Testing
+The testing for the stress classification system used for this device was done by watching horror movies that have the jump scares and tense moments marked with timestamps to correlate with the prediction of stress from the biometric data as well as comparing the classification against timestamps recorded with the percieved stress level throughout a day. The confirmation of the stress prediction is done by sight, if the higher stress predictions line up roughly with the marked timestamps the categorisation is considered a success.
+
+\newpage
+# Methodology and System Model
+## Design Questions
+This report aims to answer the questions and complete the tasks outlined in the completion report. These are summarised here. The questions and tasks are answered in various places throughout the report.
+
+Research:
+
+1. Review Device Mounting and placement Options
+2. Testing procedure research and design.
+3. How to derive levels of stress from collected data?
+4. How to power and charge the device? How to minimise power consumption?
+5. Of what material should the device be constructed?
+
+Engineering:
+
+1. Design and build mobile application.
+2. Design and develop schematic for Galvanic Skin Response Sensor.
+3. PCB Testing procedure.
+
+Testing:
+
+1. Determine what exactly is being measured in terms of stress.
+2. Establish a relationship between physiological signals and stress.
+3. Design a testing procedure for the overall system.  
+
+
+## High Level System Design
+\begin{figure}
+\centering
+\includegraphics[width=0.5\linewidth]{images/HighLevelSystemDesign.png}
+\caption{High Level System Design}
+\label{fig:HighLevelSystemDesign}
+\end{figure}
+
+The High-Level System Design is shown in Figure \ref{fig:HighLevelSystemDesign} where each of the separate modules are illustrated as separate entities. Most notably, the sensors which are placed on body, reflected on the left-hand side of the diagram capture physiological signals which are then filtered, processed, and transmitted wirelessly to a remote host. The data can then be accessed, viewed, and analysed wirelessly from other authenticated remote devices.
+
+### Low-level Design
+The low-level design of the device is presented as an investigation of materials for each sub-section.
+
+## Investigation of Materials
+### Discussion on Material for Electrodes
+The decision on the most appropriate material for the electrodes was based on the most imperative goal of minimising obstruction to regular movement. There is the concession however that the device functions as intended achieving maximum integrity of data.
+
+For example, the choice between soldered pads and pogo pins for electrodes presented itself as a difficult choice as the pogo pins offer many benefits regarding the maintenance of consistent pressure and data integrity. An example of a possible pogo pin is illustrated in Figure \ref{fig:PogoPinExample}.
+
+However, it seemed apparent that Pogo pins would render the device uncomfortable to wear due to the nature of small surface area. It was in fact decided to maintain the electrode design from the prototype as presented in Figure \ref{fig:PrototypeElectrodeDesign}.
+
+\begin{figure}
+\begin{minipage}{0.45\textwidth}
+\begin{figure}
+\centering
+\includegraphics[width=1\linewidth]{images/PogoPinExample.png}
+\caption{Pogo Pin Example}
+\label{fig:PogoPinExample}
+\end{figure}
+\end{minipage}\hfill
+\begin{minipage}{0.45\textwidth}
+\begin{figure}
+\centering
+\includegraphics[width=0.5\linewidth]{images/PrototypeElectrodeDesign.png}
+\caption{Prototype Electrode Design}
+\label{fig:PrototypeElectrodeDesign}
+\end{figure}
+\end{minipage}
+\end{figure}
+
+The final implementation of this design can be seen in Figure \ref{fig:FinalElectrodes}, where the electrode design from the prototype is implemented.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.5\linewidth]{images/FinalElectrodes.jpg}
+\caption{Final Electrodes}
+\label{fig:FinalElectrodes}
+\end{figure}
+
+### Discussion on PCB Construction Material
+In the investigation of PCB construction materials, it was found that the most appropriate option depends entirely on the mode of mounting to the user chosen. In the case of mounting in the form of a strap or arm band, the rigid material seems evidently superior.
+
+The options available to the project included both rigid and flexible PCB substrate. Figure \ref{fig:RigidTopSide} and Figure \ref{fig:RigidBottomSide} illustrate the construction of the Rigid PCB. Figure \ref{fig:FlexBottomSide} and Figure \ref{fig:FlexTopSide} illustrate the construction of the Flexible PCB.
+
+\begin{figure}
+\begin{minipage}{0.45\textwidth}
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{images/RigidTopSide.jpg}
+\caption{Rigid Top Side}
+\label{fig:RigidTopSide}
+\end{figure}
+\end{minipage}\hfill
+\begin{minipage}{0.45\textwidth}
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{images/RigidBottomSide.jpg}
+\caption{Rigid Bottom Side}
+\label{fig:RigidBottomSide}
+\end{figure}
+\end{minipage}
+\end{figure}
+
+\begin{figure}
+\begin{minipage}{0.45\textwidth}
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{images/FlexTopSide.jpg}
+\caption{Flex Top Side}
+\label{fig:FlexTopSide}
+\end{figure}
+\end{minipage}\hfill
+\begin{minipage}{0.45\textwidth}
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{images/FlexBottomSide.jpg}
+\caption{Flex Bottom Side}
+\label{fig:FlexBottomSide}
+\end{figure}
+\end{minipage}
+\end{figure}
+
+
+## PCB Design
+Post completion of the prototype it was found to be quite necessary to develop further the physical composition of both the Galvanic Skin Response Sensor and the Skin Temperature Sensor. Due to the relatively small form factor of the pulse sensor, it was decided to be left on the OEM PCB.
+
+Subsequently it was required that the schematic be implemented in a PCB design software. The chosen package was KiCad, as the project team had previous experience. The simulated prototype schematic as seen in Figure \ref{fig:PrototypeSchematic}, was then implemented in KiCad as per Figure \ref{fig:KiCadSchematic}. Notably, the inclusion of the Skin Temperature Schematic can be seen. The development of the skin temperature sensor schematic was derived from the typical application section in datasheet of the Sensor itself (See Appendix \ref{appendix:SkinTempSchem}).
+
+\begin{figure}
+\begin{minipage}{0.35\textwidth}
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{images/PrototypeSchematic.png}
+\caption{Prototype Schematic}
+\label{fig:PrototypeSchematic}
+\end{figure}
+\end{minipage}\hfill
+\begin{minipage}{0.6\textwidth}
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{images/KiCadSchematic.png}
+\caption{KiCad Schematic}
+\label{fig:KiCadSchematic}
+\end{figure}
+\end{minipage}
+\end{figure}
+
+Once this has process has been completed the design of the PCB can begin. The initial design of the PCB comprised only two generic mounting holes as seen in Figure \ref{fig:GenericMountingHoles}. The issue with this design however is that it offers no real way of mounting or integrating it into clothing.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.45\linewidth]{images/GenericMountingHoles.png}
+\caption{Generic Mounting Holes}
+\label{fig:GenericMountingHoles}
+\end{figure}
+
+The final design, however, includes no mounting holes but rather two slits on either side of the PCB to thread Velcro, or strap of some other variation for easy pressure management and tension. This can be seen in Figure \ref{fig:StrapMountingHoles}. In addition to the revised mounting holes, it contains more efficient route tracing and wider tracks. As well as via’s for effective ground plane management.
+
+\begin{figure}
+\begin{minipage}{0.45\textwidth}
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{images/StrapMountingHoles.png}
+\caption{PCB With Strap Mounting Holes}
+\label{fig:StrapMountingHoles}
+\end{figure}
+\end{minipage}\hfill
+\begin{minipage}{0.45\textwidth}
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{images/GroundPlanes.png}
+\caption{Ground Planes and Through Hole Vias}
+\label{fig:GroundPlanes}
+\end{figure}
+\end{minipage}
+\end{figure}
+
+In comparison the design variations of the PCB can be seen more apparently in the 3D viewer aspect of KiCad.
+
+\begin{figure}
+\begin{minipage}{0.45\textwidth}
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{images/StrapTopView.png}
+\caption{Strap Variation Top View}
+\label{fig:StrapTopView}
+\end{figure}
+\end{minipage}\hfill
+\begin{minipage}{0.45\textwidth}
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{images/StrapBotView.png}
+\caption{Strap Variation Bottom View}
+\label{fig:StrapBotView}
+\end{figure}
+\end{minipage}
+\end{figure}
+
+\begin{figure}
+\begin{minipage}{0.45\textwidth}
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{images/GenericTopView.png}
+\caption{Generic Variation Top View}
+\label{fig:GenericTopView}
+\end{figure}
+\end{minipage}\hfill
+\begin{minipage}{0.45\textwidth}
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{images/GenericBotView.png}
+\caption{Generic Variation Bottom View}
+\label{fig:GenericBotView}
+\end{figure}
+\end{minipage}
+\end{figure}
+
+The intention with the strap variation is to have the two electrodes (outlined in red in Figure \ref{fig:StrapBotView}) maintain contact with the skin, and for the skin temperature sensor (outlined in blue) to also maintain contact with the skin.
+
+Placing the skin temperature sensor here also has other added benefits. It provides the sensor with enough room for ventilation to be unaffected in the case that other components overheat.
+
+\newpage
+## Wearability
+At the beginning of the project multiple different options for the type of accessory this device could replace were discussed, such as a watch, a glove, and a bicep sleeve. The glove option was quickly discarded because of the obtrusive nature of mounting electronics to gloves.
+
+When determining placement of the device on the body, the sensors were tested for placement and mounting requirements. The temperature sensor had very little change when mounted against different parts of the body. The GSR sensor worked the most effectively when the electrodes were placed on the tips of neighbouring fingers, this was however considered to be too obtrusive when wearing the device for extended periods of time and the clarity of the data was not reduced enough to affect the categorisation.
+
+The only sensor which required specific placement on the body to produce useful data was the pulsesensor. The only placement of the pulsesensor that was found to give reliable data while the user is moving was having the sensor clipped to the earlobe as shown in Figure \ref{fig:Positioning}.
+
+\begin{figure}
+	\includegraphics[width=0.3\textwidth]{images/PositioningEarLobe.png}
+	\includegraphics[width=0.3\textwidth]{images/PositioningEarLobeMovement.png}
+	\includegraphics[width=0.3\textwidth]{images/PositioningElbow.png}
+		\begin{subfigure}{0.3\textwidth}
+			\caption{Sensor Clipped to Earlobe}
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}{0.3\textwidth}
+			\caption{Sensor Clipped to Earlobe with Heavy Movement}
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}{0.3\textwidth}
+			\caption{Strapped to Inner-Elbow}
+		\end{subfigure}
+
+	\includegraphics[width=0.3\textwidth]{images/PositioningMidArmMovement.png}
+	\includegraphics[width=0.3\textwidth]{images/PositioningWristMildMovement.png}
+	\includegraphics[width=0.3\textwidth]{images/PositioningBlank.png}
+		\begin{subfigure}{0.3\textwidth}
+			\caption{Strapped to Inner Mid-Arm with Moderate Movement}
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}{0.3\textwidth}
+			\caption{Strapped to Wrist with Mild Finger Movement}
+		\end{subfigure}
+		\hfill
+		\hspace{0.3\textwidth}
+		\caption{Sensor Plavement Testing}
+		\label{fig:Positioning}
+\end{figure}
+
+
+The most significant consideration when creating this wearable system was to ensure that the device was not obstructive during everyday activities. This meant it could not be mounted against the hands, fingers, insides of joints, or back. With the pulsesensor only able to be placed at the earlobe, this meant the whole device had to be located nearby. The least obtrusive placement of the device nearby the earlobe was found to be the bicep.
+
+\newpage
+Initially the device was to be sown into a compression sleeve which could be slid around the bicep. This proved to be quite tedious to put on without scratching the user with the PCBs, shifting the PCB out of alignment of the mounting system, or tangling the chord for the pulsesensor.
+
+The sleeve was then replaced with a compression bandage which can be easily wrapped around the user's arm while controlling the placement of the GSR sensor, temperature sensor (should it be included), and the wire for the pulsesensor. The bandage can also be used to hold a small portable battery pack for powering the device, or a larger battery pack can be placed in a pocket and a cable hidden under the clothes of the user if the device is required to operate for an extended period. It also provides protection for the microcontroller’s components from stress induced by rubbing against the user’s clothing.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.366\linewidth]{images/WornDevice.jpg}
+\includegraphics[width=0.266\linewidth]{images/DeviceBack.png}
+\includegraphics[width=0.266\linewidth]{images/DeviceFront.png}
+\caption{Final Device}
+\label{fig:Worn}
+\end{figure}
+
+\newpage
+## Device Powering and Battery Management options
+This section aims to provide a holistic overview of the available options to power the device and subsequently the systems available for powering. When powering the device, it is important to understand the power requirements of the entire system.
+
+The MCU has several different modes, each of which consume different amounts of power, Table \ref{tab:MCUPowerModes} illustrates the most important features.
+
+\begin{table}[thbp]
+\centering
+\begin{tabular}{|l|l|l|}
+\hline
+Power Mode              & Description    & Power Consumption \\ \hline
+Light Sleep             & -              & 0.8mA             \\ \hline
+Hibernation             & RTC Timer Only & 5uA               \\ \hline
+Power Off               & -              & 1uA               \\ \hline
+Transmit/Receive BT/BLE & -              & 95-130mA          \\ \hline
+Transmit/Receive Wi-Fi  & -              & 95-240mA          \\ \hline
+\end{tabular}
+\caption{MCU Power Modes}
+\label{tab:MCUPowerModes}
+\end{table}
+
+The Pulse Sensor consumes approximately 2.6mA at 3.3V and the AHT20 consumes approximately 75nA at 40 degrees Celsius.
+
+\begin{table}[thbp]
+\centering
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+    & MCU   & AHT20 & Pulse Sensor & GSR   \\ \hline
+Max & 240mA & 75nA  & 2.6mA        & 1.4mA \\ \hline
+Min & 1uA   & 60nA  & -            & -     \\ \hline
+\end{tabular}
+\caption{Power Consumption Summary}
+\label{tab:PowerConsumptionSummary}
+\end{table}
+
+Therefore, at a maximum, the entire system will require about 245mA of power at any given point. Appendix \ref{appendix:BatteryOptions} outlines some of the available options. Evidently option 1 or 2 would be most appropriate.
+
+\newpage
+# App Development
+To complement our wearable device a dedicated web-based app was created that would allow the user to view sensor and biomarker data and analytics in real-time. The development of the app was broken into three stages: App Design, Front-end development and Back-end development.
+
+## App Design
+
+\begin{figure}
+\centering
+\includegraphics[width=0.6\linewidth]{images/FigmaDesigns.png}
+\caption{Figma Designs for app, home screen(left) and sensor panel(right)}
+\label{fig:FigmaDesigns}
+\end{figure}
+
+In the app design phase, early prototypes of the application interface were created using Figma. As shown on the left of Figure \ref{fig:FigmaDesigns}, the home screen of the app is broken into 3 major components that fulfil the goal of the app. The first component is the calendar navigation bar, this feature allows the user to access data and analytics from previous periods as well as access current real-time data. Right below the calendar navigation bar is the circular progress bar that provides the user a categorization of their stress level, as this was one of the primal functions of our wearable device the progress bar was allocated a relatively large space to accentuate its importance as well as attract the user’s attention regarding the metric shown. The final component of the home screen is the sectioned-off quadrants with each quad section assigned a different sensor reading except for one section. If the user was to click on one of the sensors segments, then they would see an interface resembling the design on the right of Figure \ref{fig:FigmaDesigns}. As shown in the figure, the user can view a graph that encompasses all their data regarding a particular sensor. In addition, a ‘Your Highlights’ section is created to provide further analytics and information to the user.
+
+\newpage
+## Software Architecture
+To develop our data visualization app for our wearable device a wide array of technologies was used to provide the user with the relevant data.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.7\linewidth]{images/SoftwareArchitectureFlowchart.png}
+\caption{Software Architecture Flowchart}
+\label{fig:SoftwareArchitectureFlowchart}
+\end{figure}
+
+## Front-end Development
+As shown in Figure \ref{fig:SoftwareArchitectureFlowchart} above, two main technologies were utilised to help the front-end component of our app, the first being React which is a popular JavaScript library for building UI components, and the second component being tailwind which is a UI library that helps streamline styling changes. In regards, to the user interface the app contains three major React components: `Calendar`, `HealthPanel` and `StressBar`. The `Calendar` component is responsible for displaying the date navigation bar and ensuring that when a user clicks on a certain date the correct data is requested from the backend. The `HealthPanel` involved creating the four panels that direct the user to specific sensor data, the journal panel was a feature that allowed to use to store notes and help them identify possible stress sources. The last major React component and arguably the most important component is the `StressBar` component, this component was responsible for dynamically changing the interface when sensor data is streaming to the database in real-time thus allowing the user to view a categorization of their stress level. The full component tree is shown in Figure \ref{fig:SoftwareArchitectureFlowchart}.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.5\linewidth]{images/ReactComponentTree.png}
+\caption{React Component Tree}
+\label{fig:ReactComponentTree}
+\end{figure}
+
+To communicate with the database, the app sends GET requests to certain API endpoints such as `/get-data.php` and sends a query string containing information on the date that is selected by the user in the calendar navigation bar, and this allows the app to pull sensor data from a certain day of the users picking. A sample API request is shown below, this certain request gets all the sensor data on the 11th of September 2022.
+
+```{verbatim, echo=TRUE, out.width="60%", fig.cap="\\label{fig:SampleAPIEndpoint}Sample API Endpoint"}
+https://your-midshift.com/get-data.php/?year="2022"&month="09"&day="11"
+```
+
+## Back-end Development
+As displayed in Figure \ref{fig:SoftwareArchitectureFlowchart}, to help build the backend of our web-based application PHP and MySQL were used in conjunction. MySQL is a relational database that is based on the popular query language SQL. The database is hosted on Bluehost cloud servers and allowed us to store, retrieve and filter sensor data that is being collected from our wearable device. Sample data from our database is shown in Figure \ref{fig:SampleDataFromDatabase}, as displayed in the Figure the data model was created using six columns: `id`, `value1`, `value2`, `value3`, `reading_time` and `user`. The id allows us to identify unique data entries, the value variables are data entries from the sensor, the reading time is the timestamp of when the data was inserted into the database and finally the user column was used to separate our data according to the individual user that inserted data into the database.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.6\linewidth]{images/SampleDataFromDatabase.png}
+\caption{Sample data from database}
+\label{fig:SampleDataFromDatabase}
+\end{figure}
+
+To communicate with our database, PHP was used because it is a powerful tool for making dynamic and interactive web pages. The first main action regarding PHP was to create a script that would parse the sensors values from a POST request and then insert those values into the database.  Sample code from this script is shown in the block below. The script initially checks the request method to ensure that a post request has been sent. After this check the script parses the body from the POST request and grabs the API key, this step allows us to check if the correct API key is received and ensures that the right authentication practices are in place so that only authorized entities can insert new data. The next body of the code involves grabbing sensors values from the POST request and inserting them into the database using SQL.
+
+```{js, echo=TRUE, eval=FALSE, out.width="60%", fig.cap="\\label{fig:SnippetPost}Snippet code for posting data to database"}
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $api_key = test_input($_POST["api_key"]);
+    if($api_key == $api_key_value) {
+        $value1 = test_input($_POST["value1"]);
+        $value2 = test_input($_POST["value2"]);
+        $value3 = test_input($_POST["value3"]);
+        $user = test_input($_POST["user"]);
+
+        // Create connection
+        $conn = new mysqli($servername, $username, $password, $dbname);
+        // Check connection
+        if ($conn->connect_error) {
+            die("Connection failed: " . $conn->connect_error);
+        }
+
+        $sql = "INSERT INTO Sensor (value1, value2, value3, user)
+        VALUES ('" . $value1 . "', '" . $value2 . "', '" . $value3 . "', '" . $user . "')";
+
+        if ($conn->query($sql) === TRUE) {
+            echo "New record created successfully";
+        }
+        else {
+            echo "Error: " . $sql . "<br>" . $conn->error;
+        }
+        $conn->close();
+    }
+    else {
+        echo "Wrong API Key provided.";
+    }
+}
+```
+
+After this was completed, the next action was to create a script that would be able to retrieve values from the database within a certain time period. Sample code of this script is shown in the code blocks above and below. In essence, when a GET request is made the query is expected to contain three values the year, month and day and this allows the execution of a query from that day as displayed in the variable $my_query.
+
+```{js, echo=TRUE, eval=FALSE, out.width="60%", fig.cap="\\label{fig:SnippetGet}Snippet code for getting values from database"}
+$method = $_SERVER['REQUEST_METHOD'];
+
+$year = strval($_GET['year']);
+$month = strval($_GET['month']);
+$day = strval($_GET['day']);
+$my_query = "select * from Sensor where reading_time  >= '$year-$month-$day 00:00:00'
+			and reading_time  <= '$year-$month-$day 23:59:00'";
+```
+
+## Microcontroller Algorithm
+Appendix \ref{appendix:MCUCode} shows the algorithm employed to facilitate the functions of the Microcontroller. It includes the acquisition of data from both GSR and Pulse Sensor. Additionally, the BPM calculation and GSR Software Filtering are both performed on the MCU.
+
+Most notably, the algorithm includes the separation of two distinct tasks pinned to one of each of the two available cores inside the ESP32.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.9\linewidth]{images/DualCoreESP32.png}
+\caption{Dual Core ESP32}
+\label{fig:DualCoreESP32}
+\end{figure}
+
+Core 1 is utilised to perform the acquisition of data from the sensors and core 2 is used to make HTTP requests to the database. This was decided as when both tasks run on the same core, the HTTP requests block the sensor functions and ultimately disrupt the sample frequency.
+
+\newpage
+# Findings
+## Laboratory Test Results
+Device Power Consumption: Upon completion of PCB assembly, it was found that the Galvanic Skin Response sensor consumed approximately 1.4mA of current. This was determined by using the power supply and ammeter setup shown in Figure \ref{fig:AmmeterConnection} and Figure \ref{fig:PowerSupplyAndAmmeter}.
+
+\begin{figure}
+\begin{minipage}{0.6\textwidth}
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{images/AmmeterConnection.jpg}
+\caption{Ammeter Connection}
+\label{fig:AmmeterConnection}
+\end{figure}
+\end{minipage}\hfill
+\begin{minipage}{0.3\textwidth}
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{images/PowerSupplyAndAmmeter.jpg}
+\caption{Power Supply and Ammeter Setup}
+\label{fig:PowerSupplyAndAmmeter}
+\end{figure}
+\end{minipage}
+\end{figure}
+
+Note: The temperature sensor was not included in the power consumption testing as complications arose in the soldering process.
+
+## Numerical Results
+In the testing of numerical validity of the results outputted by the custom GSR sensor, it was compared to a readily available version which was acquired online. The Grove GSR Sensor manufactured by seeed studio utilises an LM324 amplifier and electrodes embedded into elastic finger straps. This is an important consideration as the two devices utilise different electrodes, producing a somewhat differing result. Nonetheless, the actual value produced by the device is of little significance as what matters is the peaks and troughs visualised in the graph.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.4\linewidth]{images/CustomGSRSeeed.png}
+\caption{Custom GSR vs Seeed Studio}
+\label{fig:CustomGSRSeeed}
+\end{figure}
+
+\newpage
+Figure \ref{fig:CustomGSRSeeed} illustrates the comparison between the custom GSR designed by the project team (Red) and the readily available version (Blue). Evidently, the custom GSR sensor is significantly more sensitive in changes to galvanic skin response as seen by the change in height beginning from the start of the rise (outlined in green). The comparison was conducted by utilising an Arduino Uno and the Serial Plotter function to visualise both charts on the same graph. Potentially, the electrode type from the readily available version could be implemented to maintain constant pressure on the electrodes. In addition to a reduction in sensitivity and increase in filter capacitance.
+
+### Pulse Reading Verification
+\vspace{-1 cm}
+\begin{figure}
+\begin{minipage}{0.6\textwidth}
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{images/RawPulseBPM.png}
+\caption{Raw Pulse Signal and BPM}
+\label{fig:RawPulseBPM}
+\end{figure}
+\end{minipage}\hfill
+\begin{minipage}{0.3\textwidth}
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{images/BPMVerification.png}
+\caption{BPM Verification}
+\label{fig:BPMVerification}
+\end{figure}
+\end{minipage}
+\end{figure}
+
+\vspace{-0.3 cm}
+In Figure \ref{fig:RawPulseBPM}, it can be seen the comparison of the raw pulse signal (Blue) and the BPM (red). A threshold is taken at approximately 3000 (varies person to person) and each time the blue signal crosses that value a “pulse” is measured. To display the signal on an appropriate scale, the BPM has been multiplied by 100. So, in this case the signal at approximately 7500 indicates a resting BPM of approximately 75 beats per minute. This can then be compared with another measurement of pulse as seen in Figure \ref{fig:RawPulseBPM}, where a mobile application which uses photoplethysmography as is being used in the stress monitoring device, can be seen to share a very similar BPM within the range of calculation as outlined in the demonstrated graph. Thus, confirming the calculation is correct and accurate.
+
+## Timing Constraints
+Some alterations from the initial timeline put forward in the completion plan occurred due to delays in PCB manufacture and lead-times on ordered components. The temperature sensors were originally intended to be mounted to the same PCB as the GSR sensor, however the lead-time for the temperature sensors was too long to allow them to be attached to new PCBs and verified before the end of the project.
+
+\newpage
+## Stress Derivation
+The method of stress categorisation for this system is done by comparison of average sensor values. For the categorisation of a whole day's worth of sensor data, the day's average heart rate and GSR value are taken and compared to the average values over the whole data set. This is an imperfect solution since it does not allow the user to input how stressed they felt for the day to refine the categorisation of the data; however, this would require a significantly more processing intensive method which would be impractical for the hardware used in this system.
+
+The stress categorisation for the live data is done by taking the average of the sensor data for the previous 30 samples (1.5 minutes) and comparing it to the average of the rest of the day's data to generate a comparison of relative stress level compared to the rest of the day, this operation is done every 3 samples (9 seconds).
+
+Figure \ref{fig:StressDerivationResults} shows firstly the recorded GSR and BPM values, then the averages of these values calculated over the 30 sample wide frames. The Type 1 categories compare the recorded value to the average of the whole data set directly and normalise the result, this creates a very noisy and difficult to analyse categorisation of stress level. The Type 2 stress categories compare the average over the data frame to the average of the whole data set, this produces a much smoother categorisation curve that is easy to analyse.
+
+The **Stress Categories Type 2** graph in Figure \ref{fig:StressDerivationResults} shows the stress levels over a roughly 90 minute period of a working day for the user. Around 22:45 was when the user began working on a complex task, which was completed by 23:20. As displayed on the graph, the stress rose fairly quickly at the start of this task and then calmed down as the task was completed. After the task was complete a 15 minute break was enjoyed, which is notably the lowest stress level displayed on the graph. Following the break, the user was required to engage in a stressful activity, which was completed by 22:40. The graph shows the user beginning to calm down before the collection of data ceased.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.7\linewidth]{images/Results.png}
+\caption{Stress Derivation Results}
+\label{fig:StressDerivationResults}
+\end{figure}
+
+
+# Recommendations and Future Work
+## Machine Learning and Statistics
+One method of improving this system would be to use machine learning techniques such as convolutional neural networks (CNNs). Applications of these techniques have been proven to be over 99% accurate for biometric identification of different people using pre-trained CNNs such as GoogleNet, ResNet18, and SqueezeNet \cite{Aldjia2021}, however the accuracy for the categorisation of stress would likely be significantly lower. The integration of such techniques into the application for correlation of biometric data to recorded stress events could greatly increase the accuracy of the stress prediction provided within the app.
+
+A different potential implementation of machine learning techniques would be to use a generative adversarial network (GAN) to produce a categorisation of the stress level using human input as the discriminator for refining the categorisation such as that used in HumanGAN \cite{HumanGAN}. This method would likely lead to a more accurate categorisation of the user's stress levels, especially if the network is using the new data to continue to train the model. The main drawback of using a custom GAN would be the training cost, since the network would require significant amounts of data and manual categorisations of stress for the data to create an accurate model to work from.
+
+One final potential application of machine learning techniques would be to improve the heart sensor processing. An efficient small-scale neural network could be implemented on the microcontroller \cite{Roth2020} to refine the detection of heartbeat between users and each period of use.
+
+\vspace{-0.3 cm}
+## Advanced PCB Design
+It is thought that the custom PCB design could be developed into a more refined product with the inclusion of the selected microcontroller integrated onto the same PCB. It is thought that this would help with the reduction in obtrusiveness and provide a more aesthetic small form factor design. The following is a premeditated ideation of how this could be brought into reality.
+
+First the schematic for the MCU would be implemented into KiCad as follows in Figure \ref{fig:AdvancedPCBSchematic}. This would include the MCU itself, the antenna, galvanic skin response sensor and temperature sensor. Subsequently the schematic would be translated into a PCB design as seen in Figure \ref{fig:AdvancedPCBDesign}. Ultimately, the final form would appear as illustrated in Figure \ref{fig:AdvancedPCBTopView} and Figure \ref{fig:AdvancedPCBBotView}. The benefits of achieving this design would allow evidently the only external wiring to be from the power source and the pulse sensor, removing the need for excess header pins. Most importantly however it would reduce the space required for integration.
+
+\vspace{-0.3 cm}
+\begin{figure}
+\begin{minipage}{0.49\textwidth}
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{images/AdvancedPCBSchematic.png}
+\caption{Advanced PCB Design Schematic}
+\label{fig:AdvancedPCBSchematic}
+\end{figure}
+\end{minipage}\hfill
+\begin{minipage}{0.49\textwidth}
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{images/AdvancedPCBDesign.png}
+\caption{Advanced PCB Design}
+\label{fig:AdvancedPCBDesign}
+\end{figure}
+\end{minipage}
+\end{figure}
+
+\vspace{-0.4 cm}
+\begin{figure}
+\begin{minipage}{0.49\textwidth}
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{images/AdvancedPCBTopView.png}
+\caption{Advanced PCB Design Top View}
+\label{fig:AdvancedPCBTopView}
+\end{figure}
+\end{minipage}\hfill
+\begin{minipage}{0.49\textwidth}
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{images/AdvancedPCBBotView.png}
+\caption{Advanced PCB Design Bottom View}
+\label{fig:AdvancedPCBBotView}
+\end{figure}
+\end{minipage}
+\end{figure}
+
+\vspace{-0.4 cm}
+# Conclusion
+With the advent of IoT devices and the gaining popularity of wearables, wearable devices are becoming rapidly adopted and allow the user to view real-time information regarding their overall wellbeing, and generally increasing health awareness. Our final wearable device can measure sensor data in real-time and render the results in a web-based application that the wearer can access through a mobile device. Furthermore, mathematical relationships and models were created to provide insightful data to the user and ultimately inform them of their current stress levels. Overall, our device was able to achieve the functionality that we set out to achieve however during the development phase numerous features both hardware and software were identified that could potentially be added in the future to enhance and improve our wearable.
+
+\newpage
+
+# References
+\renewcommand*{\bibfont}{\footnotesize}
+\printbibliography[heading=none]
+\def\printbibliography{}
+\normalsize
+
+\newpage
+
+# Appendices
+\appendix
+
+# Contribution Table
+\begin{table}[thbp]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|l|l|l|}
+\hline
+Section                                                            & Contributor(s)     & Contribution (Respectively) \\ \hline
+Executive Summary                                                  & Ahad               & 100\%                       \\ \hline
+Introduction and Statement of Problem                              & Alec, Ahad         & 50\%, 50\%                  \\ \hline
+Background and Literature Review                                   &                    &                             \\ \hline
+PCB Design Best Practices                                          & Alec               & 100\%                       \\ \hline
+Web Based Application                                              & Ahad               & 100\%                       \\ \hline
+Research                                                           &                    &                             \\ \hline
+General Overview of Wearable Devices and IoT Based Medical Devices & Alec               & 100\%                       \\ \hline
+Physiological Signals and Indicators of Stress                     & Alec               & 100\%                       \\ \hline
+Stress Derivation                                                  & Oliver             & 100\%                       \\ \hline
+Testing                                                            & Oliver             & 100\%                       \\ \hline
+Methodology and System Model                                       &                    &                             \\ \hline
+Questions to be Answered                                           & Ahad, Alec, Oliver & 33\%, 33\%, 33\%            \\ \hline
+High Level System Design                                           & Alec               & 100\%                       \\ \hline
+Low-Level Design and Investigation of Materials                    &                    &                             \\ \hline
+Discussion of Materials for Electrodes                             & Alec               & 100\%                       \\ \hline
+Discussion on PCB Construction Material                            & Alec               & 100\%                       \\ \hline
+PCB Design                                                         & Alec               & 100\%                       \\ \hline
+Wearability                                                        & Oliver             & 100\%                       \\ \hline
+Device Powering and Battery Management Options                     & Alec               & 100\%                       \\ \hline
+App Development                                                    & Ahad               & 100\%                       \\ \hline
+Microcontroller Algorithm                                          & Alec, Ahad         & 75\%, 25\%                  \\ \hline
+Findings                                                           &                    &                             \\ \hline
+Laboratory Test Results                                            & Alec               & 100\%                       \\ \hline
+Numerical Results                                                  & Alec               & 100\%                       \\ \hline
+Timing Constraints                                                 & Oliver             & 100\%                       \\ \hline
+Stress Derivation                                                  & Oliver             & 100\%                       \\ \hline
+Recommendations and Future Work                                    &                    &                             \\ \hline
+Machine Learning and Statistics                                    & Oliver             & 100\%                       \\ \hline
+Advanced PCB Design                                                & Alec               & 100\%                       \\ \hline
+Conclusion                                                         & Ahad               & 100\%                       \\ \hline
+Editing                                                            & Oliver             & 100\%                       \\ \hline
+\end{tabular}%
+}
+\end{table}
+
+# AHT20 Typical Application \label{appendix:SkinTempSchem}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.7\linewidth]{images/AHT20TypicalApplication.png}
+\caption{AHT20 Typical Application}
+\label{fig:AHT20TypicalApplication}
+\end{figure}
+
+# Battery Options \label{appendix:BatteryOptions}
+
+\begin{table}[thbp]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|c|l|c|c|c|}
+\hline
+No. & Link                                  & Voltage & mAh  & Size (mm)    \\ \hline
+1   & https://www.adafruit.com/product/2011 & 3.7     & 2500 & 60x36x7      \\ \hline
+2   & https://www.adafruit.com/product/328  & 3.7     & 2500 & 50x60x7.3    \\ \hline
+3   & https://www.adafruit.com/product/1317 & 3.7     & 150  & 19.75x26x3.8 \\ \hline
+4   & https://www.adafruit.com/product/4236 & 3.7     & 420  & 35x24x5.2    \\ \hline
+5   & https://www.adafruit.com/product/2750 & 3.7     & 350  & 36x19.6x5.2  \\ \hline
+\end{tabular}
+}
+\end{table}
+
+# Battery Management Systems
+
+\begin{table}[thbp]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|l|l|l|l|}
+\hline
+No. & Link                                  & Connection Type & Size      \\ \hline
+1   & https://www.adafruit.com/product/1904 & Mini USB        & 21x19x2   \\ \hline
+2   & https://www.adafruit.com/product/4410 & USB C           & 24x19x7.2 \\ \hline
+\end{tabular}%
+}
+\end{table}
+
+\newpage
+# React Code
+## Components/Calendar.js
+
+```{js, echo=TRUE, eval=FALSE}
+import React from "react";
+import { nanoid } from "nanoid";
+import { useDispatch } from "react-redux";
+import { setDate } from "../redux/Date";
+import { fetchDateData } from "../redux/SensorAPI";
+import { useSelector } from "react-redux";
+import _ from "lodash";
+export default function Calendar() {
+  let today = new Date();
+  let maxDatesShown = 20;
+  const dispatch = useDispatch();
+  const currentDate = useSelector(state => state.date);
+  const dateData =  new Array(maxDatesShown).fill(0).map((data, index) => {
+    let day = today.toLocaleDateString('en-us', { weekday: 'short' });
+    let month = today.toLocaleString('en-us', { month: 'short' });
+    let date = today.getDate();
+    let dayId = today.getDate();
+    today.setDate(today.getDate() - 1);
+
+    let dateId = {year: today.getFullYear(), month: today.getMonth() + 1, day: dayId}
+    if (index === 0) day = "TODAY";
+    return{day,month,date,dateId}
+  })
+
+  function handleDateClick (dateId) {
+    //console.log("ping");
+    dispatch(setDate(dateId));
+    dispatch(fetchDateData(dateId));
+  }
+// onClick = {() => handleDateClick(date.dateId)}
+  const allDates = dateData.map((date, index) => {
+    return (
+      <li key={nanoid()} className= "text-white ">
+        <input
+      checked = {_.isEqual(currentDate, date.dateId)}
+      onChange={() => handleDateClick(date.dateId)}
+      className="sr-only peer"
+      type="radio" value="yes"
+      name="answer"
+      id={`date-${index}`}
+    />
+        <label
+    className="flex px-2 justify-center border border-transparent bg-slate-900 w-16 rounded-md cursor-pointer focus:outline-none peer-checked:text-black peer-checked:bg-white"
+    htmlFor={`date-${index}`}
+    >
+          <div className="flex flex-col items-center">
+            <div className="text-sm font-semibold">{date.day}</div>
+            <div className="flex justify-center gap-1">
+              <div className="text-xs">{date.month}</div>
+              <div className="text-xs">{date.date}</div>
+            </div>
+          </div>
+        </label>
+      </li>
+      )
+  })
+  return (
+    <ul className="calendar flex flex-row-reverse overflow-x-auto">
+      {allDates}
+    </ul>
+  )
+}
+```
+
+\newpage
+## Components/HealthPanel.js
+
+```{js, echo=TRUE, eval=FALSE}
+import React from "react";
+
+export default function HealthPanel() {
+  return (
+    <div className="w-full p-4 grid grid-cols-2 gap-3">
+      <div className=" bg-gray-300 rounded-lg h-48"></div>
+      <div className="bg-gray-300 rounded-lg h-48"></div>
+      <div className=" bg-gray-300 rounded-lg h-48"></div>
+      <div className="bg-gray-300 rounded-lg h-48"></div>
+    </div>
+  )
+}
+```
+
+\newpage
+## Components/Navbar.js
+
+```{js, echo=TRUE, eval=FALSE}
+import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faUser, faBell, faHeartPulse, faBrain} from '@fortawesome/free-solid-svg-icons'
+import { faPauseCircle } from "@fortawesome/free-regular-svg-icons";
+export default function Navbar() {
+  return (
+    <div className="flex justify-between items-center  p-2 bg-slate-900">
+      <FontAwesomeIcon icon={faUser} size="lg" className="text-gray-300" />
+      <div className="flex items-center gap-2">
+        <FontAwesomeIcon icon={faHeartPulse} size="2xl" className="icon text-white" />
+        <p className="text-white font-sans font-light text-2xl">mindShift</p>
+      </div>
+      <FontAwesomeIcon icon={faBell} size="lg" className="text-gray-300"/>
+    </div>
+  )
+}
+```
+
+\newpage
+## Components/StressBar.js
+
+```{js, echo=TRUE, eval=FALSE}
+import React from "react";
+import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
+import 'react-circular-progressbar/dist/styles.css';
+
+export default function StressBar() {
+  return (
+    <div className="px-3 py-2 m-6 rounded-lg flex flex-col justify-center h-64 text-lg">
+      <CircularProgressbar value={50} text={'MEDIUM'} styles={buildStyles({textSize: '16px',  pathTransitionDuration: 0.5,})}></CircularProgressbar>
+    </div>
+
+  )
+}
+```
+
+\newpage
+## Redux/Date.js
+
+```{js, echo=TRUE, eval=FALSE}
+export function setDate({year, month, day}) {
+  return {
+    type: "SET_DATE",
+    data: {year, month, day}
+  }
+}
+
+export default function dateReducer(data=getCurrentDate(), action) {
+  switch(action.type) {
+    case "SET_DATE":
+      return action.data
+    default:
+      return data
+  }
+}
+
+function getCurrentDate() {
+  let today = new Date();
+  let day = today.getDate();
+  let month = today.getMonth() + 1;
+  let year = today.getFullYear();
+  return {day, month, year};
+}
+```
+
+\newpage
+## Redux/index.js
+
+```{js, echo=TRUE, eval=FALSE}
+import { configureStore } from "@reduxjs/toolkit";
+import thunk from "redux-thunk";
+import { useDispatch } from "react-redux";
+import sensorDataReducer from "./SensorAPI";
+import dateReducer from "./Date";
+import { fetchDateData } from "./SensorAPI";
+import { setDate } from "./Date";
+const store = configureStore(
+  {
+    reducer: {
+      date: dateReducer,
+      sensor: sensorDataReducer,
+
+    },
+    middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(thunk)
+  }
+)
+store.dispatch(fetchDateData(store.getState().date));
+store.subscribe(() => console.log(store.getState()));
+export default store;
+```
+
+\newpage
+## Redux/SensorAPI.js
+
+```{js, echo=TRUE, eval=FALSE}
+import {useSelector, useDispatch } from "react-redux";
+
+export function fetchDateData({year, month, day}) {
+  return (dispatch) => {
+    const baseUrl = `https://your-mindshift.com/get-data.php/?year=${year}&month=${month}&day=${day}`;
+    fetch(baseUrl)
+    .then(res => res.json())
+    .then(payload => {
+      const data = payload;
+      dispatch({type: "FETCH_DATE_DATA", data})
+    })
+  }
+}
+
+export default function sensorDataReducer(data=[], action) {
+  switch(action.type) {
+    case "FETCH_DATE_DATA":
+      return action.data
+    default:
+      return data
+  }
+}
+```
+
+\newpage
+## App.js
+
+```{js, echo=TRUE, eval=FALSE}
+import React from "react";
+import HighchartsReact from "highcharts-react-official";
+import Highcharts from 'highcharts';
+import Test from "./util/Test";
+import Navbar from "./components/Navbar";
+import Calendar from "./components/Calendar";
+import StressBar from "./components/StressBar";
+import HealthPanel from "./components/HealthPanel";
+import { faBlackboard } from "@fortawesome/free-solid-svg-icons";
+import { useSelector } from "react-redux";
+function App() {
+
+  //const [data, setData] = React.useState("");
+  const data = useSelector(state => state.sensor)
+  let alecsData = [];
+  let oliversData = [];
+  let value1 = [];
+  let value2 = [];
+  let value3 = [];
+  let value4 = [];
+  let value5 = [];
+  let value6 = [];
+  let reading_time = [];
+  let reading_time2 = [];
+
+  React.useEffect(() => {
+    async function getData() {
+      console.log("ping")
+      const res = await fetch('https://your-mindshift.com/get-data.php/');
+      const dataRes = await res.json();
+      console.log(dataRes);
+      //setData(dataRes);
+    }
+    //getData();
+    //const myInterval = setInterval(getData, 5000);
+    return (() => {
+      //clearInterval(myInterval);
+    })
+  }, []);
+
+  alecsData = (data !== "") && data.filter((values) => values.user === "alec");
+  oliversData = (data !== "") && data.filter((values) => values.user === "oliver");
+
+  value1 = (data !== "") && alecsData.map((values) => +values.value1);
+  value2 = (data !== "") && alecsData.map((values) => +values.value2);
+  value3 = (data !== "") && alecsData.map((values) => +values.value3);
+
+  value4 = (data !== "") && oliversData.map((values) => +values.value1);
+  value5 = (data !== "") && oliversData.map((values) => +values.value2);
+  value6 = (data !== "") && oliversData.map((values) => +values.value3);
+
+  reading_time = (data !== "") && alecsData.map((values) => values.reading_time.split(" ")[1].slice(0,5));
+  reading_time2 = (data !== "") && oliversData.map((values) => values.reading_time.split(" ")[1].slice(0,5));
+  console.log(reading_time);
+  const options = {
+    title: { text: 'ALEC 1' },
+    chart: {
+      backgroundColor: "#0f172a"
+    },
+    series: [{
+      showInLegend: false,
+      data: value1
+    }],
+    plotOptions: {
+      line: { animation: false,
+        dataLabels: { enabled: true }
+      },
+      series: { color: '#059e8a' }
+    },
+    xAxis: {
+      type: 'datetime',
+      categories: reading_time
+    },
+    yAxis: {
+      title: { text: 'Temperature (Celsius)' }
+    },
+    credits: { enabled: false }
+  }
+
+  const options4 = {
+    title: { text: 'OLIVER 1' },
+    chart: {
+      backgroundColor: "#0f172a"
+    },
+    series: [{
+      showInLegend: false,
+      data: value4
+    }],
+    plotOptions: {
+      line: { animation: false,
+        dataLabels: { enabled: true }
+      },
+      series: { color: '#059e8a' }
+    },
+    xAxis: {
+      type: 'datetime',
+      categories: reading_time2
+    },
+    yAxis: {
+      title: { text: 'Temperature (Celsius)' }
+    },
+    credits: { enabled: false }
+  }
+
+  const options2 = {
+    title: { text: 'ALEC 2' },
+    chart: {
+      backgroundColor: "#0f172a"
+    },
+    series: [{
+      showInLegend: false,
+      data: value2
+    }],
+    plotOptions: {
+      line: { animation: false,
+        dataLabels: { enabled: true }
+      },
+      series: { color: '#059e8a' }
+    },
+    xAxis: {
+      type: 'datetime',
+      categories: reading_time
+    },
+    yAxis: {
+      title: { text: 'Temperature (Celsius)' }
+    },
+    credits: { enabled: false }
+  }
+  const options5 = {
+    title: { text: 'OLIVER 2' },
+    chart: {
+      backgroundColor: "#0f172a"
+    },
+    series: [{
+      showInLegend: false,
+      data: value5
+    }],
+    plotOptions: {
+      line: { animation: false,
+        dataLabels: { enabled: true }
+      },
+      series: { color: '#059e8a' }
+    },
+    xAxis: {
+      type: 'datetime',
+      categories: reading_time2
+    },
+    yAxis: {
+      title: { text: 'Temperature (Celsius)' }
+    },
+    credits: { enabled: false }
+  }
+
+  const options3 = {
+    title: { text: 'ALEC 3' },
+    chart: {
+      backgroundColor: "#0f172a"
+    },
+    series: [{
+      showInLegend: false,
+      data: value3
+    }],
+    plotOptions: {
+      line: { animation: false,
+        dataLabels: { enabled: true }
+      },
+      series: { color: '#059e8a' }
+    },
+    xAxis: {
+      type: 'datetime',
+      categories: reading_time
+    },
+    yAxis: {
+      title: { text: 'Temperature (Celsius)' }
+    },
+    credits: { enabled: false }
+  }
+
+  const options6 = {
+    title: { text: 'OLIVER 3' },
+    chart: {
+      backgroundColor: "#0f172a"
+    },
+    series: [{
+      showInLegend: false,
+      data: value6
+    }],
+    plotOptions: {
+      line: { animation: false,
+        dataLabels: { enabled: true }
+      },
+      series: { color: '#059e8a' }
+    },
+    xAxis: {
+      type: 'datetime',
+      categories: reading_time2
+    },
+    yAxis: {
+      title: { text: 'Temperature (Celsius)' }
+    },
+    credits: { enabled: false }
+  }
+  return (
+    <div className="App w-screen">
+      <Navbar />
+      <Calendar />
+      <StressBar />
+      <HealthPanel />
+      <HighchartsReact
+        highcharts={Highcharts}
+        options={options}
+      />
+      <HighchartsReact
+        highcharts={Highcharts}
+        options={options2}
+      />
+      <HighchartsReact
+        highcharts={Highcharts}
+        options={options3}
+      />
+      <HighchartsReact
+        highcharts={Highcharts}
+        options={options4}
+      />
+      <HighchartsReact
+        highcharts={Highcharts}
+        options={options5}
+      />
+      <HighchartsReact
+        highcharts={Highcharts}
+        options={options6}
+      />
+      <Test />
+    </div>
+  );
+}
+
+export default App;
+```
+
+\newpage
+# Microcontroller Code \label{appendix:MCUCode}
+
+```{js, echo=TRUE, eval=FALSE}
+#include <stdlib.h>
+#include <WiFi.h>
+#include <HTTPClient.h>
+#include <string>
+
+int BAUDRATE = 9600;
+int Signal = 0;
+bool QS = false;
+int BPM = 0;
+int IBI = 750;
+bool Pulse = false;
+int sampleCounter = 0;
+int lastBeatTime = 0;
+int P = 2048;
+int T = 2048;
+int threshSetting = 3000;
+int thresh = 3000;
+int amp = 410;
+bool firstBeat = true;
+bool secondBeat = false;
+int FadeLevel = 0;
+int delayMs = 20;
+int rate[10];
+
+float voltage = 0;
+float vs = 3.3;
+#define FILTER_LEN 100
+float skinResponse = 0;
+float filteredSkinResponse = 0;
+int count = 0;
+uint32_t filterBuffer[FILTER_LEN] = {0};
+
+const char* ssid = "TP-LINK_3E17";
+const char* password = "61967274";
+const char* serverName = "http://your-mindshift.com/post-data.php";
+String apiKeyValue = "tPmAT5Ab3j7F9";
+
+TaskHandle_t Task1;
+TaskHandle_t Task2;
+
+void setup(){
+  Serial.begin(BAUDRATE);
+  // Connect to Wi-Fi
+  WiFi.begin(ssid, password);
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(1000);
+    //Serial.println("Connecting to WiFi...");
+  }
+
+  xTaskCreatePinnedToCore(
+    getData,
+    "Task1",
+    10000,
+    NULL,
+    0,
+    &Task1,
+    0);
+
+  xTaskCreatePinnedToCore(
+    checkWiFi,
+    "Task2",
+    10000,
+    NULL,
+    0,
+    &Task1,
+    1);
+}
+
+void loop(){}
+
+void getData(void * pvParamets){
+  for(;;){
+    Serial.print(getGSR());
+    Serial.print(" ");
+    Serial.print(getBPM());
+    Serial.print(" ");
+    Serial.println(Signal);
+
+    setBPM();
+    setGSR();
+    delay(10);
+  }
+}
+
+String getGSR(){
+  return String(filteredSkinResponse);
+}
+
+String getBPM(){
+  return String(BPM);
+}
+
+void checkWiFi(void * pvParameters) {
+
+  for(;;){
+    if(WiFi.status()== WL_CONNECTED){
+      WiFiClient client;
+      HTTPClient http;
+
+      // Your Domain name with URL path or IP address with path
+      http.begin(client, serverName);
+
+      // Specify content-type header
+      http.addHeader("Content-Type", "application/x-www-form-urlencoded");
+
+      // Prepare your HTTP POST request data
+      String httpRequestData = "api_key=" + apiKeyValue + "&value1=" + String(getGSR())
+                             + "&value2=" + String(getBPM()) + "&value3=" + String(String(0)) + "" + "&user=" + "alec";
+      //Serial.print("httpRequestData: ");
+      //Serial.println(httpRequestData);
+
+      // You can comment the httpRequestData variable above
+      // then, use the httpRequestData variable below (for testing purposes without the BME280 sensor)
+      //String httpRequestData = "api_key=tPmAT5Ab3j7F9&value1=24.75&value2=49.54&value3=1005.14";
+
+      // Send HTTP POST request
+      int httpResponseCode = http.POST(httpRequestData);
+
+      // If you need an HTTP request with a content type: text/plain
+      //http.addHeader("Content-Type", "text/plain");
+      //int httpResponseCode = http.POST("Hello, World!");
+
+      // If you need an HTTP request with a content type: application/json, use the following:
+      //http.addHeader("Content-Type", "application/json");
+      //int httpResponseCode = http.POST("{\"value1\":\"19\",\"value2\":\"67\",\"value3\":\"78\"}");
+
+      if (httpResponseCode>0) {
+        //Serial.print("HTTP Response code: ");
+        //Serial.println(httpResponseCode);
+      }
+      else {
+        //Serial.print("Error code: ");
+        //Serial.println(httpResponseCode);
+      }
+      // Free resources
+      http.end();
+    }
+    else {
+      //Serial.println("WiFi Disconnected");
+    }
+    delay(20000);
+  }
+}
+
+void setGSR(){
+  int voltageReading = analogRead(38);
+  voltage = voltageReading * (vs/4095);
+  skinResponse = ((voltage - 1.75) * -1) * 1000;
+
+  int i = 0;
+  uint32_t Sum = 0;
+
+  filterBuffer[count++] = skinResponse;
+  if(count == FILTER_LEN){
+    count = 0;
+    }
+
+  for (i = 0; i < FILTER_LEN; i++){
+    Sum += filterBuffer[i];
+    }
+
+  filteredSkinResponse = Sum/FILTER_LEN;
+
+  if(filteredSkinResponse>4000){
+    filteredSkinResponse = 0;
+  }
+}
+
+void setBPM() {
+  Signal = analogRead(37);
+
+  sampleCounter = sampleCounter + delayMs; // keeping track of time in ms
+  int N = sampleCounter - lastBeatTime;
+
+  if (N > 250 && N < 3000){
+    if (Signal > thresh){
+      Pulse = true;
+      IBI = sampleCounter - lastBeatTime;
+
+      word runningTotal = 0;
+
+      for (int i = 0; i <= 8; i++) {          // shift data in the rate array
+        rate[i] = rate[i + 1];                // and drop the oldest IBI value
+        runningTotal += rate[i];              // add up the 9 oldest IBI values
+      }
+
+      rate[9] = IBI;                          // add the latest IBI to the rate array
+      runningTotal += rate[9];                // add the latest IBI to runningTotal
+      runningTotal /= 10;                     // average the last 10 IBI values
+      BPM = 60000 / runningTotal;             // how many beats can fit into a minute? that's BPM!
+
+      lastBeatTime = sampleCounter;
+    }
+  }
+
+  if (N > 3000) {                          // if 3 seconds go by without a beat
+    thresh = threshSetting;                // set thresh default
+    P = 2048;                               // set P default
+    T = 2048;                               // set T default
+    lastBeatTime = sampleCounter;          // bring the lastBeatTime up to date
+    firstBeat = true;                      // set these to avoid noise
+    secondBeat = false;                    // when we get the heartbeat back
+    Pulse = false;
+    BPM = 0;
+    IBI = 600;                  // 600ms per beat = 100 Beats Per Minute (BPM)
+    Pulse = false;
+    amp = 410;                  // beat amplitude 1/10 of input range.
+  }
+}
+```
